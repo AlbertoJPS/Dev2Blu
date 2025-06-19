@@ -1,0 +1,14 @@
+D:\Dev2Blu\AulasFundCSharp\Aula3\bin\Debug\net8.0\Aula3.exe
+D:\Dev2Blu\AulasFundCSharp\Aula3\bin\Debug\net8.0\Aula3.deps.json
+D:\Dev2Blu\AulasFundCSharp\Aula3\bin\Debug\net8.0\Aula3.runtimeconfig.json
+D:\Dev2Blu\AulasFundCSharp\Aula3\bin\Debug\net8.0\Aula3.dll
+D:\Dev2Blu\AulasFundCSharp\Aula3\bin\Debug\net8.0\Aula3.pdb
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.AssemblyInfoInputs.cache
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.AssemblyInfo.cs
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.dll
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\refint\Aula3.dll
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.pdb
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\Aula3.genruntimeconfig.cache
+D:\Dev2Blu\AulasFundCSharp\Aula3\obj\Debug\net8.0\ref\Aula3.dll
