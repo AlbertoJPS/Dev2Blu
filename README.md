@@ -1,7 +1,9 @@
 <h1 align="center">
-  <img src="https://media.licdn.com/dms/image/D4D22AQE6J9K4C7qJrA/feedshare-shrink_800/0/1717690400972?e=1721865600&v=beta&t=qv5cM6j6A2cQ2Yy4HT7VYjXDvKp9tVhJqYvNQz04PzE" alt="+Devs2Blu" width="200"/>
+  <a href="https://www.devs2blu.com.br/" target="_blank">
+    <img src="https://cdn.sonicadigital.com.br/dev2blu/storage/settings/1/original-663156875a6de.png" alt="+Devs2Blu" width="260"/>
+  </a>
   <br>
-  Dev2Blu — C# Learning Journey
+  C# Learning Journey
 </h1>
 
 <p align="center">
@@ -13,7 +15,7 @@
 
 ## Sobre o Projeto
 
-Este repositório reúne minhas atividades, projetos e desafios desenvolvidos como estudante participante do <b>+Devs2Blu</b> — iniciativa que representa uma das principais trilhas de formação em desenvolvimento de software do Vale do Itajaí. O programa oferece uma experiência presencial, combinando teoria, prática e contato com empresas do setor, preparando os alunos para os desafios reais do mercado de tecnologia.
+Este repositório reúne minhas atividades, projetos e desafios desenvolvidos como estudante participante do <b>+Devs2Blu</b> — iniciativa que representa uma das principais trilhas de formação em [...]
 
 O curso é ministrado pelo <b>Senac</b>, com apoio da <b>Prefeitura de Blumenau</b> e coordenação da <b>Blusoft</b>, referência no fomento ao ecossistema de TI regional.
 
@@ -59,7 +61,7 @@ O curso é ministrado pelo <b>Senac</b>, com apoio da <b>Prefeitura de Blumenau<
 
 ## Para Empresas & Comunidade
 
-Este repositório reflete o progresso e o aprendizado conquistados graças à oportunidade proporcionada pelo +Devs2Blu. Aqui está reunido meu compromisso em evoluir como futuro profissional, com ética, dedicação e vontade de fazer parte do ecossistema tecnológico de Blumenau.
+Este repositório reflete o progresso e o aprendizado conquistados graças à oportunidade proporcionada pelo +Devs2Blu. Aqui está reunido meu compromisso em evoluir como futuro profissional, com ét[...]
 
 Estou aberto(a) a feedbacks, conexões e oportunidades que possam fortalecer o desenvolvimento mútuo.
 
@@ -72,7 +74,9 @@ Fique à vontade para explorar os projetos ou entrar em contato para dúvidas, s
 ---
 
 <p align="center">
-  <img src="https://blusoft.org.br/wp-content/uploads/2023/05/logos-blusoft-senac.png" alt="Blusoft & Senac" width="400"/>
+  <a href="https://portal.sc.senac.br/portal/site/mba/parcerias-internacionais?gad_source=1&gad_campaignid=22177229513&gbraid=0AAAAADyjd6yD039hv4Yn_JtUGUSA06XNr&gclid=CjwKCAjw6s7CBhACEiwAuHQckpmF13D7JIF1nPMfI_cV1uJK5_zoQlhtXnFx8QYXVU6luSfZsVDkVRoCzd8QAvD_BwE" target="_blank">
+    <img src="https://aldeiacom.com.br/wp-content/uploads/2022/08/senac.png.webp" alt="Senac Parceiro" width="200"/>
+  </a>
 </p>
 
 <p align="center">
