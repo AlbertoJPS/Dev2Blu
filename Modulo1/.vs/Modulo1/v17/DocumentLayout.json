@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\Modulo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E6DAB27-921B-4D19-9194-AA5A2DA991D7}|Aula3\\Aula3.csproj|d:\\dev2blu\\modulo1\\aula3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E6DAB27-921B-4D19-9194-AA5A2DA991D7}|Aula3\\Aula3.csproj|solutionrelative:aula3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\Exercicio_01.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\Exercicio_01.csproj|solutionrelative:aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F58F2A9-AC9C-4614-A14B-B3432FAC3059}|Aula4\\Aula4.csproj|d:\\dev2blu\\modulo1\\aula4\\aula4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F58F2A9-AC9C-4614-A14B-B3432FAC3059}|Aula4\\Aula4.csproj|solutionrelative:aula4\\aula4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E6DAB27-921B-4D19-9194-AA5A2DA991D7}|Aula3\\Aula3.csproj|d:\\dev2blu\\modulo1\\aula3\\aula3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E6DAB27-921B-4D19-9194-AA5A2DA991D7}|Aula3\\Aula3.csproj|solutionrelative:aula3\\aula3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,48 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula3\\Program.cs",
-              "RelativeDocumentMoniker": "Aula3\\Program.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula3\\Program.cs",
-              "RelativeToolTip": "Aula3\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAiwFQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Aula3.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula3\\Aula3.cs",
+              "RelativeDocumentMoniker": "Aula3\\Aula3.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula3\\Aula3.cs",
+              "RelativeToolTip": "Aula3\\Aula3.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T00:33:59.843Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Aula4.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4\\Aula4.cs",
+              "RelativeDocumentMoniker": "Aula4\\Aula4.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4\\Aula4.cs",
+              "RelativeToolTip": "Aula4\\Aula4.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAJkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:04:40.366Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Exercicio_01.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.cs",
+              "RelativeDocumentMoniker": "Aula4_Tarefa\\Exercicio_01.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.cs",
+              "RelativeToolTip": "Aula4_Tarefa\\Exercicio_01.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAADwv3oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:02:55.859Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]
