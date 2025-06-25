@@ -17,22 +17,15 @@
 //    Console.WriteLine("Você é menor de idade");
 //}
 
-using Tarefas.MaosNaMassa;
+//dica
 
-namespace Aula5
-{
-    class Aula5
-    {
-        static void Main(string[] args)
-        {
-            string nomeConvidado;
-            Console.WriteLine("\n\nDigite o nome do convidado:\n");
-            nomeConvidado = Console.ReadLine();
+//notação ponto
+//é a forma de acessar membros de um objeto ou classe em C#
+//por exemplo, se você tem uma classe chamada "Pessoa" e um membro chamado "Nome",
+//você pode acessar o nome de uma pessoa específica usando a notação ponto: pessoa.Nome
 
-            // Uso da classe PraticaIfElse para verificar o convidado
-            PraticaIfElse.VerificarConvidado(nomeConvidado);
-        }
-    }
-}
+using TarefasAula.MaosNaMassa;
 
+Console.WriteLine("\n\nDigite o nome do convidado:\n");
 
+PraticaIfElse.VerificarConvidado();

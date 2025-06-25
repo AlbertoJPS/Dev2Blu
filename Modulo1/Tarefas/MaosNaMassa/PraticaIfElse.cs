@@ -1,17 +1,13 @@
-﻿//dica
-
-//notação ponto
-//é a forma de acessar membros de um objeto ou classe em C#
-//por exemplo, se você tem uma classe chamada "Pessoa" e um membro chamado "Nome",
-//você pode acessar o nome de uma pessoa específica usando a notação ponto: pessoa.Nome
-
-
-namespace Tarefas.MaosNaMassa
+﻿namespace Tarefas.MaosNaMassa
 {
     public class PraticaIfElse
     {
-        public static void VerificarConvidado(string nomeConvidado)
+        public static void VerificarConvidado()
         {
+            string nomeConvidado;
+            Console.WriteLine("\n\nDigite o nome do convidado:\n");
+            nomeConvidado = Console.ReadLine();
+
             if (nomeConvidado == "João" ||
                 nomeConvidado == "José" ||
                 nomeConvidado == "Carlos")

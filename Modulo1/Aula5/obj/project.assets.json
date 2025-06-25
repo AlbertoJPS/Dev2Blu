@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Tarefas/1.0.0": {
+      "TarefasAula/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Tarefas.dll": {}
+          "bin/placeholder/TarefasAula.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Tarefas.dll": {}
+          "bin/placeholder/TarefasAula.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Tarefas/1.0.0": {
+    "TarefasAula/1.0.0": {
       "type": "project",
-      "path": "../Tarefas/Tarefas.csproj",
-      "msbuildProject": "../Tarefas/Tarefas.csproj"
+      "path": "../TarefasAula/TarefasAula.csproj",
+      "msbuildProject": "../TarefasAula/TarefasAula.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Tarefas >= 1.0.0"
+      "TarefasAula >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj": {
-              "projectPath": "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj"
+            "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj": {
+              "projectPath": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj"
             }
           }
         }

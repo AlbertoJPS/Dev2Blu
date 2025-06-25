@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj": {
-                "projectPath": "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj"
+              "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj": {
+                "projectPath": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj": {
+    "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj",
-        "projectName": "Tarefas",
-        "projectPath": "D:\\Dev2Blu\\Modulo1\\Tarefas\\Tarefas.csproj",
+        "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj",
+        "projectName": "TarefasAula",
+        "projectPath": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\TarefasAula.csproj",
         "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev2Blu\\Modulo1\\Tarefas\\obj\\",
+        "outputPath": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
