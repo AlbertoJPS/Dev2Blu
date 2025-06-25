@@ -1,0 +1,5 @@
+D:\Dev2Blu\Modulo1\Tarefas\obj\Debug\net6.0\Tarefas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\Modulo1\Tarefas\obj\Debug\net6.0\Tarefas.AssemblyInfoInputs.cache
+D:\Dev2Blu\Modulo1\Tarefas\obj\Debug\net6.0\Tarefas.AssemblyInfo.cs
+D:\Dev2Blu\Modulo1\Tarefas\obj\Debug\net6.0\Tarefas.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\Modulo1\Tarefas\obj\Debug\net6.0\Tarefas.sourcelink.json

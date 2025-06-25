@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.csproj",
-      "projectName": "Exercicio_01",
-      "projectPath": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.csproj",
+      "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\ExerciciosAvaliativos.csproj",
+      "projectName": "ExerciciosAvaliativos",
+      "projectPath": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\ExerciciosAvaliativos.csproj",
       "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
       "outputPath": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\obj\\",
       "projectStyle": "PackageReference",

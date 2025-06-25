@@ -1,9 +1,13 @@
 ﻿
 using System.Threading.Tasks.Dataflow;
 
-const int numeroMinimoJogadores = 2;
-const int numeroMaximoJogadores = 6;
+//CLASSE PascalCase
 
+//CONST SNAKE_CASE
+const int NUMERO_MAXIMO_JOGADORES = 2;
+const int NUMERO_MINIMO_JOGADORES = 6;
+
+//VARIÁVEL CAMEL_CASE
 string nomeJogo = "RPG";
 
 Console.WriteLine("\nAntes de Começarmos gostaria de confirmar sua idade, qual sua data de nascimento?\n");

@@ -1,0 +1,15 @@
+D:\Dev2Blu\Modulo1\Aula5\bin\Debug\net6.0\Aula5.exe
+D:\Dev2Blu\Modulo1\Aula5\bin\Debug\net6.0\Aula5.deps.json
+D:\Dev2Blu\Modulo1\Aula5\bin\Debug\net6.0\Aula5.runtimeconfig.json
+D:\Dev2Blu\Modulo1\Aula5\bin\Debug\net6.0\Aula5.dll
+D:\Dev2Blu\Modulo1\Aula5\bin\Debug\net6.0\Aula5.pdb
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.AssemblyInfoInputs.cache
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.AssemblyInfo.cs
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.sourcelink.json
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.dll
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\refint\Aula5.dll
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.pdb
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\Aula5.genruntimeconfig.cache
+D:\Dev2Blu\Modulo1\Aula5\obj\Debug\net6.0\ref\Aula5.dll
