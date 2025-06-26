@@ -4,6 +4,9 @@
     {
         public static void VerificarFila() 
         {
+            Console.WriteLine("\n\nEstamos organizando os alunos para a foto de final de curso e para isso, \ndecidimos fazer três filas.");
+            Console.WriteLine("\n\nPara comerçarmos, me diga seu nome, já que é o primeiro: \n");
+
             char primeiraLetraNome = Console.ReadLine()[0];
 
             switch (primeiraLetraNome)
