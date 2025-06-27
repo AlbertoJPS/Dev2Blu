@@ -55,20 +55,22 @@
 
 // Listas -------------------------------------------------
 
-List<string> listaAlunos = new List<string>();
+//List<string> listaAlunos = new List<string>();
 
-listaAlunos.Add("Marco");
-listaAlunos.Remove("Marco");
+//listaAlunos.Add("Marco");
+//listaAlunos.Remove("Marco");
 
-listaAlunos.Add("Alberto");
-listaAlunos.Add("Ana");
-listaAlunos.Add("João");
-listaAlunos.Add("Marco");
+//listaAlunos.Add("Alberto");
+//listaAlunos.Add("Ana");
+//listaAlunos.Add("João");
+//listaAlunos.Add("Marco");
 
-int contador = 0;
+//int contador = 0;
 
-foreach (string alunos in listaAlunos)
-{
-    contador++;
-    Console.WriteLine($"{contador} - {alunos}");
-}
+//foreach (string alunos in listaAlunos)
+//{
+//    contador++;
+//    Console.WriteLine($"{contador} - {alunos}");
+//}
+
+PraticaList.CriarLista();

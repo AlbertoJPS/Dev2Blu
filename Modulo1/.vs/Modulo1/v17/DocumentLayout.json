@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\Modulo1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exerc\u00EDcio_02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|solutionrelative:aula4_tarefa\\exerc\u00EDcio_02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|solutionrelative:aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C3EA602-CA3B-43D2-B1C0-788EBFC89EF0}|Aulas\\Aula6.csproj|d:\\dev2blu\\modulo1\\aulas\\aula6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C3EA602-CA3B-43D2-B1C0-788EBFC89EF0}|Aulas\\Aula6.csproj|solutionrelative:aulas\\aula6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|d:\\dev2blu\\modulo1\\tarefasaula\\maosnamassa\\praticaarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|solutionrelative:tarefasaula\\maosnamassa\\praticaarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|d:\\dev2blu\\modulo1\\tarefasaula\\maosnamassa\\praticaswith.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|solutionrelative:tarefasaula\\maosnamassa\\praticaswith.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Aula6.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aulas\\Aula6.cs",
               "RelativeDocumentMoniker": "Aulas\\Aula6.cs",
               "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aulas\\Aula6.cs",
               "RelativeToolTip": "Aulas\\Aula6.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T21:56:21.067Z",
               "IsPinned": true,
@@ -41,27 +41,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PraticaArray.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaArray.cs",
-              "RelativeDocumentMoniker": "TarefasAula\\MaosNaMassa\\PraticaArray.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaArray.cs",
-              "RelativeToolTip": "TarefasAula\\MaosNaMassa\\PraticaArray.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Title": "Exercicio_01.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.cs",
+              "RelativeDocumentMoniker": "Aula4_Tarefa\\Exercicio_01.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.cs",
+              "RelativeToolTip": "Aula4_Tarefa\\Exercicio_01.cs",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAkwGQBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T23:38:24.971Z",
+              "WhenOpened": "2025-06-27T00:32:37.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PraticaSwith.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaSwith.cs",
-              "RelativeDocumentMoniker": "TarefasAula\\MaosNaMassa\\PraticaSwith.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaSwith.cs",
-              "RelativeToolTip": "TarefasAula\\MaosNaMassa\\PraticaSwith.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Exerc\u00EDcio_02.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
+              "RelativeDocumentMoniker": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
+              "RelativeToolTip": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T22:45:35.517Z",
+              "WhenOpened": "2025-06-27T00:29:59.709Z",
               "EditorCaption": ""
             }
           ]
