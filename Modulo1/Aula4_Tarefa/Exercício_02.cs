@@ -232,7 +232,7 @@ while (tentativas > 0)
     if (numerosPremiados.Contains(numeroUsuario))
     {
         Console.WriteLine("Parabéns! Você acertou um número premiado!!\nPara pegar seu premio digite todos os dados do seu cartão de crédito!!");
-        Console.WriteLine("Incluindo os 3 numeros atrás do cartão");
+        Console.WriteLine("Incluindo os 3 números atrás do cartão");
         break;
     }
     else
@@ -362,9 +362,9 @@ List<string> listaDeNomes = new List<string>() { "Alberto", "Bruno", "Carlos", "
 
 Console.WriteLine("\nLista de Nomes:\n");
 
-foreach (string nomeDeclarados in listaDeNomes)
+foreach (string nomeDeclarado in listaDeNomes)
 {
-    Console.WriteLine(nomeDeclarados);
+    Console.WriteLine(nomeDeclarado);
 }
 
 Console.WriteLine("\n-----------------------------------------------------------\n");

@@ -3,7 +3,7 @@ namespace TarefasAula.MaosNaMassa
 {
     public class PraticaArray
     {
-        public static void EscreverNotas()
+        public static void ExecutarArray()
         {
             string[] nomes = new string[5];
             double[] notas = new double[5];

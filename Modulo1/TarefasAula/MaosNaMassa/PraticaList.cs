@@ -4,7 +4,7 @@ namespace TarefasAula.MaosNaMassa
 {
     public class PraticaList
     {
-        public static void CriarLista()
+        public static void ExecutaList()
         {
 
             List<string> nomes = new List<string>();

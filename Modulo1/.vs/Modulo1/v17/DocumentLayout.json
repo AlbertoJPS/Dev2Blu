@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|solutionrelative:aula4_tarefa\\exercicio_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C3EA602-CA3B-43D2-B1C0-788EBFC89EF0}|Aulas\\Aula6.csproj|d:\\dev2blu\\modulo1\\aulas\\aula6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C3EA602-CA3B-43D2-B1C0-788EBFC89EF0}|Aulas\\Aula6.csproj|solutionrelative:aulas\\aula6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Aula6.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aulas\\Aula6.cs",
-              "RelativeDocumentMoniker": "Aulas\\Aula6.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aulas\\Aula6.cs",
-              "RelativeToolTip": "Aulas\\Aula6.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T21:56:21.067Z",
-              "IsPinned": true
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,9 +28,10 @@
               "RelativeDocumentMoniker": "Aula4_Tarefa\\Exercicio_01.cs",
               "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_01.cs",
               "RelativeToolTip": "Aula4_Tarefa\\Exercicio_01.cs",
-              "ViewState": "AgIAAFEBAAAAAAAAAAAkwGQBAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T00:32:37.325Z"
+              "WhenOpened": "2025-07-01T00:03:18.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,9 +41,9 @@
               "RelativeDocumentMoniker": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
               "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
               "RelativeToolTip": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
-              "ViewState": "AgIAAKQBAAAAAAAAAAAuwMMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKEBAAAAAAAAAAAAAG4BAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T00:29:59.709Z",
+              "WhenOpened": "2025-06-30T23:57:17.02Z",
               "EditorCaption": ""
             }
           ]
@@ -75,6 +59,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",

@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\Aula5\\Aula5.csproj",
-      "projectName": "Aula5",
-      "projectPath": "D:\\Dev2Blu\\Modulo1\\Aula5\\Aula5.csproj",
+      "projectUniqueName": "D:\\Dev2Blu\\Modulo1\\Aula5\\Aula05.csproj",
+      "projectName": "Aula05",
+      "projectPath": "D:\\Dev2Blu\\Modulo1\\Aula5\\Aula05.csproj",
       "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
       "outputPath": "D:\\Dev2Blu\\Modulo1\\Aula5\\obj\\",
       "projectStyle": "PackageReference",

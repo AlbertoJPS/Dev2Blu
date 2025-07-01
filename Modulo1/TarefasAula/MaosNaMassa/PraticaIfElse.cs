@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
         }
-        public static void VerificarConvidado()
+        public static void ExecutarIF()
         {
             string nomeConvidado;
            

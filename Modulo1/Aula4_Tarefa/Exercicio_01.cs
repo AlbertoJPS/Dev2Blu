@@ -1,7 +1,6 @@
 ﻿//using static System.Net.Mime.MediaTypeNames;
 
 //Console.ForegroundColor = ConsoleColor.DarkYellow;
-
 //Console.WriteLine("Exercício 1\n\n ");
 
 //SimulateTyping("A Jornada de Bob\n\n\n", 25);
@@ -141,7 +140,6 @@
 
 //Console.ForegroundColor = ConsoleColor.DarkYellow;
 //SimulateTyping($"\nO menino abriu um grande sorriso e disse que hoje eles teriam algo para comer,\nPois agora tinham {valorResultado} Laranjas.\n\n", 25);
-//Console.ResetColor();
 
 ////total de laranjas com menino pobre
 //valorEntradaA = valorResultado;
@@ -162,8 +160,8 @@
 
 ////2.4
 
-//SimulateTyping("Mas antes de ir Sr., queria saber se poderia me ajudar dessaforma mais alguns dias.\n", 25);
-//SimulateTyping("O Sr. com certeza sabe que poderia salvar muitas vidas assim, \nsão tantas crianças com fome que ajudaria a ter o que comer..\n", 25);
+//SimulateTyping("Mas antes de ir Sr., queria saber se poderia me ajudar dessa forma mais alguns dias.\n", 25);
+//SimulateTyping("O Sr. com certeza sabe que poderia salvar muitas vidas assim, \nsão tantas crianças com fome que ajudaria a ter o que comer..\n\n", 25);
 //Console.ResetColor();
 
 //Console.WriteLine("Quantos dias poderá comprar laranjas?");
@@ -178,10 +176,9 @@
 ////2.5
 
 //SimulateTyping(".....\n", 100);
-//SimulateTyping("Já que o senhor ainda está aqui, poderia me dar uma ultima ajuda?\nEu não sei quantas laranjas terei de dar para cada uma das crianças.", 25);
+//SimulateTyping("\nJá que o senhor ainda está aqui, poderia me dar uma ultima ajuda?\nEu não sei quantas laranjas terei de dar para cada uma das crianças.\n", 25);
 //Console.ResetColor();
 
-//Console.WriteLine("\nVocê acha melhor dar quantas laranjas do total para cada uma da crianças?");
 //valorEntradaB = int.Parse(Console.ReadLine());
 
 //valorResultado /= valorEntradaB;
