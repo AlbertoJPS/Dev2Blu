@@ -393,7 +393,9 @@ do
 
     Console.Write("Escolha uma opção: ");
 
-    opcao = int.Parse(Console.ReadLine());
+    var escolha = Console.ReadLine();
+    bool escolhaValida = int.TryParse(escolha, out opcao);
+
     Console.Clear();
 
     switch (opcao)
@@ -404,7 +406,8 @@ do
 
         case 2:
             Console.Write("\n\nDigite o valor para depósito: R$ ");
-            decimal deposito = decimal.Parse(Console.ReadLine());
+            var depositoEntrada = Console.ReadLine();
+            bool depositoRealizado = decimal.TryParse(depositoEntrada, out decimal deposito);
 
             if (deposito > 0)
             {
@@ -419,7 +422,8 @@ do
 
         case 3:
             Console.Write("\n\nDigite o valor para saque: R$ ");
-            decimal saque = decimal.Parse(Console.ReadLine());
+            var saqueEntrada = Console.ReadLine();
+            bool saqueRealizado = decimal.TryParse(saqueEntrada, out decimal saque);
 
             if (saque > 0 && saque <= saldo)
             {
