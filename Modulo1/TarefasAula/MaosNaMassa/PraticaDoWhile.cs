@@ -17,17 +17,17 @@
                 if ((senhaEntrada = LerSenha()) == SENHA_CORRETA)
                 {
                     Console.WriteLine("\nSenha Correta! Acesso Permitido.");
-                    continua = true;
+                    continua = false;
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nSenha Incorreta! Tente novamente.\n");
                     Console.ResetColor();
-                    continua = false;
+                    continua = true;
                 }
             }
-            while (!continua);
+            while (continua);
 
             Console.Clear();
             Console.WriteLine("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");

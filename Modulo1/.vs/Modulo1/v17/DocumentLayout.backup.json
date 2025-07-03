@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\Modulo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exerc\u00EDcio_02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|solutionrelative:aula4_tarefa\\exerc\u00EDcio_02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|d:\\dev2blu\\modulo1\\tarefasaula\\revisoes\\exercicio_02_revisao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|solutionrelative:tarefasaula\\revisoes\\exercicio_02_revisao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C34649D9-96A5-4C1A-9720-6467D1BBF820}|Aula08\\Aula08.csproj|d:\\dev2blu\\modulo1\\aula08\\aula08.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C34649D9-96A5-4C1A-9720-6467D1BBF820}|Aula08\\Aula08.csproj|solutionrelative:aula08\\aula08.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|d:\\dev2blu\\modulo1\\tarefasaula\\maosnamassa\\praticatryparse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1841249A-86C3-4888-9456-797185C6FA99}|TarefasAula\\TarefasAula.csproj|solutionrelative:tarefasaula\\maosnamassa\\praticatryparse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B71F0971-367C-4324-8B1A-6FE95BD3DDB4}|Aula10\\Aula10.csproj|d:\\dev2blu\\modulo1\\aula10\\aula10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71F0971-367C-4324-8B1A-6FE95BD3DDB4}|Aula10\\Aula10.csproj|solutionrelative:aula10\\aula10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PraticaTryParse.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaTryParse.cs",
-              "RelativeDocumentMoniker": "TarefasAula\\MaosNaMassa\\PraticaTryParse.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\MaosNaMassa\\PraticaTryParse.cs",
-              "RelativeToolTip": "TarefasAula\\MaosNaMassa\\PraticaTryParse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T00:41:24.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Aula08.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula08\\Aula08.cs",
-              "RelativeDocumentMoniker": "Aula08\\Aula08.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula08\\Aula08.cs",
-              "RelativeToolTip": "Aula08\\Aula08.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "Aula10.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula10\\Aula10.cs",
+              "RelativeDocumentMoniker": "Aula10\\Aula10.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula10\\Aula10.cs",
+              "RelativeToolTip": "Aula10\\Aula10.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T00:41:12.67Z",
+              "WhenOpened": "2025-07-02T22:48:30.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Exerc\u00EDcio_02.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
-              "RelativeDocumentMoniker": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
-              "RelativeToolTip": "Aula4_Tarefa\\Exerc\u00EDcio_02.cs",
-              "ViewState": "AgIAAKQBAAAAAAAAAAAIwLYBAAAPAAAAAAAAAA==",
+              "Title": "Exercicio_02_revisao.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\Revisoes\\Exercicio_02_revisao.cs",
+              "RelativeDocumentMoniker": "TarefasAula\\Revisoes\\Exercicio_02_revisao.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAula\\Revisoes\\Exercicio_02_revisao.cs",
+              "RelativeToolTip": "TarefasAula\\Revisoes\\Exercicio_02_revisao.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAuwMEAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T23:57:17.02Z",
+              "WhenOpened": "2025-07-02T22:32:28.52Z",
               "EditorCaption": ""
             }
           ]

@@ -34,12 +34,12 @@ namespace TarefasAula.MaosNaMassa
             Console.WriteLine("\nCadastrada turma");
             Console.WriteLine("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
 
-            count = 0;
+            count = 1;
 
             foreach (string alunos in turma)
             {
-                count++;
                 Console.WriteLine($"\n#{count}  {alunos}");
+                count++;
             }
 
             Console.WriteLine("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
