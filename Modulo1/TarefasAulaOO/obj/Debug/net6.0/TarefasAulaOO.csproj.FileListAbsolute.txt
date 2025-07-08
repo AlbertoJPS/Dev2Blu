@@ -1,0 +1,15 @@
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.AssemblyInfoInputs.cache
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.AssemblyInfo.cs
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.sourcelink.json
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\TarefasAulaOO.exe
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\TarefasAulaOO.deps.json
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\TarefasAulaOO.runtimeconfig.json
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\TarefasAulaOO.dll
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\TarefasAulaOO.pdb
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.dll
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\refint\TarefasAulaOO.dll
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.pdb
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.genruntimeconfig.cache
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\ref\TarefasAulaOO.dll

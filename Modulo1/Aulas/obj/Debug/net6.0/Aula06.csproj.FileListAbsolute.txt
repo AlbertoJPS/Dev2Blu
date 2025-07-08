@@ -1,0 +1,6 @@
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.csproj.AssemblyReference.cache
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.AssemblyInfoInputs.cache
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.AssemblyInfo.cs
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\Modulo1\Aulas\obj\Debug\net6.0\Aula06.sourcelink.json
