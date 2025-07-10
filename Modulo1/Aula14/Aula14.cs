@@ -2,8 +2,9 @@
 using Aula14.ClassOO;
 using TarefasAulaOO.Aula14;
 using System.Globalization;
+using System.Text;
 
-//// Static
+//// Static -----------------------------------------------------------------------------------------------
 
 //Sistema.DataInicializaçâo = DateTime.Now;
 
@@ -24,48 +25,63 @@ using System.Globalization;
 //Console.ReadLine();
 //Console.WriteLine($"Data de inicialização do sistema: {Sistema.DataInicializaçâo.ToString("dd/MM/yyyy HH:mm")}");
 
-// Maos Na Massa 1 -----------------------------------------------------
 
-/// ChatGpt escreva aqui as chamadas aos metodos e adicione os construtores necessários para executar as tarefas da imagem anexada ///
+//---------------------------------------------------------------------------------------------------------
+//Maos Na Massa -------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------
 
 
-//Maos Na Massa 2 -----------------------------------------------------
-
-List<Produto2> listaProdutos = new();
+List <Produto2> listaProdutos = new();
 List<ContaBancaria2> listaContas = new();
 
-int opcaoPrincipal;
-do
+MenuPrincipal();
+
+void MenuPrincipal()
 {
-    Console.Clear();
-    Console.WriteLine("\n=========================================");
-    Console.WriteLine("\nOlá!! Abaixo esá a lista de tarefas de Aula");
-    Console.WriteLine("\n============ Menu  Principal ============\n");
-    Console.ForegroundColor = ConsoleColor.DarkCyan;
-    Console.WriteLine("1 - Gerenciar Produtos");
-    Console.WriteLine("2 - Gerenciar Contas Bancárias");
-    Console.WriteLine("3 - Sair");
-    Console.ResetColor();
-    Console.WriteLine("\n=========================================");
-    Console.Write("\nEscolha uma opção: ");
+    int opcaoPrincipal;
 
-    string entrada = Console.ReadLine();
-    bool valido = int.TryParse(entrada, out opcaoPrincipal);
-    Console.Clear();
-
-    if (!valido) continue;
-
-    switch (opcaoPrincipal)
+    do
     {
-        case 1:
-            MenuProdutos();
-            break;
-        case 2:
-            MenuContas();
-            break;
-    }
-} while (opcaoPrincipal != 3);
+        Console.Clear();
+        Console.WriteLine("\n=========================================");
+        Console.WriteLine("\nOlá!! Abaixo esá a lista de tarefas de Aula");
+        Console.WriteLine("\n============ Menu  Principal ============\n");
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.WriteLine("1 - Gerenciar Alunos");
+        Console.WriteLine("2 - Gerenciar Produtos");
+        Console.WriteLine("3 - Gerenciar Contas Bancárias");
+        Console.WriteLine("4 - Sair");
+        Console.ResetColor();
+        Console.WriteLine("\n=========================================");
+        Console.Write("\nEscolha uma opção: ");
 
+        string entrada = Console.ReadLine();
+        bool valido = int.TryParse(entrada, out opcaoPrincipal);
+        Console.Clear();
+
+        if (!valido) continue;
+
+        switch (opcaoPrincipal)
+        {
+            case 1:
+                // Alunos
+                break;
+            case 2:
+                MenuProdutos();
+                break;
+            case 3:
+                MenuBanco();
+                break;
+            case 4:
+                Console.WriteLine("\nSaindo do sistema...");
+                break;
+            default:    
+                Console.WriteLine("\nOpção inválida. Tente novamente.");
+                break;
+        }
+        Console.ReadKey();
+    } while (opcaoPrincipal != 4);
+}
 void MenuProdutos()
 {
     int opcao;
@@ -141,13 +157,17 @@ void MenuProdutos()
 
                 Console.WriteLine("\n=========================================");
                 break;
+            case 4:
+                Console.WriteLine("\nVoltando para o menu anterior...");
+                break;
+            default:
+                Console.WriteLine("\nOpção inválida. Tente novamente.");
+                break;
         }
-        Console.WriteLine("\nPressione algo para continuar...");
         Console.ReadKey();
     } while (opcao != 4);
 }
-
-void MenuContas()
+void MenuBanco()
 {
     int opcao;
     do
@@ -196,23 +216,34 @@ void MenuContas()
                     MenuConta(listaContas[idx], total);
                 }
                 break;
+            case 4:
+                Console.WriteLine("\nVoltando para o menu anterior...");
+                break;
+
+            default:
+                Console.WriteLine("\nOpção inválida. Tente novamente.");
+                break;
         }
-        Console.WriteLine("\nPressione algo para continuar...");
         Console.ReadKey();
     } while (opcao != 4);
 }
-
 void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
 {
     int opcao;
     do
     {
         Console.Clear();
+        Console.WriteLine("\n==========================================");
+        Console.WriteLine("\n            Banco ConfiaNoPai");
         Console.WriteLine($"=== Conta: {conta.Titular} - Saldo: {conta.Saldo:C} ===");
+        Console.WriteLine("\n================== Menu ==================\n");
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("1 - Depósito");
         Console.WriteLine("2 - Saque");
         Console.WriteLine("3 - Empréstimo");
         Console.WriteLine("4 - Voltar");
+        Console.ResetColor();
+        Console.WriteLine("\n==========================================");
         Console.Write("Opção: ");
 
         bool valido = int.TryParse(Console.ReadLine(), out opcao);
@@ -222,20 +253,120 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
         switch (opcao)
         {
             case 1:
-                Console.Write("Valor: ");
-                decimal deposito = decimal.TryParse(Console.ReadLine(), out deposito) ? deposito : 0;
-                conta.Depositar(deposito);
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("================ Depósitos ==============");
+                Console.WriteLine("=========================================");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.Write("\nDigite um valor para deposito (Esc para cancelar): ");
+
+                string? input = EscParaCancelar();
+                if (input is null)
+                {
+                    Console.ResetColor();
+                    Console.WriteLine("\nOperação cancelada. Voltando para o menu anterior...");
+                    break;
+                }
+                else
+                {
+                    if (decimal.TryParse(input, out decimal valorDeposito) && valorDeposito > 0)
+                    {
+                        conta.Depositar(valorDeposito);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nValor inválido.");
+                    }
+                }
+                Console.ResetColor();
+                Console.WriteLine("\n=========================================");
                 break;
+
             case 2:
-                Console.Write("Valor: ");
-                decimal saque = decimal.TryParse(Console.ReadLine(), out saque) ? saque : 0;
-                conta.Sacar(saque);
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("================== Saque ================");
+                Console.WriteLine("=========================================");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.Write("\nDigite um valor para saque (Esc para cancelar): ");
+
+                input = EscParaCancelar();
+                if (input is null)
+                {
+                    Console.ResetColor();
+                    Console.WriteLine("\nOperação cancelada. Voltando para o menu anterior...");
+                    break;
+                }
+                else
+                {
+                    if (decimal.TryParse(input, out decimal valorSaque) && valorSaque > 0)
+                    {
+                        if(valorSaque <= conta.Saldo)
+                        {
+                            conta.Sacar(valorSaque);
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nSaldo insuficiente para realizar o saque.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nValor inválido.");
+                    }
+                }
+                Console.ResetColor();
+                Console.WriteLine("\n=========================================");
                 break;
+
             case 3:
-                ContaBancaria2.Emprestimo(conta, totalCaixa);
+                Emprestimos(conta, totalCaixa);
+                break;
+
+            case 4:
+                Console.WriteLine("\nVoltando para o menu anterior...");
+                break;
+
+            default:
+                Console.WriteLine("\nOpção inválida. Tente novamente.");
                 break;
         }
-        Console.WriteLine("\nPressione algo para continuar...");
         Console.ReadKey();
-    } while (opcao != 5);
+    } while (opcao != 4);
+}
+void Emprestimos(ContaBancaria2 conta, decimal totalCaixa)
+{
+    Console.WriteLine("\n=========================================");
+    Console.WriteLine("=============== Empréstimos =============");
+    Console.WriteLine("=========================================");
+    Console.ForegroundColor = ConsoleColor.DarkYellow;
+    ContaBancaria2.Emprestimo(conta, totalCaixa);
+    Console.ResetColor();
+    Console.WriteLine("\n=========================================");
+
+    if (conta.PossuiEmprestimo)
+    {
+        Console.WriteLine("\nDeseja efeturar o pagamento? (Digite 's' para Sim)");
+        char resposta = char.ToLower(Console.ReadKey(true).KeyChar);
+        if (resposta != 's')
+        {
+            ContaBancaria2.PagarEmprestimo(conta);
+        }
+    }
+}
+static string? EscParaCancelar()
+{
+    StringBuilder sb = new();
+    while (true)
+    {
+        var keyInfo = Console.ReadKey(intercept: true);
+        if (keyInfo.Key == ConsoleKey.Escape)
+            return null;
+        if (keyInfo.Key == ConsoleKey.Enter)
+        {
+            Console.WriteLine();
+            break;
+        }
+        Console.Write(keyInfo.KeyChar);
+        sb.Append(keyInfo.KeyChar);
+    }
+    return sb.ToString();
 }
