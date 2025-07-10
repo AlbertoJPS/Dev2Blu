@@ -1,6 +1,6 @@
 ﻿namespace TarefasAulaOO.Aula13
 {
-    internal class Produto
+    public class Produto
     {
 
         private int _quantidadeEstoque;
@@ -22,6 +22,16 @@
                 }
             } 
         }
+
+        public Produto() { }
+
+        public Produto(string nome, double preco, int quantidadeEstoque)
+        {
+            Nome = nome;
+            Preco = preco;
+            QuantidadeEstoque = quantidadeEstoque;
+        }
+
         public void AtualizarEstoque(int quantidade)
         {
             if (quantidade < 0)

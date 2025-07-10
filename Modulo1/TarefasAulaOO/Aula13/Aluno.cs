@@ -8,6 +8,15 @@ namespace TarefasAulaOO.Aula13
         public int Idade { get; set; }
         public string Matricula { get; set; }
 
+        public Aluno() { }
+
+        public Aluno(string nome, int idade, string matricula)
+        {
+            Nome = nome;
+            Idade = idade;
+            Matricula = matricula;
+        }
+
         public void CalcularIdadeEmMeses()
         {
             int idadeEmMeses = Idade * 12;

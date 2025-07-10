@@ -1,9 +1,17 @@
 ﻿namespace TarefasAulaOO.Aula13
 {
-    internal class ContaBancaria
+    public class ContaBancaria
     {
         public string Titular { get; set; }
         public decimal Saldo { get; set; }
+
+        public ContaBancaria() { }
+
+        public ContaBancaria(string titular, decimal saldoInicial)
+        {
+            Titular = titular;
+            Saldo = saldoInicial;
+        }
 
         public void Depositar(decimal valor)
         {

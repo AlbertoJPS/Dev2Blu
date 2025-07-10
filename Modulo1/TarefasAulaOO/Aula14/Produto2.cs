@@ -1,18 +1,17 @@
-﻿namespace TarefasAulaOO.Aula14
+﻿using System.Globalization;
+
+namespace TarefasAulaOO.Aula14
 {
     public class Produto2
     {
-
         private int _quantidadeEstoque;
+        private static bool _internacional = false; // padrão nacional
 
         public string Nome { get; set; }
         public double Preco { get; set; }
         public int QuantidadeEstoque
         {
-            get
-            {
-                return _quantidadeEstoque;
-            }
+            get => _quantidadeEstoque;
             set
             {
                 if (value < 0)
@@ -26,94 +25,86 @@
             }
         }
 
-        public static void ExecutarTarefa1()
+        public Produto2() { }
+
+        public Produto2(string nome, double preco, int quantidadeEstoque)
         {
-            Console.WriteLine("Bem-vindo ao Estoquista ShowDoMilhão!");
-            Console.ReadKey();
-            //decimal saldo = 0;
-            //int opcao = 0;
+            Nome = nome;
+            Preco = preco;
+            QuantidadeEstoque = quantidadeEstoque;
+        }
 
-            //do
-            //{
-            //    Console.Clear();
-            //    Console.WriteLine("\nDo While---------------------------------------------------\n");
+        public static void CadastrarProduto(List<Produto2> lista)
+        {
+            bool continuar = true;
+            while (continuar)
+            {
+                Console.Write("\nNome: ");
+                string nome = Console.ReadLine() ?? "";
+                if (string.IsNullOrWhiteSpace(nome))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\nNome inválido! Produto não foi cadastrado.");
+                    Console.ResetColor();
+                    Console.WriteLine("\nPressione uma tecla para tentar novamente...");
+                    Console.ReadKey();
+                    continue;
+                }
 
-            //    Console.WriteLine("Estoquista ShowDoMilhão, seja bem-vindo!\n");
-            //    Console.WriteLine("1 - Consultar saldo");
-            //    Console.WriteLine("2 - Realizar depósito");
-            //    Console.WriteLine("3 - Realizar saque");
-            //    Console.WriteLine("4 - Sair");
+                Console.Write("Preço: ");
+                string precoInput = Console.ReadLine() ?? "";
+                if (!double.TryParse(precoInput, out double preco))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\nPreço inválido! Produto não foi cadastrado.");
+                    Console.ResetColor();
+                    Console.WriteLine("\nPressione uma tecla para tentar novamente...");
+                    Console.ReadKey();
+                    continue;
+                }
 
-            //    Console.WriteLine("\n-----------------------------------------------------------\n");
+                Console.Write("Quantidade: ");
+                string qtdInput = Console.ReadLine() ?? "";
+                if (!int.TryParse(qtdInput, out int qtd))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\nQuantidade inválida! Produto não foi cadastrado.");
+                    Console.ResetColor();
+                    Console.WriteLine("\nPressione uma tecla para tentar novamente...");
+                    Console.ReadKey();
+                    continue;
+                }
 
-            //    Console.Write("Escolha uma opção: ");
+                lista.Add(new Produto2(nome, preco, qtd));
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\nProduto cadastrado com sucesso!");
+                Console.ResetColor();
+                Console.WriteLine("\nDeseja cadastrar outro produto? (digite 's' para continuar): ");
+                char resposta = char.ToLower(Console.ReadKey(true).KeyChar);
+                if (resposta != 's')
+                {
+                    continuar = false;
+                }
+            }
+        }
+        
+        public static void AlterarCulturaInternacional()
+        {
+            Thread.CurrentThread.CurrentCulture = Thread.CurrentThread.CurrentCulture.Name == "pt-BR"
+                ? new CultureInfo("en-US")
+                : new CultureInfo("pt-BR");
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
 
-            //    var escolha = Console.ReadLine();
-            //    bool escolhaValida = int.TryParse(escolha, out opcao);
-
-            //    Console.Clear();
-
-            //    switch (opcao)
-            //    {
-            //        case 1:
-            //            Console.WriteLine($"\n\nSeu saldo atual é: R$ {saldo:F2}");
-            //            break;
-
-            //        case 2:
-            //            Console.Write("\n\nDigite o valor para depósito: R$ ");
-            //            var depositoEntrada = Console.ReadLine();
-            //            bool depositoRealizado = decimal.TryParse(depositoEntrada, out decimal deposito);
-
-            //            if (deposito > 0)
-            //            {
-            //                saldo += deposito;
-            //                Console.WriteLine($"\nDepósito de R$ {deposito:F2} realizado com sucesso.");
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("\nValor inválido para depósito.");
-            //            }
-            //            break;
-
-            //        case 3:
-            //            Console.Write("\n\nDigite o valor para saque: R$ ");
-            //            var saqueEntrada = Console.ReadLine();
-            //            bool saqueRealizado = decimal.TryParse(saqueEntrada, out decimal saque);
-
-            //            if (saque > 0 && saque <= saldo)
-            //            {
-            //                saldo -= saque;
-            //                Console.WriteLine($"\nSaque de R$ {saque:F2} realizado com sucesso.");
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("\nSaque inválido ou saldo insuficiente.");
-            //            }
-            //            break;
-
-            //        case 4:
-            //            Console.WriteLine("\n\nObrigado por utilizar o Banco +Devs2Blu. Volte sempre!");
-            //            break;
-
-            //        default:
-            //            Console.WriteLine("\n\nOpção inválida. Tente novamente.");
-            //            break;
-            //    }
-
-            //    if (opcao != 4)
-            //    {
-            //        Console.WriteLine("\n\nPressione qualquer tecla para continuar...");
-            //        Console.ReadKey();
-            //    }
-
-            //} while (opcao != 4);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"\nCultura alterada para: {Thread.CurrentThread.CurrentCulture.Name}");
+            Console.ResetColor();
         }
 
         public void AtualizarEstoque(int quantidade)
         {
             if (quantidade < 0)
             {
-                Console.WriteLine($"A quantidade se mantêm: {QuantidadeEstoque}");
+                Console.WriteLine($"A quantidade se mantém: {QuantidadeEstoque}");
             }
             else
             {
@@ -121,11 +112,12 @@
                 Console.WriteLine($"Estoque atualizado. Nova quantidade: {QuantidadeEstoque}");
             }
         }
-        public void ExibirInfo()
+
+        public static void ExibirInfo(List<Produto2> lista, int index)
         {
-            Console.WriteLine($"Nome do Produto: {Nome}");
-            Console.WriteLine($"Preço: {Preco:C}");
-            Console.WriteLine($"Quantidade em Estoque: {QuantidadeEstoque}");
+            Console.Write($" Produto: {lista[index].Nome} -");
+            Console.Write($" Preço: {lista[index].Preco.ToString("C")} -");
+            Console.WriteLine($" Estoque: {lista[index].QuantidadeEstoque}");
         }
     }
 }

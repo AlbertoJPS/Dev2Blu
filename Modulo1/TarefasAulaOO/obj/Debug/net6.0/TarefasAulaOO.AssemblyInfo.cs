@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TarefasAulaOO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c4f9f07bdd0bfadcc9c953a49139dc8067189e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c016f4383bbe9dcb0c7539e765e3473fb864b265")]
 [assembly: System.Reflection.AssemblyProductAttribute("TarefasAulaOO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TarefasAulaOO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
