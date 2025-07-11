@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "TarefasAulaOO/1.0.0": {
+        "dependencies": {
+          "Aula15": "1.0.0"
+        },
         "runtime": {
           "TarefasAulaOO.dll": {}
+        }
+      },
+      "Aula15/1.0.0": {
+        "runtime": {
+          "Aula15.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "TarefasAulaOO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula15/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

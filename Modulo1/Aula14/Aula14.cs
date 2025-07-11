@@ -3,6 +3,7 @@ using Aula14.ClassOO;
 using TarefasAulaOO.Aula14;
 using System.Globalization;
 using System.Text;
+using Aula15.Enums;
 
 //// Static -----------------------------------------------------------------------------------------------
 
@@ -189,31 +190,57 @@ void MenuBanco()
         Console.Clear();
 
         if (!valido) continue;
-
+        
         switch (opcao)
         {
             case 1:
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("=========== Cadastro de Conta ===========");
+                Console.WriteLine("=========================================\n");
                 Console.Write("Titular: ");
                 string titular = Console.ReadLine();
-                Console.Write("Saldo Inicial: ");
+                Console.Write("\nSaldo Inicial: ");
                 decimal saldo = decimal.TryParse(Console.ReadLine(), out saldo) ? saldo : 0;
-                Console.Write("Renda Mensal: ");
+                Console.Write("\nRenda Mensal: ");
                 decimal renda = decimal.TryParse(Console.ReadLine(), out renda) ? renda : 0;
                 listaContas.Add(new ContaBancaria2(titular, saldo, renda));
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"\nA conta de {titular} foi cadastrada com sucesso!");
+                Console.ResetColor();
                 break;
             case 2:
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("============== Caixa Banco ==============");
+                Console.WriteLine("=========================================\n");
                 decimal total = listaContas.Sum(c => c.Saldo);
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine($"Saldo total em caixa: {total:C}");
+                Console.ResetColor();
                 break;
             case 3:
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("=========== Seleção de Conta ============");
+                Console.WriteLine("=========================================\n");
                 for (int i = 0; i < listaContas.Count; i++)
-                    Console.WriteLine($"[{i}] {listaContas[i].Titular} - Saldo: {listaContas[i].Saldo:C}");
-                Console.Write("Escolha o número da conta: ");
-                int idx = int.TryParse(Console.ReadLine(), out idx) ? idx : -1;
-                if (idx >= 0 && idx < listaContas.Count)
+                {
+                    int numeroConta = i + 1;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write($"[{numeroConta.ToString("D4")}] ");
+                    Console.ResetColor();
+                    Console.WriteLine($"{listaContas[i].Titular} - Saldo: {listaContas[i].Saldo:C}");
+                }
+
+                Console.Write("\nEscolha o número da conta: ");
+                bool parseOk = int.TryParse(Console.ReadLine(), out int escolha);
+                int idx = escolha - 1;
+                if (parseOk && idx >= 0 && idx < listaContas.Count)
                 {
                     total = listaContas.Sum(c => c.Saldo);
                     MenuConta(listaContas[idx], total);
+                }
+                else
+                {
+                    Console.WriteLine("\nConta inválida. Pressione qualquer tecla para continuar...");
                 }
                 break;
             case 4:
@@ -235,7 +262,9 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
         Console.Clear();
         Console.WriteLine("\n==========================================");
         Console.WriteLine("\n            Banco ConfiaNoPai");
-        Console.WriteLine($"=== Conta: {conta.Titular} - Saldo: {conta.Saldo:C} ===");
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine($"   Conta: {conta.Titular} - Saldo: {conta.Saldo:C}    ");
+        Console.ResetColor();
         Console.WriteLine("\n================== Menu ==================\n");
         Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("1 - Depósito");
@@ -256,6 +285,7 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
                 Console.WriteLine("\n=========================================");
                 Console.WriteLine("================ Depósitos ==============");
                 Console.WriteLine("=========================================");
+                Console.WriteLine($"\nSaldo atual: {conta.Saldo.ToString("C", CultureInfo.CurrentCulture)}");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.Write("\nDigite um valor para deposito (Esc para cancelar): ");
 
@@ -271,6 +301,42 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
                     if (decimal.TryParse(input, out decimal valorDeposito) && valorDeposito > 0)
                     {
                         conta.Depositar(valorDeposito);
+                        Console.ResetColor();
+
+                        if (conta.ComprovantePadrao == Comprovante.Simples || conta.ComprovantePadrao == Comprovante.Detalhado)
+                        {
+                            string comprovanteTipo = conta.ComprovantePadrao == Comprovante.Simples ? "Simples" : "Detalhado";
+                            Console.WriteLine($"\nComprovante {comprovanteTipo} selecionado como padrão.");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("\nComprovante: Impresso com sucesso");
+                            Console.ResetColor();
+                        }
+                        else 
+                        {
+                            Console.WriteLine("\nDeseja selecionar como padrão o comprovante simples ou detatlado?");
+                            Console.WriteLine("\n(Digite 1 para Comprovante simples, ou 2 para Detalhado)");
+                            char resposta = char.ToLower(Console.ReadKey(true).KeyChar);
+                            switch (resposta)
+                            {
+                                case '1':
+                                    conta.ComprovantePadrao = Comprovante.Simples;
+                                    Console.WriteLine("\nComprovante simples selecionado como padrão.");
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("\nComprovante: Impresso com sucesso");
+                                    Console.ResetColor();
+                                    break;
+                                case '2':
+                                    conta.ComprovantePadrao = Comprovante.Detalhado;
+                                    Console.WriteLine("\nComprovante detalhado selecionado como padrão.");
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("\nComprovante: Impresso com sucesso");
+                                    Console.ResetColor();
+                                    break;
+                                default:
+                                    Console.WriteLine("\nOpção inválida. Comprovante não selecionado.");
+                                    break;
+                            }
+                        }
                     }
                     else
                     {
@@ -285,6 +351,8 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
                 Console.WriteLine("\n=========================================");
                 Console.WriteLine("================== Saque ================");
                 Console.WriteLine("=========================================");
+                Console.WriteLine($"\nSaldo atual: {conta.Saldo.ToString("C", CultureInfo.CurrentCulture)}");
+
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.Write("\nDigite um valor para saque (Esc para cancelar): ");
 
@@ -349,6 +417,15 @@ void Emprestimos(ContaBancaria2 conta, decimal totalCaixa)
         if (resposta != 's')
         {
             ContaBancaria2.PagarEmprestimo(conta);
+        }
+    }
+    else
+    {
+        Console.WriteLine("\nDeseja solicitar um empréstimo? (Digite 's' para Sim)");
+        char resposta = char.ToLower(Console.ReadKey(true).KeyChar);
+        if (resposta != 's')
+        {
+            //ContaBancaria2.PagarEmprestimo(conta); // Criar um metodo para solicitar empréstimo
         }
     }
 }

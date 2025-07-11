@@ -2,9 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Aula15/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Aula15.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula15.dll": {}
+        }
+      },
       "TarefasAulaOO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Aula15": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/TarefasAulaOO.dll": {}
         },
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "Aula15/1.0.0": {
+      "type": "project",
+      "path": "../Aula15/Aula15.csproj",
+      "msbuildProject": "../Aula15/Aula15.csproj"
+    },
     "TarefasAulaOO/1.0.0": {
       "type": "project",
       "path": "../TarefasAulaOO/TarefasAulaOO.csproj",

@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Aula15\Aula15.csproj" />
+  </ItemGroup>
+
 </Project>

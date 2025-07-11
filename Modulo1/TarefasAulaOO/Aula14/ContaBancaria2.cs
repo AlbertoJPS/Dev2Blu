@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Aula15.Enums;
 
 namespace TarefasAulaOO.Aula14
 {
@@ -14,6 +15,8 @@ namespace TarefasAulaOO.Aula14
         public decimal ValorEmprestimo { get; private set; }
         public bool PossuiEmprestimo => ValorEmprestimo > 0;
         public decimal TotalCaixa { get => _TotalCaixa; }
+
+        public Comprovante ComprovantePadrao { get; set; }
 
         public ContaBancaria2() { }
 

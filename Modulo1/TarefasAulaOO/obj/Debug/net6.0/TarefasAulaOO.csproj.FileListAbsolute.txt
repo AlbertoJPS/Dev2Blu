@@ -13,3 +13,10 @@ D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\refint\TarefasAulaOO.dll
 D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.pdb
 D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.genruntimeconfig.cache
 D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\ref\TarefasAulaOO.dll
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\Aula15.deps.json
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\Aula15.runtimeconfig.json
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\Aula15.exe
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\Aula15.dll
+D:\Dev2Blu\Modulo1\TarefasAulaOO\bin\Debug\net6.0\Aula15.pdb
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasAulaOO.csproj.AssemblyReference.cache
+D:\Dev2Blu\Modulo1\TarefasAulaOO\obj\Debug\net6.0\TarefasA.873C9EBE.Up2Date
