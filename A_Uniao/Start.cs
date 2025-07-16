@@ -1,5 +1,6 @@
 ﻿using Sistema_Central.BancoSimulado;
 using Sistema_Central.Entities;
+using Sistema_Central.Utilitários;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Sistema_Central
         public static void Main(string[] args)
         {
             Console.WriteLine("\n\nSistema Central Iniciado\n\n");
-
+            Console.ReadLine();
             List<Planeta> listaDePlanetas = new();
             List<Nave> listaDeNaves = new();
             List<Missao> listaMissoes = new();
@@ -23,8 +24,9 @@ namespace Sistema_Central
 
             PopularBanco.PopularTudo(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas, jaPopulado);
 
-            PopularBanco.ExibirDadosCompletos(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas);
 
+            Menus.ExibirMenuInicial(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas);
         }
+       
     }
 }

@@ -51,5 +51,16 @@ namespace Sistema_Central.Entities
         {
             EstadoAstronauta = SituacaoAstronauta.Morto;
         }
+
+        public static void MostrarAstronauta(Astronauta astronauta)
+        {
+            Console.WriteLine($"Nome: {astronauta.Nome}");
+            Console.WriteLine($"Idade: {astronauta.Idade}");
+            Console.WriteLine($"Nacionalidade: {astronauta.Nacionalidade}");
+            Console.WriteLine($"Nascimento: {astronauta.DataNascimento.ToShortDateString()}");
+            Console.WriteLine($"Situação: {astronauta.EstadoAstronauta}");
+            Console.WriteLine($"Tripulando: {(astronauta.TripulandoNave != null ? astronauta.TripulandoNave.Nome : "Nenhuma")}");
+            Console.WriteLine("-------------------------------------------");
+        }
     }
 }

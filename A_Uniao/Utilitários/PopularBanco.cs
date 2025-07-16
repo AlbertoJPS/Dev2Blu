@@ -1,7 +1,6 @@
 ﻿
 using Sistema_Central.Entities;
 using Sistema_Central.Utilitários;
-using System.Collections.Generic;
 
 namespace Sistema_Central.BancoSimulado
 {
@@ -10,8 +9,8 @@ namespace Sistema_Central.BancoSimulado
         public static bool PopularTudo(List<Planeta> planetas, List<Nave> naves, List<Missao> missoes, List<Astronauta> astronautas, bool jaPopulado)
         {
             if (jaPopulado)
-            { 
-                return false; 
+            {
+                return false;
             }
             else
             {
@@ -99,133 +98,94 @@ namespace Sistema_Central.BancoSimulado
         public static void PopularMissoes(List<Missao> listaMissoes, List<Nave> listaNaves, List<Planeta> listaPlanetas)
         {
             // Missão 1 – EM ANDAMENTO
-            var nave1 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Orion")]; // 5.0 UA
-            var planeta1 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Chronos")]; // 4.2 UA
+            var nave1 = listaNaves.Find(n => n.Nome == "Orion");               // Alcance: 5.0 UA
+            var planeta1 = listaPlanetas.Find(p => p.Nome == "Chronos");       // Distância: 4.2 UA
             nave1.EstadoAtualNave = SituacaoNave.EmMissao;
-            listaMissoes.Add(new Missao(
-                "Observação de Anomalias",
-                ObjetivoMissao.Reconhecimento,
-                DateTime.Now.AddDays(-15),
-                DateTime.Now.AddDays(60),
-                planeta1,
-                nave1
-            )
+            var missao1 = new Missao("Observação de Anomalias", ObjetivoMissao.Reconhecimento, 75, planeta1, nave1)
             {
-                EstadoMissao = SituacaoMissao.EmAndamento
-            });
+                EstadoMissao = SituacaoMissao.EmAndamento,
+                DataLancamento = DateTime.Now.AddDays(-15)
+            };
+            listaMissoes.Add(missao1);
 
             // Missão 2 – EM ANDAMENTO
-            var nave2 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Soyuz-X")]; // 12.5 UA
-            var planeta2 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Lunaris")]; // 12.3 UA
+            var nave2 = listaNaves.Find(n => n.Nome == "Soyuz-X");             // Alcance: 12.5 UA
+            var planeta2 = listaPlanetas.Find(p => p.Nome == "Lunaris");       // Distância: 12.3 UA
             nave2.EstadoAtualNave = SituacaoNave.EmMissao;
-            listaMissoes.Add(new Missao(
-                "Pesquisa Subterrânea",
-                ObjetivoMissao.Pesquisa,
-                DateTime.Now.AddDays(-30),
-                DateTime.Now.AddDays(90),
-                planeta2,
-                nave2
-            )
+            var missao2 = new Missao("Pesquisa Subterrânea", ObjetivoMissao.Pesquisa, 120, planeta2, nave2)
             {
-                EstadoMissao = SituacaoMissao.EmAndamento
-            });
+                EstadoMissao = SituacaoMissao.EmAndamento,
+                DataLancamento = DateTime.Now.AddDays(-30)
+            };
+            listaMissoes.Add(missao2);
 
             // Missão 3 – EM ANDAMENTO
-            var nave3 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Fênix Celestial")]; // 8.1 UA
-            var planeta3 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Prometheus")]; // 8.0 UA
+            var nave3 = listaNaves.Find(n => n.Nome == "Fênix Celestial");     // Alcance: 8.1 UA
+            var planeta3 = listaPlanetas.Find(p => p.Nome == "Prometheus");    // Distância: 8.0 UA
             nave3.EstadoAtualNave = SituacaoNave.EmMissao;
-            listaMissoes.Add(new Missao(
-                "Operação Escudo Divino",
-                ObjetivoMissao.Combate,
-                DateTime.Now.AddDays(-10),
-                DateTime.Now.AddDays(50),
-                planeta3,
-                nave3
-            )
+            var missao3 = new Missao("Operação Escudo Divino", ObjetivoMissao.Combate, 60, planeta3, nave3)
             {
-                EstadoMissao = SituacaoMissao.EmAndamento
-            });
+                EstadoMissao = SituacaoMissao.EmAndamento,
+                DataLancamento = DateTime.Now.AddDays(-10)
+            };
+            listaMissoes.Add(missao3);
 
             // Missão 4 – CANCELADA
-            var nave4 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Voyager")]; // 7.2 UA
-            var planeta4 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Elysium")]; // 7.2 UA
+            var nave4 = listaNaves.Find(n => n.Nome == "Voyager");             // Alcance: 7.2 UA
+            var planeta4 = listaPlanetas.Find(p => p.Nome == "Elysium");       // Distância: 7.2 UA
             nave4.EstadoAtualNave = SituacaoNave.Avariada;
-            listaMissoes.Add(new Missao(
-                "Exploração Profunda",
-                ObjetivoMissao.Pesquisa,
-                DateTime.Now.AddDays(-40),
-                DateTime.Now.AddDays(20),
-                planeta4,
-                nave4
-            )
+            var missao4 = new Missao("Exploração Profunda", ObjetivoMissao.Pesquisa, 60, planeta4, nave4)
             {
-                EstadoMissao = SituacaoMissao.Cancelada
-            });
+                EstadoMissao = SituacaoMissao.Cancelada,
+                DataLancamento = DateTime.Now.AddDays(-40)
+            };
+            listaMissoes.Add(missao4);
 
             // Missão 5 – FALHOU
-            var nave5 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Zvezda")]; // 6.9 UA
-            var planeta5 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Xernes")]; // 6.4 UA
+            var nave5 = listaNaves.Find(n => n.Nome == "Zvezda");              // Alcance: 6.9 UA
+            var planeta5 = listaPlanetas.Find(p => p.Nome == "Xernes");        // Distância: 6.4 UA
             nave5.EstadoAtualNave = SituacaoNave.Perdida;
-            listaMissoes.Add(new Missao(
-                "Colônia Fracassada Zvezda",
-                ObjetivoMissao.Colonizacao,
-                DateTime.Now.AddDays(-120),
-                DateTime.Now.AddDays(-10),
-                planeta5,
-                nave5
-            )
+            var missao5 = new Missao("Colônia Fracassada Zvezda", ObjetivoMissao.Colonizacao, 110, planeta5, nave5)
             {
-                EstadoMissao = SituacaoMissao.Falhou
-            });
+                EstadoMissao = SituacaoMissao.Falhou,
+                DataLancamento = DateTime.Now.AddDays(-120)
+            };
+            listaMissoes.Add(missao5);
 
             // Missão 6 – FALHOU
-            var nave6 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Europa I")]; // 6.8 UA
-            var planeta6 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Thalos")]; // 6.2 UA 
+            var nave6 = listaNaves.Find(n => n.Nome == "Europa I");            // Alcance: 6.8 UA
+            var planeta6 = listaPlanetas.Find(p => p.Nome == "Thalos");        // Distância: 6.2 UA
             nave6.EstadoAtualNave = SituacaoNave.Perdida;
-            listaMissoes.Add(new Missao(
-                "Sinal Silenciado",
-                ObjetivoMissao.Reconhecimento,
-                DateTime.Now.AddDays(-80),
-                DateTime.Now.AddDays(-5),
-                planeta6,
-                nave6
-            )
+            var missao6 = new Missao("Sinal Silenciado", ObjetivoMissao.Reconhecimento, 75, planeta6, nave6)
             {
-                EstadoMissao = SituacaoMissao.Falhou
-            });
+                EstadoMissao = SituacaoMissao.Falhou,
+                DataLancamento = DateTime.Now.AddDays(-80)
+            };
+            listaMissoes.Add(missao6);
 
             // Missão 7 – CONCLUÍDA
-            var nave7 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Gaia")]; // 6.5 UA
-            var planeta7 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Helion")]; // 4.8 UA
+            var nave7 = listaNaves.Find(n => n.Nome == "Gaia");                // Alcance: 6.5 UA
+            var planeta7 = listaPlanetas.Find(p => p.Nome == "Helion");        // Distância: 4.8 UA
             nave7.EstadoAtualNave = SituacaoNave.Disponivel;
-            listaMissoes.Add(new Missao(
-                "Estudo Energético Helion",
-                ObjetivoMissao.Pesquisa,
-                DateTime.Now.AddDays(-90),
-                DateTime.Now.AddDays(-5),
-                planeta7,
-                nave7
-            )
+            var missao7 = new Missao("Estudo Energético Helion", ObjetivoMissao.Pesquisa, 85, planeta7, nave7)
             {
-                EstadoMissao = SituacaoMissao.Concluida
-            });
+                EstadoMissao = SituacaoMissao.Concluida,
+                DataLancamento = DateTime.Now.AddDays(-90)
+            };
+            listaMissoes.Add(missao7);
 
             // Missão 8 – CONCLUÍDA
-            var nave8 = listaNaves[listaNaves.FindIndex(n => n.Nome == "Tsar")]; // 15.0 UA
-            var planeta8 = listaPlanetas[listaPlanetas.FindIndex(p => p.Nome == "Nebula X")]; // 13.9 UA
+            var nave8 = listaNaves.Find(n => n.Nome == "Tsar");                // Alcance: 15.0 UA
+            var planeta8 = listaPlanetas.Find(p => p.Nome == "Nebula X");      // Distância: 13.9 UA
             nave8.EstadoAtualNave = SituacaoNave.Disponivel;
-            listaMissoes.Add(new Missao(
-                "Operação Martelo Escarlate",
-                ObjetivoMissao.Combate,
-                DateTime.Now.AddDays(-60),
-                DateTime.Now.AddDays(-1),
-                planeta8,
-                nave8
-            )
+            var missao8 = new Missao("Operação Martelo Escarlate", ObjetivoMissao.Combate, 60, planeta8, nave8)
             {
-                EstadoMissao = SituacaoMissao.Concluida
-            });
+                EstadoMissao = SituacaoMissao.Concluida,
+                DataLancamento = DateTime.Now.AddDays(-60)
+            };
+            listaMissoes.Add(missao8);
         }
+
 
         public static void PopularAstronautas(List<Astronauta> lista, List<Nave> naves)
         {
@@ -316,67 +276,5 @@ namespace Sistema_Central.BancoSimulado
             lista.Add(new Astronauta("Mikhail Sidorov", PaisAstronauta.Russia, new DateTime(1980, 1, 27)));
             lista.Add(new Astronauta("Kenji Nakamura", PaisAstronauta.Japao, new DateTime(1983, 9, 16)));
         }
-
-        public static void ExibirDadosCompletos(List<Planeta> planetas, List<Nave> naves, List<Missao> missoes, List<Astronauta> astronautas)
-        {
-            Console.WriteLine("\n================ PLANETAS ================\n");
-
-            foreach (var planeta in planetas)
-            {
-                Console.WriteLine($"Nome: {planeta.Nome}");
-                Console.WriteLine($"Descrição: {planeta.Descricao}");
-                Console.WriteLine($"Distância (UA): {planeta.DistanciaEmUA}");
-                Console.WriteLine($"Situação: {planeta.SituacaoAtual}");
-                Console.WriteLine("-------------------------------------------");
-            }
-
-            Console.WriteLine("\n================ NAVES ===================\n");
-
-            foreach (var nave in naves)
-            {
-                Console.WriteLine($"Nome: {nave.Nome} | Modelo: {nave.Modelo}");
-                Console.WriteLine($"Porte: {nave.Porte}");
-                Console.WriteLine($"Fabricante: {nave.Fabricante}");
-                Console.WriteLine($"Situação Atual: {nave.EstadoAtualNave}");
-                Console.WriteLine($"Capacidade de Tripulantes: {nave.CapacidadeMaximaTripulantes}");
-                Console.WriteLine($"Distância Máxima de Viagem (UA): {nave.DistanciaMaximaViagem}");
-
-                Console.Write("Objetivos Suportados: ");
-                foreach (var objetivo in nave.TiposDeMissaoSuportados)
-                {
-                    Console.Write($"{objetivo} ");
-                }
-
-                Console.WriteLine("\n-------------------------------------------");
-            }
-
-            Console.WriteLine("\n=============== MISSÕES ===================\n");
-
-            foreach (var missao in missoes)
-            {
-                Console.WriteLine($"Nome da Missão: {missao.Nome}");
-                Console.WriteLine($"Objetivo: {missao.Objetivo}");
-                Console.WriteLine($"Data de Início: {missao.DataLancamento.ToShortDateString()}");
-                Console.WriteLine($"Data de Término: {missao.DataRetornoPrevisto.ToShortDateString()}");
-                Console.WriteLine($"Estado: {missao.EstadoMissao}");
-                Console.WriteLine($"Planeta Alvo: {missao.Destino.Nome}");
-                Console.WriteLine($"Nave Designada: {missao.Nave.Nome}");
-                Console.WriteLine("-------------------------------------------");
-            }
-
-            Console.WriteLine("\n============ ASTRONAUTAS ==================\n");
-
-            foreach (var astro in astronautas)
-            {
-                Console.WriteLine($"Nome: {astro.Nome}");
-                Console.WriteLine($"Idade: {astro.Idade}");
-                Console.WriteLine($"Nacionalidade: {astro.Nacionalidade}");
-                Console.WriteLine($"Data de Nascimento: {astro.DataNascimento.ToShortDateString()}");
-                Console.WriteLine($"Situação Atual: {astro.EstadoAstronauta}");
-                Console.WriteLine($"Tripulando Nave: {(astro.TripulandoNave != null ? astro.TripulandoNave.Nome : "Nenhuma")}");
-                Console.WriteLine("-------------------------------------------");
-            }
-        }
-
     }
 }

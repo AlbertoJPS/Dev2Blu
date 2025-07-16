@@ -16,5 +16,13 @@ namespace Sistema_Central.Entities
             DistanciaEmUA = distanciaEmUA;
             SituacaoAtual = situacaoAtual;
         }
+        public static void MostrarPlaneta(Planeta planeta)
+        {
+            Console.WriteLine($"Nome: {planeta.Nome}");
+            Console.WriteLine($"Descrição: {planeta.Descricao}");
+            Console.WriteLine($"Distância (UA): {planeta.DistanciaEmUA}");
+            Console.WriteLine($"Situação: {planeta.SituacaoAtual}");
+            Console.WriteLine("-------------------------------------------");
+        }
     }
 }

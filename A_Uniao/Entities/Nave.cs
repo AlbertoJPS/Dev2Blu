@@ -91,6 +91,21 @@ namespace Sistema_Central.Entities
             _capacidadeMaximaTripulantes = capacidadeMaximaTripulantes;
         }
 
-       
+        public static void MostrarNave(Nave nave)
+        {
+            Console.WriteLine($"Nome: {nave.Nome} | Modelo: {nave.Modelo}");
+            Console.WriteLine($"Porte: {nave.Porte}");
+            Console.WriteLine($"Fabricante: {nave.Fabricante}");
+            Console.WriteLine($"Situação Atual: {nave.EstadoAtualNave}");
+            Console.WriteLine($"Capacidade de Tripulantes: {nave.CapacidadeMaximaTripulantes}");
+            Console.WriteLine($"Distância Máxima (UA): {nave.DistanciaMaximaViagem}");
+
+            Console.Write("Objetivos Suportados: ");
+            foreach (var objetivo in nave.TiposDeMissaoSuportados)
+            {
+                Console.Write($"{objetivo} ");
+            }
+            Console.WriteLine("\n-------------------------------------------");
+        }
     }
 }
