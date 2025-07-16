@@ -3,3 +3,4 @@ D:\Dev2Blu\Modulo1\Aula12\obj\Debug\net6.0\Aula12.AssemblyInfoInputs.cache
 D:\Dev2Blu\Modulo1\Aula12\obj\Debug\net6.0\Aula12.AssemblyInfo.cs
 D:\Dev2Blu\Modulo1\Aula12\obj\Debug\net6.0\Aula12.csproj.CoreCompileInputs.cache
 D:\Dev2Blu\Modulo1\Aula12\obj\Debug\net6.0\Aula12.sourcelink.json
+D:\Dev2Blu\Modulo1\Aula12\obj\Debug\net6.0\Aula12.csproj.AssemblyReference.cache

@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\Modulo1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|d:\\dev2blu\\modulo1\\tarefasaulaoo\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|solutionrelative:tarefasaulaoo\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|d:\\dev2blu\\modulo1\\tarefasaulaoo\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|solutionrelative:tarefasaulaoo\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|d:\\dev2blu\\modulo1\\aula14\\classoo\\sistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|solutionrelative:aula14\\classoo\\sistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|d:\\dev2blu\\modulo1\\aula14\\classoo\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|solutionrelative:aula14\\classoo\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E425A00D-63A3-48A6-AB66-ADFD8B9A67B4}|Aula12\\Aula12.csproj|d:\\dev2blu\\modulo1\\aula12\\objetos\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E425A00D-63A3-48A6-AB66-ADFD8B9A67B4}|Aula12\\Aula12.csproj|solutionrelative:aula12\\objetos\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|d:\\dev2blu\\modulo1\\tarefasaulaoo\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|solutionrelative:tarefasaulaoo\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|d:\\dev2blu\\modulo1\\aula14\\aula14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{326494EB-22A4-4881-B66A-79D8391F7EF2}|Aula14\\Aula14.csproj|solutionrelative:aula14\\aula14.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2E9B446-8F25-491B-9D27-CD86DBBB7AF0}|Aula15\\Aula15.csproj|d:\\dev2blu\\modulo1\\aula15\\enums\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2E9B446-8F25-491B-9D27-CD86DBBB7AF0}|Aula15\\Aula15.csproj|solutionrelative:aula15\\enums\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|d:\\dev2blu\\modulo1\\tarefasaulaoo\\aula14\\contabancaria2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{149539B4-C7FC-4D85-8D5D-7442496D4E17}|TarefasAulaOO\\TarefasAulaOO.csproj|solutionrelative:tarefasaulaoo\\aula14\\contabancaria2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2E9B446-8F25-491B-9D27-CD86DBBB7AF0}|Aula15\\Aula15.csproj|d:\\dev2blu\\modulo1\\aula15\\aula15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2E9B446-8F25-491B-9D27-CD86DBBB7AF0}|Aula15\\Aula15.csproj|solutionrelative:aula15\\aula15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|d:\\dev2blu\\modulo1\\aula4_tarefa\\exercicio_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD603E31-E4AC-491A-A1D3-1DE4C7B6D145}|Aula4_Tarefa\\ExerciciosAvaliativos.csproj|solutionrelative:aula4_tarefa\\exercicio_03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +42,108 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContaBancaria2.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Aula14\\ContaBancaria2.cs",
-              "RelativeDocumentMoniker": "TarefasAulaOO\\Aula14\\ContaBancaria2.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Aula14\\ContaBancaria2.cs",
-              "RelativeToolTip": "TarefasAulaOO\\Aula14\\ContaBancaria2.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T22:41:52.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Aula14.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula14\\Aula14.cs",
-              "RelativeDocumentMoniker": "Aula14\\Aula14.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula14\\Aula14.cs",
-              "RelativeToolTip": "Aula14\\Aula14.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAawAgBAAA2AAAAAAAAAA==",
+              "Title": "Produto.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Produto.cs",
+              "RelativeDocumentMoniker": "TarefasAulaOO\\Produto.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Produto.cs",
+              "RelativeToolTip": "TarefasAulaOO\\Produto.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwE0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T22:35:52.319Z",
+              "WhenOpened": "2025-07-16T00:24:36.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Enum.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula15\\Enums\\Enum.cs",
-              "RelativeDocumentMoniker": "Aula15\\Enums\\Enum.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula15\\Enums\\Enum.cs",
-              "RelativeToolTip": "Aula15\\Enums\\Enum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Aluno.cs",
+              "RelativeDocumentMoniker": "TarefasAulaOO\\Aluno.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\Aluno.cs",
+              "RelativeToolTip": "TarefasAulaOO\\Aluno.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T22:25:13.557Z",
+              "WhenOpened": "2025-07-15T23:51:16.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Aula15.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula15\\Aula15.cs",
-              "RelativeDocumentMoniker": "Aula15\\Aula15.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula15\\Aula15.cs",
-              "RelativeToolTip": "Aula15\\Aula15.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula14\\ClassOO\\Pessoa.cs",
+              "RelativeDocumentMoniker": "Aula14\\ClassOO\\Pessoa.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula14\\ClassOO\\Pessoa.cs",
+              "RelativeToolTip": "Aula14\\ClassOO\\Pessoa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T21:56:04.948Z",
+              "WhenOpened": "2025-07-15T23:50:36.354Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Calculadora.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula12\\Objetos\\Calculadora.cs",
+              "RelativeDocumentMoniker": "Aula12\\Objetos\\Calculadora.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula12\\Objetos\\Calculadora.cs",
+              "RelativeToolTip": "Aula12\\Objetos\\Calculadora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T22:52:52.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sistema.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula14\\ClassOO\\Sistema.cs",
+              "RelativeDocumentMoniker": "Aula14\\ClassOO\\Sistema.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula14\\ClassOO\\Sistema.cs",
+              "RelativeToolTip": "Aula14\\ClassOO\\Sistema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T22:43:06.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContaBancaria.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\ContaBancaria.cs",
+              "RelativeDocumentMoniker": "TarefasAulaOO\\ContaBancaria.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\TarefasAulaOO\\ContaBancaria.cs",
+              "RelativeToolTip": "TarefasAulaOO\\ContaBancaria.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAqwIsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T22:16:11.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Aula14.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula14\\Aula14.cs",
+              "RelativeDocumentMoniker": "Aula14\\Aula14.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula14\\Aula14.cs",
+              "RelativeToolTip": "Aula14\\Aula14.cs",
+              "ViewState": "AgIAAAcCAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T22:01:51.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Exercicio_03.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_03.cs",
+              "RelativeDocumentMoniker": "Aula4_Tarefa\\Exercicio_03.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula4_Tarefa\\Exercicio_03.cs",
+              "RelativeToolTip": "Aula4_Tarefa\\Exercicio_03.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T21:52:08.605Z"
             }
           ]
         },

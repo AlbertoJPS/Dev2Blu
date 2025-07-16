@@ -20,3 +20,8 @@ D:\Dev2Blu\Modulo1\Aula13\obj\Debug\net6.0\refint\Aula13.dll
 D:\Dev2Blu\Modulo1\Aula13\obj\Debug\net6.0\Aula13.pdb
 D:\Dev2Blu\Modulo1\Aula13\obj\Debug\net6.0\Aula13.genruntimeconfig.cache
 D:\Dev2Blu\Modulo1\Aula13\obj\Debug\net6.0\ref\Aula13.dll
+D:\Dev2Blu\Modulo1\Aula13\bin\Debug\net6.0\Aula15.deps.json
+D:\Dev2Blu\Modulo1\Aula13\bin\Debug\net6.0\Aula15.runtimeconfig.json
+D:\Dev2Blu\Modulo1\Aula13\bin\Debug\net6.0\Aula15.exe
+D:\Dev2Blu\Modulo1\Aula13\bin\Debug\net6.0\Aula15.dll
+D:\Dev2Blu\Modulo1\Aula13\bin\Debug\net6.0\Aula15.pdb

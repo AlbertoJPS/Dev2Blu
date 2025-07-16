@@ -1,11 +1,11 @@
 ﻿
 using Aula14.ClassOO;
-using TarefasAulaOO.Aula14;
 using System.Globalization;
 using System.Text;
 using Aula15.Enums;
+using TarefasAulaOO;
 
-//// Static -----------------------------------------------------------------------------------------------
+//// Static Elements -----------------------------------------------------------------------------------------------
 
 //Sistema.DataInicializaçâo = DateTime.Now;
 
@@ -26,14 +26,172 @@ using Aula15.Enums;
 //Console.ReadLine();
 //Console.WriteLine($"Data de inicialização do sistema: {Sistema.DataInicializaçâo.ToString("dd/MM/yyyy HH:mm")}");
 
+////Aluno
+
+//var aluno1 = new Aluno("Julio", 22, new DateTime(2003, 5, 22), "21200741");
+//var aluno2 = new Aluno("Wallace", 22, new DateTime(2003, 3, 4));
+
+//aluno1.CalcularIdadeEmMeses();
+//aluno2.CalcularIdadeEmMeses();
+
+//aluno1.ExibirInfo();
+//aluno2.ExibirInfo();
+
+////Banco
+
+//var contaJulio = new ContaBancaria("Julio", 457.27m);
+//var contaTioZe = new ContaBancaria("Zé");
+
+//contaJulio.Depositar(-56);
+//contaJulio.Sacar(0.27m);
+//contaJulio.Sacar(500);
+//contaJulio.Depositar(100.45m);
+//contaTioZe.Depositar(50);
+//contaTioZe.ExibirSaldo();
+//contaJulio.ExibirSaldo();
+//Console.WriteLine($"Que legal! Temos {ContaBancaria.ContagemContas} cadastradas em nosso banco!");
+
+////Produto
+
+//List<Produto> produtos = new List<Produto>();
+//bool importado = false;
+//string nome;
+//double preco;
+//int quantidade;
+//string verificacao = "";
+//int numero;
+//Console.Write("Quantos produtos você deseja cadastrar no estoque? ");
+//while (!int.TryParse(Console.ReadLine(), out numero))
+//{
+//    Console.WriteLine("Entrada inválida! Tente novamente...");
+//}
+//for (int i = 0; i < numero; i++)
+//{
+//    Console.Write("Digite o nome do produto: ");
+//    nome = Console.ReadLine();
+//    Console.Write("Digite o valor do produto: ");
+//    while (!double.TryParse(Console.ReadLine(), out preco))
+//    {
+//        Console.WriteLine("Entrada inválida! Tente novamente...");
+//    }
+//    Console.Write("Digite a quantidade em estoque do produto: ");
+//    while (!int.TryParse(Console.ReadLine(), out quantidade))
+//    {
+//        Console.WriteLine("Entrada inválida! Tente novamente...");
+//    }
+//    Console.WriteLine("Seu produto é importado?(S ou N) ");
+//    while (verificacao != "S" && verificacao != "N")
+//    {
+//        verificacao = Console.ReadLine();
+//        if (verificacao == "S")
+//        {
+//            importado = true;
+//        }
+//        else if (verificacao == "N")
+//        {
+//            importado = false;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Resposta inválida! Tente novamente...");
+//        }
+//    }
+//    verificacao = "";
+//    if (quantidade == 0)
+//    {
+//        produtos.Add(new Produto(nome, preco, importado));
+//    }
+//    else
+//    {
+//        produtos.Add(new Produto(nome, preco, quantidade, importado));
+//    }
+//}
+//int controle = 0;
+//while (controle != 5)
+//{
+//    Console.WriteLine("Menu do Estoque. Selecione o que deseja fazer");
+//    Console.WriteLine("1 - Adicionar ao Estoque");
+//    Console.WriteLine("2 - Retirar do Estoque");
+//    Console.WriteLine("3 - Exibir o que tem no estoque");
+//    //Console.WriteLine("4 - Exibir valor de um produto em Real ou Dólar!");
+//    Console.WriteLine("5 - Sair");
+//    int.TryParse(Console.ReadLine(), out controle);
+//    switch (controle)
+//    {
+//        case 1:
+//            Console.Write("Diga o produto a ser adicionado: ");
+//            nome = Console.ReadLine();
+//            var produtoAdicionar = produtos.FirstOrDefault(p => p.Nome == nome);
+//            if (produtoAdicionar != null)
+//            {
+//                Console.Write("Digite a quantidade a ser adicionada: ");
+//                while (!int.TryParse(Console.ReadLine(), out quantidade))
+//                {
+//                    Console.WriteLine("Entrada invalida! Tente novamente...");
+//                }
+//                produtoAdicionar.AdicionarEstoque(quantidade);
+//            }
+//            else
+//            {
+//                Console.WriteLine("Produto não encontrado no estoque!");
+//            }
+//            break;
+//        case 2:
+//            Console.Write("Diga o produto a ser retirado: ");
+//            nome = Console.ReadLine();
+//            var produtoRetirar = produtos.FirstOrDefault(p => p.Nome == nome);
+//            if (produtoRetirar != null)
+//            {
+//                Console.Write("Digite a quantidade a ser retirada: ");
+//                while (!int.TryParse(Console.ReadLine(), out quantidade))
+//                {
+//                    Console.WriteLine("Entrada invalida! Tente novamente...");
+//                }
+//                produtoRetirar.RetirarEstoque(quantidade);
+//            }
+//            else
+//            {
+//                Console.WriteLine("Produto não encontrado no estoque!");
+//            }
+//            break;
+//        case 3:
+//            foreach (var produto in produtos)
+//            {
+//                produto.ExibirInfoEstoque();
+//            }
+//            break;
+//        // case 4:
+//        //     Console.Write("Diga o nome do produto a ser analisado: ");
+//        //     nome = Console.ReadLine();
+//        //     var produtoAnalisado = produtos.FirstOrDefault(p => p.Nome == nome);
+//        //     if (produtoAnalisado != null)
+//        //     {
+//        //         string precoFormatado = Produto.ValorEmPadraoMonetario(produtoAnalisado.Preco, produtoAnalisado.Importado);
+//        //         Console.WriteLine($"Preço do produto {produtoAnalisado.Nome}: {precoFormatado}");
+//        //     }
+//        //     else
+//        //     {
+//        //         Console.WriteLine("Produto não encontrado no estoque!");
+//        //     }
+//        //     break;
+//        case 5:
+//            Console.WriteLine("Fechando o estoque...");
+//            break;
+//        default:
+//            Console.WriteLine("Opção inválida!");
+//            break;
+//    }
+
+//}
+//Console.WriteLine("Estoque fechado!");
 
 //---------------------------------------------------------------------------------------------------------
 //Maos Na Massa -------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------
 
-
-List <Produto2> listaProdutos = new();
-List<ContaBancaria2> listaContas = new();
+List<Aluno> listaAlunos = new();
+List <Produto> listaProdutos = new();
+List<ContaBancaria> listaContas = new();
 
 MenuPrincipal();
 
@@ -65,7 +223,7 @@ void MenuPrincipal()
         switch (opcaoPrincipal)
         {
             case 1:
-                // Alunos
+                MenuAlunos();
                 break;
             case 2:
                 MenuProdutos();
@@ -82,6 +240,89 @@ void MenuPrincipal()
         }
         Console.ReadKey();
     } while (opcaoPrincipal != 4);
+}
+void MenuAlunos()
+{
+    int opcao;
+    do
+    {
+        Console.Clear();
+        Console.WriteLine("\n=========================================");
+        Console.WriteLine("\n!!Bem Vindo ao Sistema de Alunos!!");
+        Console.WriteLine("\n============= Menu Alunos ==============\n");
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.WriteLine("1 - Cadastrar Aluno");
+        Console.WriteLine("2 - Calcular Idade em mêses");
+        Console.WriteLine("3 - Mostrar Informações do Aluno");
+        Console.WriteLine("4 - Voltar");
+        Console.ResetColor();
+        Console.WriteLine("\n=========================================");
+        Console.Write("Opção: ");
+        bool valido = int.TryParse(Console.ReadLine(), out opcao);
+        Console.Clear();
+        if (!valido) continue;
+        switch (opcao)
+        { 
+            case 1:
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("============ Cadastrar Aluno ============");
+                Console.WriteLine("=========================================");
+                Console.WriteLine("\nDigite os dados do aluno:");
+            
+                Aluno.CadastraAluno(listaAlunos);
+                break;
+            case 2:
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("======= Calcular Idades em Mêses ========");
+                Console.WriteLine("=========================================");
+               
+                if (listaAlunos.Count != 0)
+                {
+                    for (int i = 0; i < listaAlunos.Count; i++)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write($"\n[cod {i + 1}] ");
+                        Console.ResetColor();
+                        listaAlunos[i].ExibirInfo();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("\nAinda não existem alunos cadastrados..\n");
+                    Console.ReadKey();
+                    break;
+                }
+                break;
+            case 3:
+                    Console.WriteLine("\n=========================================");
+                    Console.WriteLine("==== Mostrar Informações dos Alunos =====");
+                    Console.WriteLine("=========================================");
+                if (listaAlunos.Count != 0)
+                {
+                    for (int i = 0; i < listaAlunos.Count; i++)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write($"\n[cod {i + 1}] ");
+                        Console.ResetColor();
+                        listaAlunos[i].ExibirInfo();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("\nAinda não existem alunos cadastrados..\n");
+                    Console.ReadKey();
+                    break;
+                }
+                break;
+            case 4:
+                Console.WriteLine("\nVoltando para o menu anterior...");
+                break;
+            default:
+                Console.WriteLine("\nOpção inválida. Tente novamente.");
+                break;
+        }
+        Console.ReadKey();
+    } while (opcao != 3);
 }
 void MenuProdutos()
 {
@@ -113,7 +354,7 @@ void MenuProdutos()
                 Console.WriteLine("============ Cadastrar Produto ==========");
                 Console.WriteLine("=========================================");
 
-                Produto2.CadastrarProduto(listaProdutos);
+                Produto.CadastrarProduto(listaProdutos);
 
                 break;
 
@@ -135,7 +376,7 @@ void MenuProdutos()
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.Write($"\n[cod {i + 1}] ");
                     Console.ResetColor();
-                    Produto2.ExibirInfo(listaProdutos, i);
+                    Produto.ExibirInfo(listaProdutos, i);
                 }
                 Console.WriteLine("\n=========================================");
                 Console.Write("\nEscolha pelo número do código de produto: ");
@@ -154,7 +395,7 @@ void MenuProdutos()
                 Console.WriteLine("=============== Aterar País =============");
                 Console.WriteLine("=========================================");
 
-                Produto2.AlterarCulturaInternacional();
+                Produto.AlterarCulturaInternacional();
 
                 Console.WriteLine("\n=========================================");
                 break;
@@ -197,16 +438,7 @@ void MenuBanco()
                 Console.WriteLine("\n=========================================");
                 Console.WriteLine("=========== Cadastro de Conta ===========");
                 Console.WriteLine("=========================================\n");
-                Console.Write("Titular: ");
-                string titular = Console.ReadLine();
-                Console.Write("\nSaldo Inicial: ");
-                decimal saldo = decimal.TryParse(Console.ReadLine(), out saldo) ? saldo : 0;
-                Console.Write("\nRenda Mensal: ");
-                decimal renda = decimal.TryParse(Console.ReadLine(), out renda) ? renda : 0;
-                listaContas.Add(new ContaBancaria2(titular, saldo, renda));
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"\nA conta de {titular} foi cadastrada com sucesso!");
-                Console.ResetColor();
+                ContaBancaria.CadastrarConta(listaContas);
                 break;
             case 2:
                 Console.WriteLine("\n=========================================");
@@ -254,7 +486,7 @@ void MenuBanco()
         Console.ReadKey();
     } while (opcao != 4);
 }
-void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
+void MenuConta(ContaBancaria conta, decimal totalCaixa)
 {
     int opcao;
     do
@@ -400,13 +632,13 @@ void MenuConta(ContaBancaria2 conta, decimal totalCaixa)
         Console.ReadKey();
     } while (opcao != 4);
 }
-void Emprestimos(ContaBancaria2 conta, decimal totalCaixa)
+void Emprestimos(ContaBancaria conta, decimal totalCaixa)
 {
     Console.WriteLine("\n=========================================");
     Console.WriteLine("=============== Empréstimos =============");
     Console.WriteLine("=========================================");
     Console.ForegroundColor = ConsoleColor.DarkYellow;
-    ContaBancaria2.Emprestimo(conta, totalCaixa);
+    ContaBancaria.Emprestimo(conta, totalCaixa);
     Console.ResetColor();
     Console.WriteLine("\n=========================================");
 
@@ -416,7 +648,7 @@ void Emprestimos(ContaBancaria2 conta, decimal totalCaixa)
         char resposta = char.ToLower(Console.ReadKey(true).KeyChar);
         if (resposta != 's')
         {
-            ContaBancaria2.PagarEmprestimo(conta);
+            ContaBancaria.PagarEmprestimo(conta);
         }
     }
     else

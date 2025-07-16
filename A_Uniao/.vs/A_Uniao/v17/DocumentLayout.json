@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev2Blu\\A_Uniao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\planeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\planeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\missao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\missao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\seletores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\seletores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 355,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PopularBanco.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\PopularBanco.cs",
+              "RelativeDocumentMoniker": "Utilit\u00E1rios\\PopularBanco.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\PopularBanco.cs",
+              "RelativeToolTip": "Utilit\u00E1rios\\PopularBanco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:47:10.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Start.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Start.cs",
+              "RelativeDocumentMoniker": "Start.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Start.cs",
+              "RelativeToolTip": "Start.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:33:28.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Service.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Service.cs",
+              "RelativeDocumentMoniker": "Utilit\u00E1rios\\Service.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Service.cs",
+              "RelativeToolTip": "Utilit\u00E1rios\\Service.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAiwCwAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:35:49.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Seletores.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Seletores.cs",
+              "RelativeDocumentMoniker": "Utilit\u00E1rios\\Seletores.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Seletores.cs",
+              "RelativeToolTip": "Utilit\u00E1rios\\Seletores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:27:10.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Nave.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Nave.cs",
+              "RelativeDocumentMoniker": "Entities\\Nave.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Nave.cs",
+              "RelativeToolTip": "Entities\\Nave.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:39:52.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Planeta.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Planeta.cs",
+              "RelativeDocumentMoniker": "Entities\\Planeta.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Planeta.cs",
+              "RelativeToolTip": "Entities\\Planeta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:40:36.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Missao.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Missao.cs",
+              "RelativeDocumentMoniker": "Entities\\Missao.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Missao.cs",
+              "RelativeToolTip": "Entities\\Missao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:38:56.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Astronauta.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Astronauta.cs",
+              "RelativeDocumentMoniker": "Entities\\Astronauta.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Astronauta.cs",
+              "RelativeToolTip": "Entities\\Astronauta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:38:47.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Enums.cs",
+              "RelativeDocumentMoniker": "Utilit\u00E1rios\\Enums.cs",
+              "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Enums.cs",
+              "RelativeToolTip": "Utilit\u00E1rios\\Enums.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T23:35:13.934Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 18,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
