@@ -9,6 +9,14 @@ namespace Sistema_Central.Utilitários
         Combate,
         Pesquisa
     }
+    public enum SituacaoMissao
+    {
+        Pendente,
+        EmAndamento,
+        Concluida,
+        Cancelada,
+        Falhou
+    }
 
     public enum SituacaoNave
     {
@@ -32,20 +40,10 @@ namespace Sistema_Central.Utilitários
         Morto
     }
 
-    public enum SituacaoMissao
-    {
-        Pendente,
-        EmAndamento,
-        Concluida,
-        Cancelada,
-        Falhou
-    }
-
     public enum SituacaoPlaneta
     {
         Habitavel,
         Inexplorado,
-        Colonizavel,
         Hostil,
         FonteDeRecursos
     }

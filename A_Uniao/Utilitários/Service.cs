@@ -119,9 +119,9 @@ namespace Sistema_Central.Utilitários
             {
                 ObjetivoMissao.Reconhecimento => estadoPlaneta == SituacaoPlaneta.Inexplorado || estadoPlaneta == SituacaoPlaneta.Hostil,
                 ObjetivoMissao.ColetaRecursos => estadoPlaneta == SituacaoPlaneta.FonteDeRecursos,
-                ObjetivoMissao.Colonizacao => estadoPlaneta == SituacaoPlaneta.Colonizavel || estadoPlaneta == SituacaoPlaneta.Habitavel,
+                ObjetivoMissao.Colonizacao => estadoPlaneta == SituacaoPlaneta.Habitavel,
                 ObjetivoMissao.Combate => estadoPlaneta == SituacaoPlaneta.Hostil,
-                ObjetivoMissao.Pesquisa => estadoPlaneta != SituacaoPlaneta.Inexplorado,
+                ObjetivoMissao.Pesquisa => estadoPlaneta != SituacaoPlaneta.Habitavel || estadoPlaneta == SituacaoPlaneta.FonteDeRecursos,
                 _ => false
             };
         }

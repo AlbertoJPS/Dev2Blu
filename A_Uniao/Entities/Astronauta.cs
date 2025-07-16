@@ -12,13 +12,44 @@ namespace Sistema_Central.Entities
 
         public int Idade => (int)(DateTime.Now - DataNascimento).TotalDays / 365;
 
-        public Astronauta(string nome, PaisAstronauta nacionalidade, DateTime dataNascimento, SituacaoAstronauta estadoAstronauta = SituacaoAstronauta.Disponivel)
+        public Astronauta(string nome, PaisAstronauta nacionalidade, DateTime dataNascimento)
+        {
+            Nome = nome;
+            Nacionalidade = nacionalidade;
+            DataNascimento = dataNascimento;
+            EstadoAstronauta = SituacaoAstronauta.Disponivel;
+            TripulandoNave = null;
+        }
+
+        public Astronauta(string nome, PaisAstronauta nacionalidade, DateTime dataNascimento, SituacaoAstronauta estadoAstronauta, Nave? tripulandoNave)
         {
             Nome = nome;
             Nacionalidade = nacionalidade;
             DataNascimento = dataNascimento;
             EstadoAstronauta = estadoAstronauta;
+            TripulandoNave = tripulandoNave;
+        }
+
+        public void SetarDisponivel()
+        {
+            EstadoAstronauta = SituacaoAstronauta.Disponivel;
             TripulandoNave = null;
+        }
+
+        public void SetarEmMissao(Nave nave)
+        {
+            EstadoAstronauta = SituacaoAstronauta.EmMissao;
+            TripulandoNave = nave;
+        }
+
+        public void SetarFerido()
+        {
+            EstadoAstronauta = SituacaoAstronauta.Ferido;
+        }
+
+        public void SetarMorto()
+        {
+            EstadoAstronauta = SituacaoAstronauta.Morto;
         }
     }
 }

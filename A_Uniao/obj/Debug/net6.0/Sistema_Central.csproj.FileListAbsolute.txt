@@ -1,0 +1,15 @@
+D:\Dev2Blu\A_Uniao\bin\Debug\net6.0\Sistema_Central.exe
+D:\Dev2Blu\A_Uniao\bin\Debug\net6.0\Sistema_Central.deps.json
+D:\Dev2Blu\A_Uniao\bin\Debug\net6.0\Sistema_Central.runtimeconfig.json
+D:\Dev2Blu\A_Uniao\bin\Debug\net6.0\Sistema_Central.dll
+D:\Dev2Blu\A_Uniao\bin\Debug\net6.0\Sistema_Central.pdb
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.AssemblyInfoInputs.cache
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.AssemblyInfo.cs
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.csproj.CoreCompileInputs.cache
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.sourcelink.json
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.dll
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\refint\Sistema_Central.dll
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.pdb
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\Sistema_Central.genruntimeconfig.cache
+D:\Dev2Blu\A_Uniao\obj\Debug\net6.0\ref\Sistema_Central.dll

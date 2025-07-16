@@ -11,14 +11,19 @@ namespace Sistema_Central
 {
     public class Start
     {
+        public static bool jaPopulado = false;
         public static void Main(string[] args)
         {
             Console.WriteLine("\n\nSistema Central Iniciado\n\n");
 
             List<Planeta> listaDePlanetas = new();
-            PopularBanco.PopularPlanetas(listaDePlanetas);
             List<Nave> listaDeNaves = new();
-            PopularBanco.PopularNaves(listaDeNaves);
+            List<Missao> listaMissoes = new();
+            List<Astronauta> listaDeAstronautas = new();
+
+            PopularBanco.PopularTudo(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas, jaPopulado);
+
+            PopularBanco.ExibirDadosCompletos(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas);
 
         }
     }

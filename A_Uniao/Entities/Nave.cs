@@ -67,7 +67,6 @@ namespace Sistema_Central.Entities
                 return _capacidadeMaximaTripulantes.Value;
             }
         }
-
         public Nave(string nome, string modelo, PorteNave porte, PaisFabricante fabricante, SituacaoNave estadoNave, List<ObjetivoMissao> tiposDeMissao)
         {
             Nome = nome;
@@ -78,5 +77,20 @@ namespace Sistema_Central.Entities
             TiposDeMissaoSuportados = tiposDeMissao;
             Tripulacao = new List<Astronauta>();
         }
+
+        public Nave(string nome, string modelo, PorteNave porte, PaisFabricante fabricante, SituacaoNave estadoNave, List<ObjetivoMissao> tiposDeMissao,  double distanciaMaximaViagem, int capacidadeMaximaTripulantes)
+        {
+            Nome = nome;
+            Modelo = modelo;
+            Porte = porte;
+            Fabricante = fabricante;
+            EstadoAtualNave = estadoNave;
+            TiposDeMissaoSuportados = tiposDeMissao;
+            Tripulacao = new List<Astronauta>();
+            _distanciaMaximaViagem = distanciaMaximaViagem;
+            _capacidadeMaximaTripulantes = capacidadeMaximaTripulantes;
+        }
+
+       
     }
 }
