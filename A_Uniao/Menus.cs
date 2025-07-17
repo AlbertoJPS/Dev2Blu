@@ -20,7 +20,7 @@ namespace Sistema_Central
                 Console.WriteLine("2 - Exibir Informações");
                 Console.WriteLine("3 - Requisitar Nova Missão");
                 Console.WriteLine("4 - Lançar Missão");
-                Console.WriteLine("5 - Avançar Dias");
+                Console.WriteLine("5 - Avançar Tempo");
                 Console.WriteLine("0 - Sair");
                 Console.WriteLine("\n=====================================\n");
                 Console.Write("Escolha uma opção: ");
@@ -29,7 +29,7 @@ namespace Sistema_Central
                 switch (opcao)
                 {
                     case "1":
-                        //ExibirMenuCadastros(planetas, naves, astronautas);
+                        ExibirMenuCadastros(planetas, naves, astronautas);
                         Console.ReadKey();
                         break;
 
@@ -49,18 +49,16 @@ namespace Sistema_Central
                         break;
 
                     case "5":
-                        //AvançarDias(missoes, astronautas);
+                        AtualizarTempo.AvancarTempo(missoes, astronautas, naves);
                         Console.ReadKey();
                         break;
 
                     case "0":
                         Console.WriteLine("\nEncerrando o sistema...");
-                        Console.ReadKey();
                         break;
 
                     default:
                         Console.WriteLine("\nOpção inválida! Tente novamente.");
-                        Console.ReadKey();
                         break;
                 }
 
@@ -75,10 +73,11 @@ namespace Sistema_Central
                 Console.WriteLine("\n=====================================");
                 Console.WriteLine("\n========= MENU DE LISTAGENS =========");
                 Console.WriteLine("\n=====================================\n");
-                Console.WriteLine("1 - Ver Planetas");
+                Console.WriteLine("1 - Ver Astronautas");
                 Console.WriteLine("2 - Ver Naves");
-                Console.WriteLine("3 - Ver Missões");
-                Console.WriteLine("4 - Ver Astronautas");
+                Console.WriteLine("3 - Ver Planetas");
+                Console.WriteLine("4 - Ver Missões");
+                Console.WriteLine("5 - Visão Geral Resumida");
                 Console.WriteLine("0 - Voltar");
                 Console.WriteLine("\n=====================================\n");
                 Console.Write("Escolha uma opção: ");
@@ -89,37 +88,36 @@ namespace Sistema_Central
                     case "1":
                         Console.Clear();
                         Console.WriteLine("\n=====================================");
-                        Console.WriteLine("\n========= LISTA DE PLANETAS =========");
+                        Console.WriteLine("\n======== LISTA DE ASTRONAUTAS =======");
                         Console.WriteLine("\n=====================================");
-                        foreach (var planeta in planetas)
+                        foreach (var astronauta in astronautas)
                         {
-                            switch (planeta.SituacaoAtual)
+                            switch (astronauta.EstadoAstronauta)
                             {
-                                case SituacaoPlaneta.Habitavel:
+                                case SituacaoAstronauta.Disponivel:
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Planeta.MostrarPlaneta(planeta);
+                                    MostrarDados.MostrarAstronauta(astronauta);
                                     Console.ResetColor();
                                     break;
-                                case SituacaoPlaneta.Inexplorado:
+                                case SituacaoAstronauta.EmMissao:
+                                    Console.ForegroundColor = ConsoleColor.Blue;
+                                    MostrarDados.MostrarAstronauta(astronauta);
+                                    Console.ResetColor();
+                                    break;
+                                case SituacaoAstronauta.Ferido:
                                     Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Planeta.MostrarPlaneta(planeta);
+                                    MostrarDados.MostrarAstronauta(astronauta);
                                     Console.ResetColor();
                                     break;
-                                case SituacaoPlaneta.Hostil:
+                                case SituacaoAstronauta.Morto:
                                     Console.ForegroundColor = ConsoleColor.Red;
-                                    Planeta.MostrarPlaneta(planeta);
-                                    Console.ResetColor();
-                                    break;
-                                case SituacaoPlaneta.FonteDeRecursos:
-                                    Console.ForegroundColor = ConsoleColor.Cyan;
-                                    Planeta.MostrarPlaneta(planeta);
+                                    MostrarDados.MostrarAstronauta(astronauta);
                                     Console.ResetColor();
                                     break;
                             }
                         }
                         Console.ReadKey();
                         break;
-
                     case "2":
                         Console.Clear();
                         Console.WriteLine("\n=====================================");
@@ -131,30 +129,62 @@ namespace Sistema_Central
                             {
                                 case SituacaoNave.Disponivel:
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Nave.MostrarNave(nave);
+                                    MostrarDados.MostrarNave(nave);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoNave.EmMissao:
                                     Console.ForegroundColor = ConsoleColor.Blue;
-                                    Nave.MostrarNave(nave);
+                                    MostrarDados.MostrarNave(nave);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoNave.Avariada:
                                     Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Nave.MostrarNave(nave);
+                                    MostrarDados.MostrarNave(nave);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoNave.Perdida:
                                     Console.ForegroundColor = ConsoleColor.Red;
-                                    Nave.MostrarNave(nave);
+                                    MostrarDados.MostrarNave(nave);
                                     Console.ResetColor();
                                     break;
                             }
                         }
                         Console.ReadKey();
                         break;
-
                     case "3":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n========= LISTA DE PLANETAS =========");
+                        Console.WriteLine("\n=====================================");
+                        foreach (var planeta in planetas)
+                        {
+                            switch (planeta.SituacaoAtual)
+                            {
+                                case SituacaoPlaneta.Habitavel:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    MostrarDados.MostrarPlaneta(planeta);
+                                    Console.ResetColor();
+                                    break;
+                                case SituacaoPlaneta.Inexplorado:
+                                    Console.ForegroundColor = ConsoleColor.Yellow;
+                                    MostrarDados.MostrarPlaneta(planeta);
+                                    Console.ResetColor();
+                                    break;
+                                case SituacaoPlaneta.Hostil:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    MostrarDados.MostrarPlaneta(planeta);
+                                    Console.ResetColor();
+                                    break;
+                                case SituacaoPlaneta.FonteDeRecursos:
+                                    Console.ForegroundColor = ConsoleColor.Cyan;
+                                    MostrarDados.MostrarPlaneta(planeta);
+                                    Console.ResetColor();
+                                    break;
+                            }
+                        }
+                        Console.ReadKey();
+                        break;
+                    case "4":
                         Console.Clear();
                         Console.WriteLine("\n=====================================");
                         Console.WriteLine("\n========= LISTA DE MISSÕES ==========");
@@ -165,79 +195,109 @@ namespace Sistema_Central
                             {
                                 case SituacaoMissao.Pendente:
                                     Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Missao.MostrarMissoes(missao);
+                                    MostrarDados.MostrarMissoes(missao);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoMissao.EmAndamento:
                                     Console.ForegroundColor = ConsoleColor.Blue;
-                                    Missao.MostrarMissoes(missao);
+                                    MostrarDados.MostrarMissoes(missao);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoMissao.Concluida:
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Missao.MostrarMissoes(missao);
+                                    MostrarDados.MostrarMissoes(missao);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoMissao.Cancelada:
                                     Console.ForegroundColor = ConsoleColor.Red;
-                                    Missao.MostrarMissoes(missao);
+                                    MostrarDados.MostrarMissoes(missao);
                                     Console.ResetColor();
                                     break;
                                 case SituacaoMissao.Falhou:
                                     Console.ForegroundColor = ConsoleColor.DarkRed;
-                                    Missao.MostrarMissoes(missao);
+                                    MostrarDados.MostrarMissoes(missao);
                                     Console.ResetColor();
                                     break;
                             }
                         }
                         Console.ReadKey();
                         break;
-
-                    case "4":
+                    case "5":
                         Console.Clear();
                         Console.WriteLine("\n=====================================");
-                        Console.WriteLine("\n======== LISTA DE ASTRONAUTAS =======");
+                        Console.WriteLine("\n====== VISÃO GERAL DO SISTEMA =======");
+                        Console.WriteLine("\n=====================================\n");
+
+                        MostrarDados.ExibirVisaoGeral(planetas, naves, missoes, astronautas);
+
                         Console.WriteLine("\n=====================================");
-                        foreach (var astronauta in astronautas)
-                        {
-                            switch (astronauta.EstadoAstronauta)
-                            {
-                                case SituacaoAstronauta.Disponivel:
-                                    Console.ForegroundColor = ConsoleColor.Green;
-                                    Astronauta.MostrarAstronauta(astronauta);
-                                    Console.ResetColor();
-                                    break;
-                                case SituacaoAstronauta.EmMissao:
-                                    Console.ForegroundColor = ConsoleColor.Blue;
-                                    Astronauta.MostrarAstronauta(astronauta);
-                                    Console.ResetColor();
-                                    break;
-                                case SituacaoAstronauta.Ferido:
-                                    Console.ForegroundColor = ConsoleColor.Yellow;
-                                    Astronauta.MostrarAstronauta(astronauta);
-                                    Console.ResetColor();
-                                    break;
-                                case SituacaoAstronauta.Morto:
-                                    Console.ForegroundColor = ConsoleColor.Red;
-                                    Astronauta.MostrarAstronauta(astronauta);
-                                    Console.ResetColor();
-                                    break;
-                            }
-                        }
                         Console.ReadKey();
                         break;
-
                     case "0":
                         Console.WriteLine("\nVoltando ao menu anterior...");
                         break;
-
                     default:
                         Console.WriteLine("\nOpção inválida! Tente novamente.");
                         break;
                 }
             } while (opcao != "0");
         }
+        public static void ExibirMenuCadastros(List<Planeta> planetas, List<Nave> naves, List<Astronauta> astronautas)
+        {
+            string? opcao;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("\n=====================================");
+                Console.WriteLine("\n========= MENU DE CADASTROS =========");
+                Console.WriteLine("\n=====================================\n");
+                Console.WriteLine("1 - Cadastrar Astronauta");
+                Console.WriteLine("2 - Cadastrar Nave");
+                Console.WriteLine("3 - Cadastrar Planeta");
+                Console.WriteLine("0 - Voltar");
+                Console.Write("\nEscolha uma opção: ");
+                opcao = Console.ReadLine();
+
+                switch (opcao)
+                {
+                    case "1":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n======= Cadastro de Astronauta ======");
+                        Console.WriteLine("\n=====================================\n");
+
+                        Cadastros.CadastrarAstronauta(astronautas);
+                        Console.ReadKey();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n========= Cadastro de Nave ==========");
+                        Console.WriteLine("\n=====================================\n");
+
+                        Cadastros.CadastrarNave(naves);
+                        Console.ReadKey();
+                        break;
+                    case "3":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n======== Cadastro de Planeta ========");
+                        Console.WriteLine("\n=====================================\n");
+
+                        Cadastros.CadastrarPlaneta(planetas);
+                        Console.ReadKey();
+                        break;
+                    case "0":
+                        Console.WriteLine("\nVoltando...");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida.");
+                        break;
+                }
+
+            } while (opcao != "0");
+        }
         
-        
+
     }
 }
