@@ -7,16 +7,6 @@ namespace Sistema_Central
     {
         public static List<Missao> RequisitarMissao(List<Planeta> listaDePlanetas, List<Nave> listaDeNaves, List<Missao> listaDeMissoes, List<Astronauta> ListaDeAstronautas)
         {
-            Console.Clear();
-            Console.WriteLine("==========================================================");
-            Console.WriteLine("\nRequisitando missão ao QG...\n");
-            Console.WriteLine("==========================================================");
-            Console.ReadKey();
-            Console.Clear();
-            Console.WriteLine("==========================================================");
-            Console.WriteLine("Preencha os dados da missão abaixo:");
-            Console.WriteLine("==========================================================\n");
-
             Console.Write("Digite o nome da missão: ");
             string nomeMissao = Console.ReadLine();
             while (string.IsNullOrWhiteSpace(nomeMissao))

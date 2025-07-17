@@ -4,13 +4,28 @@ namespace Sistema_Central.Entities
 {
     public class Missao
     {
+        private int _DiasRestantes = -1;
 
         public string Nome { get; set; }
         public ObjetivoMissao Objetivo { get; set; }
         public DateTime DataLancamento { get; set; }
         public int DuracaoMissao { get; set; }
         public DateTime DataRetornoPrevisto { get; set; }
-        public int DiasRestantes { get; set; }
+        public int DiasRestantes
+        {
+            get
+            {
+                if (_DiasRestantes == -1)
+                {
+                    _DiasRestantes = DuracaoMissao;
+                }
+                return _DiasRestantes;
+            }
+            set
+            {
+                _DiasRestantes = value;
+            }
+        }
         public Planeta Destino { get; set; }
         public Nave Nave { get; set; }
         public List<Astronauta> TripulacaoMissao { get; set; }

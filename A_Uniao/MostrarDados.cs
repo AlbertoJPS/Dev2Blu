@@ -13,7 +13,8 @@ namespace Sistema_Central
             Console.WriteLine($"Nascimento: {astronauta.DataNascimento.ToShortDateString()}");
             Console.WriteLine($"Situação: {astronauta.EstadoAstronauta}");
             Console.WriteLine($"Tripulando: {(astronauta.TripulandoNave != null ? astronauta.TripulandoNave.Nome : "Nenhuma")}");
-            Console.WriteLine("-------------------------------------------");
+
+            Console.WriteLine("\n-------------------------------------------\n");
         }
         public static void MostrarNave(Nave nave)
         {
@@ -42,7 +43,7 @@ namespace Sistema_Central
                 Console.WriteLine("Tripulação Atual: [Nenhum tripulante designado]");
             }
 
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("\n-------------------------------------------\n");
         }
         public static void MostrarPlaneta(Planeta planeta)
         {
@@ -50,7 +51,7 @@ namespace Sistema_Central
             Console.WriteLine($"Descrição: {planeta.Descricao}");
             Console.WriteLine($"Distância (UA): {planeta.DistanciaEmUA}");
             Console.WriteLine($"Situação: {planeta.SituacaoAtual}");
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("\n-------------------------------------------\n");
         }
         public static void MostrarMissoes(Missao missao)
         {
@@ -94,7 +95,7 @@ namespace Sistema_Central
                 Console.WriteLine("Tripulação: [Ainda não designada]");
             }
 
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("\n-------------------------------------------\n");
         }
 
         public static void ExibirVisaoGeral(List<Planeta> planetas, List<Nave> naves, List<Missao> missoes, List<Astronauta> astronautas)
@@ -184,10 +185,10 @@ namespace Sistema_Central
             Console.WriteLine($"\n- No Hangar (Disponíveis): {disponiveis}");
             Console.WriteLine($"\n- Avariadas: {avariadas}");
             Console.WriteLine($"\n- Perdidas: {perdidas}");
-            Console.WriteLine($"\n- Tipos de Missão por País:\n");
+            Console.WriteLine($"\n- Tipos de Missão por País:");
             foreach (var pais in porPaisEObjetivo.Keys)
             {
-                Console.WriteLine($"  -- {pais}:");
+                Console.WriteLine($"\n  -- {pais}:\n");
                 foreach (var obj in porPaisEObjetivo[pais])
                 {
                     if (obj.Value > 0)

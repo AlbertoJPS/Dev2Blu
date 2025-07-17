@@ -1,10 +1,5 @@
 ﻿using Sistema_Central.Entities;
 using Sistema_Central.Utilitários;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sistema_Central
 {
@@ -14,10 +9,7 @@ namespace Sistema_Central
 
         public static void AvancarTempo(List<Missao> missoes, List<Astronauta> astronautas, List<Nave> naves)
         {
-            Console.Clear();
-            Console.WriteLine("\n=====================================");
-            Console.WriteLine("\n=========== AVANÇAR TEMPO ===========");
-            Console.WriteLine("\n=====================================\n");
+            
             Console.Write("Quantos dias deseja avançar? ");
 
             if (!int.TryParse(Console.ReadLine(), out int diasAvancados) || diasAvancados <= 0)
@@ -30,24 +22,24 @@ namespace Sistema_Central
 
             foreach (var missao in missoes)
             {
-                if (missao.EstadoMissao != SituacaoMissao.EmAndamento) continue;
-
-                missao.DiasRestantes -= diasAvancados;
-
-                if (missao.DiasRestantes <= 0)
+                if (missao.EstadoMissao == SituacaoMissao.EmAndamento)
                 {
-                    missao.EstadoMissao = SortearResultadoMissao();
-                    AtualizarEstadoNave(missao);
-                    AtualizarEstadoAstronautas(missao);
+                    missao.DiasRestantes -= diasAvancados;
 
-                    Console.WriteLine($"Missão \"{missao.Nome}\" finalizada como: {missao.EstadoMissao}");
-                }
-                else
-                {
-                    Console.WriteLine($"Missão \"{missao.Nome}\" agora tem {missao.DiasRestantes} dias restantes.");
+                    if (missao.DiasRestantes <= 0)
+                    {
+                        missao.EstadoMissao = SortearResultadoMissao();
+                        AtualizarEstadoNave(missao);
+                        AtualizarEstadoAstronautas(missao);
+
+                        Console.WriteLine($"Missão \"{missao.Nome}\" finalizada como: {missao.EstadoMissao}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Missão \"{missao.Nome}\" agora tem {missao.DiasRestantes} dias restantes.");
+                    }
                 }
             }
-
             Console.WriteLine("\nAtualização concluída. Pressione qualquer tecla para continuar...");
         }
         private static SituacaoMissao SortearResultadoMissao()
@@ -55,16 +47,26 @@ namespace Sistema_Central
             int chance = _random.Next(1, 101);
 
             if (chance <= 10)
+            {
                 return SituacaoMissao.Falhou;
+            }
             else if (chance <= 40)
+            {
                 return SituacaoMissao.Cancelada;
+            }
             else
+            {
                 return SituacaoMissao.Concluida;
+            }
         }
         private static void AtualizarEstadoNave(Missao missao)
         {
             var nave = missao.Nave;
-            if (nave == null) return;
+
+            if (nave == null)
+            {
+                return;
+            }
 
             switch (missao.EstadoMissao)
             {
@@ -79,10 +81,9 @@ namespace Sistema_Central
 
                 case SituacaoMissao.Concluida:
                     nave.EstadoAtualNave = SituacaoNave.Disponivel;
+                    nave.TripulacaoEmbarcada.Clear();
                     break;
             }
-
-            nave.TripulacaoEmbarcada.Clear();
         }
         private static void AtualizarEstadoAstronautas(Missao missao)
         {
@@ -97,19 +98,22 @@ namespace Sistema_Central
                     case SituacaoMissao.Cancelada:
                         int chance = _random.Next(1, 101);
                         if (chance <= 30)
+                        {
                             astro.EstadoAstronauta = SituacaoAstronauta.Disponivel;
+                            astro.TripulandoNave = null;
+                        }
                         else
+                        {
                             astro.EstadoAstronauta = SituacaoAstronauta.Ferido;
+                        }
                         break;
 
                     case SituacaoMissao.Concluida:
                         astro.EstadoAstronauta = SituacaoAstronauta.Disponivel;
+                        astro.TripulandoNave = null;
                         break;
                 }
-
-                astro.TripulandoNave = null;
             }
         }
-
     }
 }

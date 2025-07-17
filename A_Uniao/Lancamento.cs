@@ -21,18 +21,13 @@ namespace Sistema_Central
                 }
             }
 
-            Console.Clear();
-
             if (missoesPendentes.Count == 0)
             {
                 Console.WriteLine("\nNão há missões agendadas para lançar.");
                 Console.ReadKey();
                 return;
             }
-
-            Console.WriteLine("\n=====================================");
-            Console.WriteLine("\n========= MISSÕES PENDENTES =========");
-            Console.WriteLine("\n=====================================\n");
+            
 
             for (int i = 0; i < missoesPendentes.Count; i++)
             {

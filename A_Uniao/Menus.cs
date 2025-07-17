@@ -5,11 +5,9 @@ namespace Sistema_Central
 {
     public static class Menus
     {
-
         public static void ExibirMenuInicial(List<Planeta> planetas, List<Nave> naves, List<Missao> missoes, List<Astronauta> astronautas)
         {
             string opcao;
-
             do
             {
                 Console.Clear();
@@ -39,16 +37,33 @@ namespace Sistema_Central
                         break;
 
                     case "3":
+                        Console.Clear();
+                        Console.WriteLine("\n========================================");
+                        Console.WriteLine("\nRequisitando missão ao QG...\n");
+                        Console.WriteLine("\n========================================");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Console.WriteLine("\n========================================");
+                        Console.WriteLine("\nPreencha os dados da missão abaixo:");
+                        Console.WriteLine("\n========================================\n");
                         Requisicao.RequisitarMissao(planetas, naves, missoes, astronautas);
                         Console.ReadKey();
                         break;
 
                     case "4":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n========= MISSÕES PENDENTES =========");
+                        Console.WriteLine("\n=====================================\n");
                         Lancamento.LancarMissao(missoes, astronautas);
                         Console.ReadKey();
                         break;
 
                     case "5":
+                        Console.Clear();
+                        Console.WriteLine("\n=====================================");
+                        Console.WriteLine("\n=========== AVANÇAR TEMPO ===========");
+                        Console.WriteLine("\n=====================================\n");
                         AtualizarTempo.AvancarTempo(missoes, astronautas, naves);
                         Console.ReadKey();
                         break;
