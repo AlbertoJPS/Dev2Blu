@@ -1,7 +1,7 @@
-﻿
-using Sistema_Central.Entities;
+﻿using Sistema_Central.Entities;
+using Sistema_Central.Utilitários;
 
-namespace Sistema_Central.Utilitários
+namespace Sistema_Central
 {
     public static class Menus
     {

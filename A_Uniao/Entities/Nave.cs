@@ -38,7 +38,7 @@ namespace Sistema_Central.Entities
                 return _distanciaMaximaViagem.Value;
             }
         }
-        public List<Astronauta> Tripulacao { get; set; }
+        public List<Astronauta> TripulacaoEmbarcada { get; set; }
         public SituacaoNave EstadoAtualNave { get; set; }
         public List<ObjetivoMissao> TiposDeMissaoSuportados { get; set; }
 
@@ -75,7 +75,7 @@ namespace Sistema_Central.Entities
             Fabricante = fabricante;
             EstadoAtualNave = estadoNave;
             TiposDeMissaoSuportados = tiposDeMissao;
-            Tripulacao = new List<Astronauta>();
+            TripulacaoEmbarcada = new List<Astronauta>();
         }
 
         public Nave(string nome, string modelo, PorteNave porte, PaisFabricante fabricante, SituacaoNave estadoNave, List<ObjetivoMissao> tiposDeMissao,  double distanciaMaximaViagem, int capacidadeMaximaTripulantes)
@@ -86,7 +86,7 @@ namespace Sistema_Central.Entities
             Fabricante = fabricante;
             EstadoAtualNave = estadoNave;
             TiposDeMissaoSuportados = tiposDeMissao;
-            Tripulacao = new List<Astronauta>();
+            TripulacaoEmbarcada = new List<Astronauta>();
             _distanciaMaximaViagem = distanciaMaximaViagem;
             _capacidadeMaximaTripulantes = capacidadeMaximaTripulantes;
         }
@@ -105,7 +105,20 @@ namespace Sistema_Central.Entities
             {
                 Console.Write($"{objetivo} ");
             }
-            Console.WriteLine("\n-------------------------------------------");
+            Console.WriteLine(); // quebra de linha após objetivos
+
+            // Mostrar a tripulação da nave
+            if (nave.TripulacaoEmbarcada != null && nave.TripulacaoEmbarcada.Count > 0)
+            {
+                var nomesTripulantes = nave.TripulacaoEmbarcada.Select(t => t.Nome).ToList();
+                Console.WriteLine($"Tripulação Atual: {string.Join(", ", nomesTripulantes)}");
+            }
+            else
+            {
+                Console.WriteLine("Tripulação Atual: [Nenhum tripulante designado]");
+            }
+
+            Console.WriteLine("-------------------------------------------");
         }
     }
 }

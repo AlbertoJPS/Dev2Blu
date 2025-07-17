@@ -1,6 +1,5 @@
 ﻿using Sistema_Central.BancoSimulado;
 using Sistema_Central.Entities;
-using Sistema_Central.Utilitários;
 using System;
 using System.Collections.Generic;
 using System.Linq;

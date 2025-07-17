@@ -12,7 +12,15 @@ namespace Sistema_Central
     {
         public static void LancarMissao(List<Missao> missoes, List<Astronauta> astronautas)
         {
-            var missoesPendentes = missoes.Where(missao => missao.EstadoMissao == SituacaoMissao.Pendente).ToList();
+            var missoesPendentes = new List<Missao>();
+            foreach (var missao in missoes)
+            {
+                if (missao.EstadoMissao == SituacaoMissao.Pendente)
+                {
+                    missoesPendentes.Add(missao);
+                }
+            }
+
             Console.Clear();
 
             if (missoesPendentes.Count == 0)
@@ -21,18 +29,19 @@ namespace Sistema_Central
                 Console.ReadKey();
                 return;
             }
+
             Console.WriteLine("\n=====================================");
             Console.WriteLine("\n========= MISSÕES PENDENTES =========");
-            Console.WriteLine("\n=====================================\n\n");
+            Console.WriteLine("\n=====================================\n");
 
             for (int i = 0; i < missoesPendentes.Count; i++)
             {
                 var missao = missoesPendentes[i];
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine($"{i + 1} - {missao.Nome} - Missão de {missao.Objetivo} (Destino: {missao.Destino.Nome}, Nave: {missao.Nave.Nome}) - Duração da Missão: {missao.DuracaoMissao} dias");
+                Console.WriteLine($"{i + 1} - {missao.Nome} - Missão de {missao.Objetivo} (Destino: {missao.Destino.Nome}, Nave: {missao.Nave.Nome}) - Duração: {missao.DuracaoMissao} dias");
                 Console.ResetColor();
             }
-            Console.WriteLine("\n=====================================\n");
+
             Console.Write("\nEscolha o número da missão que deseja lançar: ");
             if (!int.TryParse(Console.ReadLine(), out int escolha) || escolha < 1 || escolha > missoesPendentes.Count)
             {
@@ -44,7 +53,15 @@ namespace Sistema_Central
             var missaoSelecionada = missoesPendentes[escolha - 1];
             var nave = missaoSelecionada.Nave;
 
-            var disponiveis = astronautas.Where(a => a.EstadoAstronauta == SituacaoAstronauta.Disponivel).ToList();
+            // Filtra astronautas disponíveis
+            var disponiveis = new List<Astronauta>();
+            foreach (var astronauta in astronautas)
+            {
+                if (astronauta.EstadoAstronauta == SituacaoAstronauta.Disponivel)
+                {
+                    disponiveis.Add(astronauta);
+                }
+            }
 
             if (disponiveis.Count < nave.CapacidadeMaximaTripulantes)
             {
@@ -53,31 +70,124 @@ namespace Sistema_Central
                 return;
             }
 
-            var tripulacaoSorteada = new List<Astronauta>();
-            var rnd = new Random();
+            // Escolha da quantidade de tripulantes
+            int minimo = nave.CapacidadeMaximaTripulantes / 2;
+            int maximo = nave.CapacidadeMaximaTripulantes;
 
-            while (tripulacaoSorteada.Count < nave.CapacidadeMaximaTripulantes)
+            Console.Write($"\nDigite o número de tripulantes (mínimo {minimo}, máximo {maximo}): ");
+            int quantidade;
+            while (!int.TryParse(Console.ReadLine(), out quantidade) || quantidade < minimo || quantidade > maximo)
             {
-                var sorteado = disponiveis[rnd.Next(disponiveis.Count)];
-                if (!tripulacaoSorteada.Contains(sorteado))
+                Console.Write($"Valor inválido. Digite um número entre {minimo} e {maximo}: ");
+            }
+
+            // Escolha entre automático ou manual
+            Console.Write("\nDeseja selecionar a tripulação automaticamente (A) ou manualmente (M)? ");
+            string modo = Console.ReadLine().ToUpper();
+
+            var tripulacaoEscolhida = new List<Astronauta>();
+            var random = new Random();
+
+            if (modo == "A")
+            {
+                while (tripulacaoEscolhida.Count < quantidade)
                 {
-                    sorteado.SetarEmMissao(nave);
-                    tripulacaoSorteada.Add(sorteado);
+                    var sorteado = disponiveis[random.Next(disponiveis.Count)];
+                    if (!tripulacaoEscolhida.Contains(sorteado))
+                    {
+                        sorteado.SetarEmMissao(nave);
+                        tripulacaoEscolhida.Add(sorteado);
+                    }
                 }
             }
+            else if (modo == "M")
+            {
+                while (tripulacaoEscolhida.Count < quantidade)
+                {
+                    Console.Clear();
+                    Console.WriteLine("\n=========== SELEÇÃO DE TRIPULAÇÃO ===========");
+                    Console.WriteLine($"Faltam {quantidade - tripulacaoEscolhida.Count} vaga(s).");
+                    Console.WriteLine("\nDisponíveis:");
 
+                    var disponiveisRestantes = new List<Astronauta>();
+                    foreach (var astro in disponiveis)
+                    {
+                        if (!tripulacaoEscolhida.Contains(astro))
+                        {
+                            disponiveisRestantes.Add(astro);
+                        }
+                    }
+
+                    for (int i = 0; i < disponiveisRestantes.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} - {disponiveisRestantes[i].Nome} ({disponiveisRestantes[i].Nacionalidade}, {disponiveisRestantes[i].Idade})");
+                    }
+
+                    Console.Write("\nEscolha o número do astronauta: ");
+                    if (!int.TryParse(Console.ReadLine(), out int indice) || indice < 1 || indice > disponiveisRestantes.Count)
+                    {
+                        Console.WriteLine("Opção inválida. Pressione qualquer tecla para continuar.");
+                        Console.ReadKey();
+                        continue;
+                    }
+
+                    var selecionado = disponiveisRestantes[indice - 1];
+                    selecionado.SetarEmMissao(nave);
+                    tripulacaoEscolhida.Add(selecionado);
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nModo inválido.");
+                Console.ReadKey();
+                return;
+            }
+
+            // Pergunta data de lançamento
+            Console.Write("\nDigite a data de lançamento (formato: dd/MM/yyyy): ");
+            DateTime dataLancamento;
+            while (!DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out dataLancamento))
+            {
+                Console.Write("Data inválida. Tente novamente (formato: dd/MM/yyyy): ");
+            }
+
+            DateTime dataRetorno = dataLancamento.AddDays(missaoSelecionada.DuracaoMissao);
+
+            // Mostrar resumo e confirmar
+            Console.Clear();
+            Console.WriteLine($"\nMISSÃO: {missaoSelecionada.Nome}");
+            Console.WriteLine($"Objetivo: {missaoSelecionada.Objetivo}");
+            Console.WriteLine($"Destino: {missaoSelecionada.Destino.Nome}");
+            Console.WriteLine($"Nave: {nave.Nome}");
+            Console.WriteLine($"Duração: {missaoSelecionada.DuracaoMissao} dias");
+            Console.WriteLine($"Data de Lançamento: {dataLancamento.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Data de Retorno Previsto: {dataRetorno.ToString("dd/MM/yyyy")}");
+            Console.WriteLine("\nTripulação:");
+            foreach (var astro in tripulacaoEscolhida)
+            {
+                Console.WriteLine($"- {astro.Nome} ({astro.Nacionalidade}, {astro.Idade})");
+            }
+
+            Console.Write("\nConfirmar lançamento da missão? (S/N): ");
+            var confirmacao = Console.ReadLine().ToUpper();
+            if (confirmacao != "S")
+            {
+                Console.WriteLine("\nLançamento cancelado. Nenhum dado foi alterado.");
+                Console.ReadKey();
+                return;
+            }
+
+            // Aplica os dados na missão e nave
+            missaoSelecionada.DataLancamento = dataLancamento;
+            missaoSelecionada.DataRetornoPrevisto = dataRetorno;
             missaoSelecionada.EstadoMissao = SituacaoMissao.EmAndamento;
+            missaoSelecionada.TripulacaoMissao = tripulacaoEscolhida;
             nave.EstadoAtualNave = SituacaoNave.EmMissao;
 
-            Console.WriteLine($"\nMissão \"{missaoSelecionada.Nome}\" lançada com sucesso!");
-            Console.WriteLine("\n=====================================\n");
-            Console.WriteLine("Tripulação embarcada:");
-            foreach (var astronauta in tripulacaoSorteada)
-            {
-                Console.WriteLine($"- {astronauta.Nome} ({astronauta.Nacionalidade}, {astronauta.Idade})");
-            }
-            Console.WriteLine("\n=====================================\n");
+            Console.WriteLine("\nMissão lançada com sucesso!");
             Console.ReadKey();
         }
+
+
     }
 }
