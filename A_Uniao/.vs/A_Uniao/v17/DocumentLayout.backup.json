@@ -3,56 +3,56 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\A_Uniao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\mostrardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:mostrardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\cadastros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:cadastros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\lancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:lancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\requisicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:requisicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\atualizartempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:atualizartempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\missao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\missao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\nave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\popularbanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\cadastros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:cadastros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\mostrardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:mostrardados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:entities\\astronauta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:utilit\u00E1rios\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\requisicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:requisicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\atualizartempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|solutionrelative:atualizartempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DB1F7FC-1C94-4CE9-B43B-0904772F05B4}|Sistema_Central.csproj|d:\\dev2blu\\a_uniao\\entities\\planeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,76 +66,74 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Start.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Start.cs",
               "RelativeDocumentMoniker": "Start.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Start.cs",
               "RelativeToolTip": "Start.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T23:33:28.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T23:33:28.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "PopularBanco.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\PopularBanco.cs",
               "RelativeDocumentMoniker": "Utilit\u00E1rios\\PopularBanco.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\PopularBanco.cs",
               "RelativeToolTip": "Utilit\u00E1rios\\PopularBanco.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAApwF4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T12:47:10.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Menus.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Menus.cs",
               "RelativeDocumentMoniker": "Menus.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Menus.cs",
               "RelativeToolTip": "Menus.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAkwHgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAMBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T12:27:10.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T12:27:10.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "MostrarDados.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\MostrarDados.cs",
               "RelativeDocumentMoniker": "MostrarDados.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\MostrarDados.cs",
               "RelativeToolTip": "MostrarDados.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAjwLsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAASwHQAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T20:43:38.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Cadastros.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Cadastros.cs",
               "RelativeDocumentMoniker": "Cadastros.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Cadastros.cs",
               "RelativeToolTip": "Cadastros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T19:57:10.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Requisicao.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Requisicao.cs",
               "RelativeDocumentMoniker": "Requisicao.cs",
@@ -143,25 +141,24 @@
               "RelativeToolTip": "Requisicao.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAA4wAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T18:16:01.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T18:16:01.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Lancamento.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Lancamento.cs",
               "RelativeDocumentMoniker": "Lancamento.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Lancamento.cs",
               "RelativeToolTip": "Lancamento.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T18:20:23.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "AtualizarTempo.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\AtualizarTempo.cs",
               "RelativeDocumentMoniker": "AtualizarTempo.cs",
@@ -169,59 +166,58 @@
               "RelativeToolTip": "AtualizarTempo.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T21:30:04.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T21:30:04.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Service.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Service.cs",
               "RelativeDocumentMoniker": "Utilit\u00E1rios\\Service.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Service.cs",
               "RelativeToolTip": "Utilit\u00E1rios\\Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAgwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T23:35:49.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T23:35:49.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Enums.cs",
               "RelativeDocumentMoniker": "Utilit\u00E1rios\\Enums.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Utilit\u00E1rios\\Enums.cs",
               "RelativeToolTip": "Utilit\u00E1rios\\Enums.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T23:35:13.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Missao.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Missao.cs",
               "RelativeDocumentMoniker": "Entities\\Missao.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Missao.cs",
               "RelativeToolTip": "Entities\\Missao.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwB8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T23:38:56.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Nave.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Nave.cs",
               "RelativeDocumentMoniker": "Entities\\Nave.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Nave.cs",
               "RelativeToolTip": "Entities\\Nave.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T23:39:52.838Z"
+              "WhenOpened": "2025-07-15T23:39:52.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -237,15 +233,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "Astronauta.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\A_Uniao\\Entities\\Astronauta.cs",
               "RelativeDocumentMoniker": "Entities\\Astronauta.cs",
               "ToolTip": "D:\\Dev2Blu\\A_Uniao\\Entities\\Astronauta.cs",
               "RelativeToolTip": "Entities\\Astronauta.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T23:38:47.72Z"
+              "WhenOpened": "2025-07-15T23:38:47.72Z",
+              "EditorCaption": ""
             }
           ]
         },

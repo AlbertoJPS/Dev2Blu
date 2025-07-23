@@ -118,5 +118,35 @@ namespace Sistema_Central.Utilitários
 
             return entrada;
         }
+
+        public static void CriarMissao(List<Missao> listaMissoes, List<Nave> listaNaves, List<Planeta> listaPlanetas, string nomeMissao, ObjetivoMissao objetivo, string nomeNave, string nomePlaneta, int diasAtras, int duracao, SituacaoNave estadoNave, SituacaoMissao estadoMissao)
+        {
+            var nave = listaNaves.Find(n => n.Nome == nomeNave);
+            var planeta = listaPlanetas.Find(p => p.Nome == nomePlaneta);
+            var dataLancamento = DateTime.Now.AddDays(-diasAtras);
+
+            var tripulacao = new List<Astronauta>();
+            foreach (var astronauta in nave.TripulacaoEmbarcada)
+            {
+                tripulacao.Add(astronauta);
+            }
+
+            nave.EstadoAtualNave = estadoNave;
+
+            var missao = new Missao(
+                nomeMissao,
+                objetivo,
+                dataLancamento,
+                duracao,
+                planeta,
+                nave,
+                tripulacao
+            )
+            {
+                EstadoMissao = estadoMissao
+            };
+
+            listaMissoes.Add(missao);
+        }
     }
 }

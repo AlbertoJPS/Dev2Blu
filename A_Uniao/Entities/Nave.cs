@@ -24,7 +24,7 @@ namespace Sistema_Central.Entities
                         case PorteNave.Pequena:
                             _distanciaMaximaViagem = _random.NextDouble() * (5 - 2) + 2; // 2 a 5 UA
                             break;
-                        case PorteNave.Média:
+                        case PorteNave.Media:
                             _distanciaMaximaViagem = _random.NextDouble() * (10 - 6) + 6; // 6 a 10 UA
                             break;
                         case PorteNave.Grande:
@@ -53,7 +53,7 @@ namespace Sistema_Central.Entities
                         case PorteNave.Pequena:
                             _capacidadeMaximaTripulantes = _random.Next(1, 5);  // 1 a 4
                             break;
-                        case PorteNave.Média:
+                        case PorteNave.Media:
                             _capacidadeMaximaTripulantes = _random.Next(5, 10); // 5 a 9
                             break;
                         case PorteNave.Grande:

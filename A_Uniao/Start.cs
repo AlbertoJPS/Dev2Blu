@@ -11,7 +11,14 @@ namespace Sistema_Central
 {
     public class Start
     {
-        public static bool jaPopulado = false;
+        public static bool _JaPopulado = false;
+
+        // usar listas staticas
+        //public static List<Planeta> _ListaDePlanetas = new List<Planeta>();
+        //public static List<Nave> _ListaDeNaves = new List<Nave>();
+        //public static List<Missao> _ListaMissoes = new List<Missao>();
+        //public static List<Astronauta> _ListaDeAstronautas = new List<Astronauta>();
+
         public static void Main(string[] args)
         {
             Console.WriteLine("\n\nSistema Central Iniciado\n\n");
@@ -21,7 +28,11 @@ namespace Sistema_Central
             List<Missao> listaMissoes = new();
             List<Astronauta> listaDeAstronautas = new();
 
-            PopularBanco.PopularTudo(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas, jaPopulado);
+
+
+
+
+            PopularBanco.PopularTudo(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas, _JaPopulado);
 
 
             Menus.ExibirMenuInicial(listaDePlanetas, listaDeNaves, listaMissoes, listaDeAstronautas);

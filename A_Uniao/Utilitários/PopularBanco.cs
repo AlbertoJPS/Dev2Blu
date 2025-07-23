@@ -65,67 +65,67 @@ namespace Sistema_Central.BancoSimulado
         public static void PopularNaves(List<Nave> lista)
         {
             // 🇺🇸 Estados Unidos — versatilidade e quantidade
-            lista.Add(new Nave("Liberty", "X-7", PorteNave.Média, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao, ObjetivoMissao.Pesquisa }, 8, 7));
+            lista.Add(new Nave("Liberty", "X-7", PorteNave.Media, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao, ObjetivoMissao.Pesquisa }, 8, 7));
             lista.Add(new Nave("Endeavour", "Z-Class", PorteNave.Grande, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento, ObjetivoMissao.ColetaRecursos }, 14, 12));
             lista.Add(new Nave("Orion", "M5", PorteNave.Pequena, PaisFabricante.EstadosUnidos, SituacaoNave.EmMissao, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento }, 5, 3));
-            lista.Add(new Nave("Pioneer", "S3", PorteNave.Média, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 9, 6));
+            lista.Add(new Nave("Pioneer", "S3", PorteNave.Media, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 9, 6));
             lista.Add(new Nave("Freedom", "XL", PorteNave.Grande, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Combate }, 13, 14));
-            lista.Add(new Nave("Voyager", "Scout", PorteNave.Média, PaisFabricante.EstadosUnidos, SituacaoNave.Avariada, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 7.2, 6));
+            lista.Add(new Nave("Voyager", "Scout", PorteNave.Media, PaisFabricante.EstadosUnidos, SituacaoNave.Avariada, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 7.2, 6));
             lista.Add(new Nave("Eagle", "Light", PorteNave.Pequena, PaisFabricante.EstadosUnidos, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento }, 4.8, 2));
 
             // 🇷🇺 Rússia — robustez, combate e grande porte
             lista.Add(new Nave("Tsar", "T-90", PorteNave.Grande, PaisFabricante.Russia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Combate }, 15, 15));
-            lista.Add(new Nave("Zvezda", "Z-9", PorteNave.Média, PaisFabricante.Russia, SituacaoNave.Perdida, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 6.9, 8));
+            lista.Add(new Nave("Zvezda", "Z-9", PorteNave.Media, PaisFabricante.Russia, SituacaoNave.Perdida, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 6.9, 8));
             lista.Add(new Nave("Soyuz-X", "Heavy", PorteNave.Grande, PaisFabricante.Russia, SituacaoNave.EmMissao, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 12.5, 13));
             lista.Add(new Nave("Volkov", "VK-2", PorteNave.Grande, PaisFabricante.Russia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.ColetaRecursos }, 11.2, 10));
 
             // 🇨🇳 China — equilíbrio e tecnologia avançada
-            lista.Add(new Nave("Long March", "L-5", PorteNave.Média, PaisFabricante.China, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 7.5, 7));
-            lista.Add(new Nave("Fênix Celestial", "F-1", PorteNave.Média, PaisFabricante.China, SituacaoNave.EmMissao, new List<ObjetivoMissao> { ObjetivoMissao.Combate }, 8.1, 6));
+            lista.Add(new Nave("Long March", "L-5", PorteNave.Media, PaisFabricante.China, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 7.5, 7));
+            lista.Add(new Nave("Fênix Celestial", "F-1", PorteNave.Media, PaisFabricante.China, SituacaoNave.EmMissao, new List<ObjetivoMissao> { ObjetivoMissao.Combate }, 8.1, 6));
             lista.Add(new Nave("Shenzhou 9", "Shen-Class", PorteNave.Pequena, PaisFabricante.China, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento }, 3.9, 2));
 
             // 🇪🇺 União Europeia — exploração e pesquisa
-            lista.Add(new Nave("Gaia", "E-1", PorteNave.Média, PaisFabricante.UniãoEuropeia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 6.5, 8));
-            lista.Add(new Nave("Athena", "A-Class", PorteNave.Grande, PaisFabricante.UniãoEuropeia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 13.5, 14));
-            lista.Add(new Nave("Europa I", "EXP-9", PorteNave.Média, PaisFabricante.UniãoEuropeia, SituacaoNave.Perdida, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento }, 6.8, 7));
+            lista.Add(new Nave("Gaia", "E-1", PorteNave.Media, PaisFabricante.UniaoEuropeia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Pesquisa }, 6.5, 8));
+            lista.Add(new Nave("Athena", "A-Class", PorteNave.Grande, PaisFabricante.UniaoEuropeia, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 13.5, 14));
+            lista.Add(new Nave("Europa I", "EXP-9", PorteNave.Media, PaisFabricante.UniaoEuropeia, SituacaoNave.Perdida, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento }, 6.8, 7));
 
             // 🇮🇳 Índia — ciência, tradição e defesa
             lista.Add(new Nave("Vikram", "V-2025", PorteNave.Pequena, PaisFabricante.India, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Reconhecimento, ObjetivoMissao.Pesquisa }, 4.4, 3));
             lista.Add(new Nave("Agni", "A-13", PorteNave.Pequena, PaisFabricante.India, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Combate }, 5.1, 4));
-            lista.Add(new Nave("Saraswati", "S-Class", PorteNave.Média, PaisFabricante.India, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 6.7, 6));
+            lista.Add(new Nave("Saraswati", "S-Class", PorteNave.Media, PaisFabricante.India, SituacaoNave.Disponivel, new List<ObjetivoMissao> { ObjetivoMissao.Colonizacao }, 6.7, 6));
         }
 
         public static void PopularMissoes(List<Missao> listaMissoes, List<Nave> listaNaves, List<Planeta> listaPlanetas)
         {
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Observação de Anomalias", ObjetivoMissao.Reconhecimento, "Orion", "Chronos",
                 diasAtras: 15, duracao: 500, SituacaoNave.EmMissao, SituacaoMissao.EmAndamento);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Pesquisa Subterrânea", ObjetivoMissao.Pesquisa, "Soyuz-X", "Lunaris",
                 diasAtras: 30, duracao: 800, SituacaoNave.EmMissao, SituacaoMissao.EmAndamento);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Operação Escudo Divino", ObjetivoMissao.Combate, "Fênix Celestial", "Prometheus",
                 diasAtras: 10, duracao: 620, SituacaoNave.EmMissao, SituacaoMissao.EmAndamento);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Exploração Profunda", ObjetivoMissao.Pesquisa, "Voyager", "Elysium",
                 diasAtras: 40, duracao: 550, SituacaoNave.Avariada, SituacaoMissao.Cancelada);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Colônia Fracassada Zvezda", ObjetivoMissao.Colonizacao, "Zvezda", "Xernes",
                 diasAtras: 120, duracao: 600, SituacaoNave.Perdida, SituacaoMissao.Falhou);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Sinal Silenciado", ObjetivoMissao.Reconhecimento, "Europa I", "Thalos",
                 diasAtras: 80, duracao: 500, SituacaoNave.Perdida, SituacaoMissao.Falhou);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Estudo Energético Helion", ObjetivoMissao.Pesquisa, "Gaia", "Helion",
                 diasAtras: 90, duracao: 540, SituacaoNave.Disponivel, SituacaoMissao.Concluida);
 
-            CriarMissao(listaMissoes, listaNaves, listaPlanetas,
+            Service.CriarMissao(listaMissoes, listaNaves, listaPlanetas,
                 "Operação Martelo Escarlate", ObjetivoMissao.Combate, "Tsar", "Nebula X",
                 diasAtras: 60, duracao: 850, SituacaoNave.Disponivel, SituacaoMissao.Concluida);
         }
@@ -142,13 +142,13 @@ namespace Sistema_Central.BancoSimulado
             lista.Add(new Astronauta("Anatoly Morozov", PaisAstronauta.Russia, new DateTime(1979, 9, 1), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Zvezda")));
 
             // Missão Falha - Europa I (7 mortos)
-            lista.Add(new Astronauta("Jean Dupont", PaisAstronauta.França, new DateTime(1983, 8, 22), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
+            lista.Add(new Astronauta("Jean Dupont", PaisAstronauta.Franca, new DateTime(1983, 8, 22), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
             lista.Add(new Astronauta("Hans Müller", PaisAstronauta.Alemanha, new DateTime(1980, 5, 10), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
             lista.Add(new Astronauta("Francesca Bianchi", PaisAstronauta.Italia, new DateTime(1985, 1, 3), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
-            lista.Add(new Astronauta("Sophie Laurent", PaisAstronauta.França, new DateTime(1987, 10, 15), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
+            lista.Add(new Astronauta("Sophie Laurent", PaisAstronauta.Franca, new DateTime(1987, 10, 15), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
             lista.Add(new Astronauta("Luca Romano", PaisAstronauta.Italia, new DateTime(1981, 12, 30), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
             lista.Add(new Astronauta("Erik Schneider", PaisAstronauta.Alemanha, new DateTime(1979, 4, 6), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
-            lista.Add(new Astronauta("Claire Dubois", PaisAstronauta.França, new DateTime(1988, 3, 27), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
+            lista.Add(new Astronauta("Claire Dubois", PaisAstronauta.Franca, new DateTime(1988, 3, 27), SituacaoAstronauta.Morto, naves.First(n => n.Nome == "Europa I")));
 
             // Missão Cancelada - Voyager (3 feridos)
             lista.Add(new Astronauta("John Walker", PaisAstronauta.EstadosUnidos, new DateTime(1982, 6, 9), SituacaoAstronauta.Ferido, naves.First(n => n.Nome == "Voyager")));
@@ -202,7 +202,7 @@ namespace Sistema_Central.BancoSimulado
             lista.Add(new Astronauta("Chen Wei", PaisAstronauta.China, new DateTime(1985, 11, 9)));
             lista.Add(new Astronauta("Aiko Tanaka", PaisAstronauta.Japao, new DateTime(1992, 4, 1)));
             lista.Add(new Astronauta("Leonardo Moretti", PaisAstronauta.Italia, new DateTime(1988, 1, 17)));
-            lista.Add(new Astronauta("Isabelle Lefevre", PaisAstronauta.França, new DateTime(1991, 9, 3)));
+            lista.Add(new Astronauta("Isabelle Lefevre", PaisAstronauta.Franca, new DateTime(1991, 9, 3)));
             lista.Add(new Astronauta("Tobias Krause", PaisAstronauta.Alemanha, new DateTime(1987, 12, 25)));
             lista.Add(new Astronauta("Naoko Yamada", PaisAstronauta.Japao, new DateTime(1984, 5, 7)));
             lista.Add(new Astronauta("Matthew Carter", PaisAstronauta.EstadosUnidos, new DateTime(1986, 10, 10)));
@@ -213,7 +213,7 @@ namespace Sistema_Central.BancoSimulado
             lista.Add(new Astronauta("Zhang Min", PaisAstronauta.China, new DateTime(1987, 8, 30)));
             lista.Add(new Astronauta("Julia Schneider", PaisAstronauta.Alemanha, new DateTime(1991, 3, 12)));
             lista.Add(new Astronauta("Giulia Conti", PaisAstronauta.Italia, new DateTime(1989, 4, 19)));
-            lista.Add(new Astronauta("Alexandre Dubois", PaisAstronauta.França, new DateTime(1986, 12, 8)));
+            lista.Add(new Astronauta("Alexandre Dubois", PaisAstronauta.Franca, new DateTime(1986, 12, 8)));
             lista.Add(new Astronauta("Emma White", PaisAstronauta.Canada, new DateTime(1992, 10, 5)));
             lista.Add(new Astronauta("Mikhail Sidorov", PaisAstronauta.Russia, new DateTime(1980, 1, 27)));
             lista.Add(new Astronauta("Kenji Nakamura", PaisAstronauta.Japao, new DateTime(1983, 9, 16)));
@@ -226,35 +226,5 @@ namespace Sistema_Central.BancoSimulado
                 }
             }
         }
-        private static void CriarMissao(List<Missao> listaMissoes, List<Nave> listaNaves, List<Planeta> listaPlanetas, string nomeMissao, ObjetivoMissao objetivo, string nomeNave, string nomePlaneta, int diasAtras, int duracao, SituacaoNave estadoNave, SituacaoMissao estadoMissao)
-        {
-            var nave = listaNaves.Find(n => n.Nome == nomeNave);
-            var planeta = listaPlanetas.Find(p => p.Nome == nomePlaneta);
-            var dataLancamento = DateTime.Now.AddDays(-diasAtras);
-
-            var tripulacao = new List<Astronauta>();
-            foreach (var astronauta in nave.TripulacaoEmbarcada)
-            {
-                tripulacao.Add(astronauta);
-            }
-
-            nave.EstadoAtualNave = estadoNave;
-
-            var missao = new Missao(
-                nomeMissao,
-                objetivo,
-                dataLancamento,
-                duracao,
-                planeta,
-                nave,
-                tripulacao
-            )
-            {
-                EstadoMissao = estadoMissao
-            };
-
-            listaMissoes.Add(missao);
-        }
-
     }
 }
