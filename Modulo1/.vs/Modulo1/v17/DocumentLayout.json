@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\Dev2Blu\\Modulo1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|d:\\dev2blu\\modulo1\\aula19\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|solutionrelative:aula19\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|d:\\dev2blu\\modulo1\\aula19\\aula19.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|solutionrelative:aula19\\aula19.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|d:\\dev2blu\\modulo1\\aula19\\interfaces\\imotorizado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|solutionrelative:aula19\\interfaces\\imotorizado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|d:\\dev2blu\\modulo1\\aula19\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{698ED70A-9CA4-45BF-A98A-803A61340BFA}|Aula19\\Aula19.csproj|solutionrelative:aula19\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\retangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\retangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|d:\\dev2blu\\modulo1\\aula18\\formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C874753-6901-44E6-B448-B7F3FB2AEAB9}|Aula18\\Aula18.csproj|solutionrelative:aula18\\formageometrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +46,123 @@
       "DocumentGroups": [
         {
           "DockedHeight": 355,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\Program.cs",
-              "RelativeDocumentMoniker": "Aula18\\Program.cs",
-              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\Program.cs",
-              "RelativeToolTip": "Aula18\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Carro.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula19\\Carro.cs",
+              "RelativeDocumentMoniker": "Aula19\\Carro.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula19\\Carro.cs",
+              "RelativeToolTip": "Aula19\\Carro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T22:32:27.217Z",
+              "WhenOpened": "2025-08-01T00:54:53.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMotorizado.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula19\\Interfaces\\IMotorizado.cs",
+              "RelativeDocumentMoniker": "Aula19\\Interfaces\\IMotorizado.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula19\\Interfaces\\IMotorizado.cs",
+              "RelativeToolTip": "Aula19\\Interfaces\\IMotorizado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T00:52:27.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Aula19",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula19\\Aula19.csproj",
+              "RelativeDocumentMoniker": "Aula19\\Aula19.csproj",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula19\\Aula19.csproj",
+              "RelativeToolTip": "Aula19\\Aula19.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-01T00:52:04.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula19\\Program.cs",
+              "RelativeDocumentMoniker": "Aula19\\Program.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula19\\Program.cs",
+              "RelativeToolTip": "Aula19\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T00:51:59.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FormaGeometrica.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\FormaGeometrica.cs",
               "RelativeDocumentMoniker": "Aula18\\FormaGeometrica.cs",
               "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\FormaGeometrica.cs",
               "RelativeToolTip": "Aula18\\FormaGeometrica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T22:49:08.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Triangulo.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\Triangulo.cs",
+              "RelativeDocumentMoniker": "Aula18\\Triangulo.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\Triangulo.cs",
+              "RelativeToolTip": "Aula18\\Triangulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:23:54.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Retangulo.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\Retangulo.cs",
+              "RelativeDocumentMoniker": "Aula18\\Retangulo.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\Retangulo.cs",
+              "RelativeToolTip": "Aula18\\Retangulo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T22:23:44.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Circulo.cs",
               "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\Circulo.cs",
               "RelativeDocumentMoniker": "Aula18\\Circulo.cs",
               "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\Circulo.cs",
               "RelativeToolTip": "Aula18\\Circulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T23:26:21.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dev2Blu\\Modulo1\\Aula18\\Program.cs",
+              "RelativeDocumentMoniker": "Aula18\\Program.cs",
+              "ToolTip": "D:\\Dev2Blu\\Modulo1\\Aula18\\Program.cs",
+              "RelativeToolTip": "Aula18\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T22:32:27.217Z",
               "EditorCaption": ""
             }
           ]
