@@ -1,0 +1,34 @@
+
+Exemplos e Dicas
+
+Tags:
+
+Containers
+
+<p> </p>
+<div></div>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+In-line
+
+<strong></strong>
+<span></span>
+
+Midia
+
+<img src="" alt="">
+<audio controls></audio>
+
+script
+
+<script></script>
+<canvas></canvas>
+
+meta dados
+
+<<meta name="" content=""> 

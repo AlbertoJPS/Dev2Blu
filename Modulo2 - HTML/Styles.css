@@ -1,0 +1,40 @@
+.music-header {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+.music-header img {
+    width: 180px;
+    height: 180px;
+}
+
+.lyrics {
+    margin-top: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin-left: 50px;
+    padding-bottom: 70px;
+}
+
+h1 {
+    color: rgb(15, 82, 121);
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(97, 50, 6); 
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
