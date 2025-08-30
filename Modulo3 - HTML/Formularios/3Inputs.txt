@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+
+Input 1 - email
+
+Objetivo: 
+Projetado especificamente para coletar endereços de e-mail. 
+A principal vantagem é que ele habilita a validação nativa do navegador 
+para garantir que o texto inserido tenha o formato de um e-mail válido 
+(por exemplo, contendo o @). Em dispositivos móveis, ele também pode exibir 
+um teclado otimizado com a tecla @ de fácil acesso.
+
+Exemplo de utilização:
+<label for="email">E-mail:</label><br>
+<input type="email" id="email" name="email">
+
+-------------------------------------------------------------------------------
+
+Input 2 - number
+
+Objetivo: 
+Usado para campos onde o usuário deve inserir apenas números. 
+O navegador adiciona pequenas setas (spinners) ao lado do campo para aumentar 
+ou diminuir o valor. Você também pode definir um valor mínimo e máximo.
+Para valores monetários, é fundamental usar o atributo step para permitir números decimais.
+
+Exemplo de utilização:
+<label for="valor">Valor do Produto:</label><br>
+<input type="number" id="valor" name="valor" step="0.01" min="0">
+
+-------------------------------------------------------------------------------
+
+Input 3 - checkbox
+
+Objetivo: Permite que o usuário selecione uma ou mais opções em uma lista. 
+Cada checkbox é um item independente que pode ser marcado ou desmarcado.
+
+Exemplo de utilização:
+<p>Selecione seus interesses:</p>
+<input type="checkbox" id="esportes" name="interesses" value="esportes">
+<label for="esportes">Esportes</label><br>
+<input type="checkbox" id="leitura" name="interesses" value="leitura">
+<label for="leitura">Leitura</label><br>
+<input type="checkbox" id="musica" name="interesses" value="musica">
+<label for="musica">Música</label>
+
+-------------------------------------------------------------------------------
