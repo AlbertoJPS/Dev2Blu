@@ -1,0 +1,54 @@
+/* @import url('Exercicio01.css') */
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #quadrado_especial {
+        background-color: greenyellow;
+    }
+    .vermelho {
+        background-color: red;
+    }
+    .azul {
+        background-color: blue;
+    }
+    .amarelo {
+        background-color: yellow;
+    }
+    .quadrado_pequeno {
+        height: 25px;
+        width: 25px;
+    }
+    .quadrado_grande {
+        height: 250px;
+        width: 250px;
+    }
+    div {
+        height: 100px;
+        width: 100px;
+    }
+    div:hover {
+        background-color: grey !important;
+    }
+    
+
+    h1,h2{
+        color: darkgreen;
+    }  
+    h1{
+        color: red;
+        font-size: 36px;
+    }
+    h3{
+        background-color: yellow;
+        /* font-weight: bold; */
+    }
+    h2{
+        font-family: cursive;
+    }
+    h4{
+        font-style: italic;
+        background-color: lightgrey;
+    }

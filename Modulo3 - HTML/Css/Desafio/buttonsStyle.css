@@ -1,0 +1,39 @@
+button{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.7;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 4px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_Save{
+    background-color: darkgreen;
+}
+.button_Update{
+    background-color: rgb(7, 98, 121);
+}
+.button_Delete{
+    background-color: rgb(150, 8, 8);
+}
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px rgba(255, 140, 0, 0.8), 
+                0 0 16px 6px rgba(255, 140, 0, 0.4), 
+                0 0 32px 12px rgba(255, 140, 0, 0.2);
+    border-color: rgb(255, 140, 0);
+}
+button:focus {
+    background-color: rgb(255, 140, 0);
+    transition: background-color 0.5s;
+}
+button:not(:horver) {
+    background-color : initial;
+}

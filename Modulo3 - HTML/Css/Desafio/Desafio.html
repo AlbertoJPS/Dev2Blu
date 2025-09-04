@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Css</title>
+    <link rel="stylesheet" href="inputStyle.css">
+    <link rel="stylesheet" href="buttonsStyle.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(2, 1, 22);
+        height: 100vh;
+        width: 400px;
+    }
+    fieldset{
+        background-color: rgb(16, 16, 65);
+        padding: 10px;
+        margin: 20px;
+    }
+
+</style>
+<body>
+    <fieldset>
+        <legend class="header_text">Seus Dados</legend>
+        <div class="inputs_text">
+            <div class="rows_text">
+                <label for="txtNome">Nome: </label>
+                <input id="txtNome" type="text" name="nome" required placeholder="Digite seu Nome">
+            </div>
+            <div class="rows_text">
+                <label for="txtCPF">CPF: </label>
+                <input id="txtCPF" type="text" name="cpf" required placeholder="Digite seu CPF">
+            </div>
+            <div class="rows_text">
+                <label for="dataNascimento">Data de nascimento: </label>
+                <input id="dataNascimento" type="date" name="data" required>
+            </div>           
+        </div>
+        <div class="buttons"><br>
+            <button class="button_Save" type="submit">Salvar</button>
+            <button class="button_Update" type="update">Editar</button>
+            <button class="button_Delete" type="delete">Excluir</button>
+         </div>      
+    </fieldset> 
+</body>
+</html>
