@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria - Pedido Online</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lilita+One&display=swap" rel="stylesheet">
+    
+    
+</head>
+<style>
+
+        *, *::before, *::after 
+        {
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 20px 15px; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body::before 
+        {
+            content: '';
+            background-image: url('https://rcky.com.br/wp-content/uploads/2021/09/pizza-show.jpg'); 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(0.7) saturate(0.8);
+            inset: 0;
+            position: fixed;            
+        }
+
+        .container 
+        {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px 25px; 
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 
+        {
+            font-family: 'Lilita One', cursive;
+            text-align: center;
+            color: #e67e22;
+            margin: 0 0 30px;
+        }
+
+        .form-group 
+        { 
+            margin-bottom: 20px; 
+        }
+        
+        label, .radio-group label 
+        { 
+            font-weight: bold; 
+            color: #f0f0f0;
+            margin-bottom: 8px;
+            display: block;  
+            
+        }
+        
+        input[type="text"], input[type="tel"], select 
+        { 
+            font-size: 16px; 
+            color: #333; 
+            background-color: #f9f9f9;
+            border: 1px solid #555; 
+            border-radius: 5px; 
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            padding: 12px; 
+            width: 100%;
+        }
+        
+        input[type="text"]:focus, input[type="tel"]:focus, select:focus 
+        { 
+            border-color: #e67e22; 
+            box-shadow: 0 0 8px rgba(230, 126, 34, 0.6); 
+            outline: none;             
+        }
+        
+        fieldset 
+        { 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+            padding: 20px;             
+        }
+        
+        legend 
+        { 
+            font-weight: bold; 
+            color: #e67e22; 
+            padding: 0 10px; 
+        }
+        
+        .form-group-inline 
+        { 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        .form-group-inline input[type="checkbox"] 
+        { 
+            margin-right: 10px; 
+            width: auto; 
+        }
+        
+        .radio-group div 
+        { 
+            margin-bottom: 10px; 
+        }
+        
+        .radio-group label 
+        { 
+            font-weight: normal; 
+            margin-left: 5px; 
+            display: inline;             
+        }
+        
+        button 
+        { 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: white; 
+            background-color: #e67e22; 
+            box-shadow: 0 4px 6px black;  
+            border: none;  
+            border-radius: 5px;  
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            padding: 15px; 
+            width: 100%; 
+            cursor: pointer;  
+            
+        }
+        
+        button:hover 
+        { 
+            background-color: #d35400;
+            box-shadow: 0 6px 12px black;
+            transform: translateY(-4px);            
+        }
+
+        @media (min-width: 768px) 
+{
+            body { padding: 40px 20px; }
+            .container { padding: 40px; }
+            h1 { font-size: 3em; }
+        }
+</style>
+<body>
+    <div class="container">
+        <h1>Pedido de Pizza</h1>
+        <form id="pizzaForm">
+            <div class="form-group">
+                <label for="txtNome">Nome Completo:</label>
+                <input type="text" id="txtNome" name="nome" required placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="IdTelefone">Telefone:</label>
+                <input type="tel" id="IdTelefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <div class="form-group">
+                    <label for="txtRua">Rua:</label>
+                    <input type="text" id="txtRua" name="rua" required>
+                </div>
+                <div class="form-group">
+                    <label for="txtNumero">Número:</label>
+                    <input type="text" id="txtNumero" name="numero" inputmode="numeric" required>
+                </div>
+                <div class="form-group">
+                    <label for="txtBairro">Bairro:</label>
+                    <input type="text" id="txtBairro" name="bairro" required>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="selectTamanho">Tamanho da Pizza:</label>
+                <select id="selectTamanho" name="tamanho">
+                    <option value="pequena">Pequena</option>
+                    <option value="media">Média</option>
+                    <option value="grande" selected>Grande</option>
+                    <option value="familia">Família</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="selectSabor">Sabor da Pizza:</label>
+                <select id="selectSabor" name="sabor">
+                    <optgroup label="Sabores Tradicionais">
+                        <option value="calabresa">Calabresa</option>
+                        <option value="frango_catupiry">Frango c/ Catupiry</option>
+                        <option value="portuguesa">Portuguesa</option>
+                    </optgroup>
+                    <optgroup label="Sabores Vegetarianos">
+                        <option value="mussarela">Mussarela</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="quatro_queijos">Quatro Queijos</option>
+                    </optgroup>
+                    <optgroup label="Sabores Especiais">
+                        <option value="camarao_alho_poro">Camarão c/ Alho Poró</option>
+                        <option value="file_fritas">File c/ Fritas</option>
+                    </optgroup>
+                    <optgroup label="Sabores Doces">
+                        <option value="banaana_chocolate">Banana c/ Chocolate</option>
+                        <option value="prestigio">Prestígio</option>
+                        <option value="brigadeiro">Brigadeiro</option>
+                    </optgroup>
+                    
+                </select>
+            </div>
+            <div class="form-group form-group-inline">
+                <input type="checkbox" id="checkBorda" name="borda_recheada">
+                <label for="checkBorda">Deseja borda recheada?</label>                
+            </div>
+            <fieldset class="radio-group">
+                <legend>Recheio da Borda</legend>
+                <div>
+                    <input type="radio" id="recheio_catupiry" name="recheio_borda" value="catupiry">
+                    <label for="recheio_catupiry">Catupiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="recheio_cheddar" name="recheio_borda" value="cheddar">
+                    <label for="recheio_cheddar">Cheddar</label>
+                </div>
+                <div>
+                    <input type="radio" id="recheio_chocolate" name="recheio_borda" value="chocolate">
+                    <label for="recheio_chocolate">Chocolate</label>
+                </div>
+                <div>
+                    <input type="radio" id="sem_recheio" name="recheio_borda" value="nenhum" checked>
+                    <label for="sem_recheio">Sem Recheio</label>
+                </div>
+            </fieldset>
+            <button type="submit">Fazer Pedido</button>
+        </form>
+    </div>
+</body>
+<script>
+    
+    //Registro dos dados do Pedido
+
+    const pizzaForm = document.getElementById('pizzaForm');
+    pizzaForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+        const bordaRecheada = data.borda_recheada ? "Sim" : "Não";
+        const recheioBorda = data.recheio_borda;
+        
+        const pedidoText = `
+
+----- PEDIDO DE PIZZA (COZINHA) -----
+
+Data/Hora: ${new Date().toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })}
+
+Cliente: ${data.nome}
+Telefone: ${data.telefone}
+Endereço: ${data.rua}, ${data.numero} - ${data.bairro}
+
+--- DETALHES DO PEDIDO ---
+
+Tamanho: ${data.tamanho.charAt(0).toUpperCase() + data.tamanho.slice(1)}
+Sabor: ${data.sabor.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+Borda Recheada: ${bordaRecheada}
+Recheio da Borda: ${recheioBorda.charAt(0).toUpperCase() + recheioBorda.slice(1)}
+
+--------------------------------------
+
+        `;
+
+        // Download Pedido
+
+        const pedidoBlob = new Blob([pedidoText.trim()], { type: 'text/plain;charset=utf-8' });
+        const downloadUrl = URL.createObjectURL(pedidoBlob);
+        const downloadLink = document.createElement('a');
+
+        downloadLink.href = downloadUrl;
+        downloadLink.download = `pedido_${data.nome.split(' ')[0]}_${Date.now()}.txt`;
+
+        document.body.appendChild(downloadLink);
+        downloadLink.click(); 
+        document.body.removeChild(downloadLink);
+        URL.revokeObjectURL(downloadUrl);
+
+        this.reset();
+        alert("Pedido enviado para a cozinha! Verifique seus downloads.");
+    });
+</script>
+</html>
