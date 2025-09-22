@@ -6766,7 +6766,7 @@ INSERT INTO Carro (Id, Filial_Id, Modelo_Id, Placa, AnoFabricacao, CapacidadeMal
 (347, 109, 116, 'ZJK7J89', 2024, 680, 7, '2.0 Híbrido', 'Automatico', 850.00, 'Disponivel', 10500),
 (348, 110, 117, 'AKL8K90', 2023, 495, 5, '2.0 Turbo', 'Automatico', 680.00, 'Disponivel', 19800),
 (349, 111, 118, 'BLM9L01', 2024, 132, 4, '3.0 Boxer', 'Automatico', 1850.00, 'Disponivel', 7800),
-(350, 112, 119, 'CMN0M12', 2023, 170, 2, '2.0 Boxer', 'Automatico', 1500.00, 'Disponivel', 12800)
+(350, 112, 119, 'CMN0M12', 2023, 170, 2, '2.0 Boxer', 'Automatico', 1500.00, 'Disponivel', 12800);
 
 INSERT INTO Carro (Id, Filial_Id, Modelo_Id, Placa, AnoFabricacao, CapacidadeMala, CapacidadePessoa, Motor, TipoCambio, Valor, StatusCarro, KmTotal) VALUES
 -- =================================================================
@@ -7033,3 +7033,772 @@ INSERT INTO Carro (Id, Filial_Id, Modelo_Id, Placa, AnoFabricacao, CapacidadeMal
 (700, 173, 10, 'KUV0U12', 2024, 280, 5, '1.0', 'Manual', 160.00, 'Disponivel', 9400);
 
 
+INSERT INTO Pessoa (Id, Nome, Genero_Id, CPF, MotoristaCNH, Motorista, Endereco, Cidade_Id, Cep, Telefone, Email, Senha, Ativo) VALUES
+
+-- =================================================================
+-- PESSOAS COM ALTA CONCENTRAÇÃO EM BLUMENAU E REGIÃO (SC)
+-- Onde a Pessoa é o próprio motorista
+-- =================================================================
+-- Blumenau (Cidade_Id: 898)
+(1, 'Lucas Almeida da Silva', 1, '11122233344', '12345678901', 'Lucas Almeida da Silva', 'Rua XV de Novembro, 150', 898, '89010000', '(47) 99123-4567', 'lucas.silva@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A', 'Sim'),
+(2, 'Ana Clara Schmidt', 2, '22233344455', '10987654321', 'Ana Clara Schmidt', 'Rua Sete de Setembro, 1200', 898, '89010202', '(47) 99234-5678', 'ana.schmidt@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B', 'Sim'),
+(3, 'Pedro Zimmermann', 1, '33344455566', '21098765432', 'Pedro Zimmermann', 'Alameda Rio Branco, 330', 898, '89010300', '(47) 99345-6789', 'pedro.zimmermann@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C', 'Sim'),
+(4, 'Mariana Oliveira Kraus', 2, '44455566677', '32109876543', 'Mariana Oliveira Kraus', 'Rua Amazonas, 500', 898, '89020001', '(47) 99456-7890', 'mariana.kraus@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D', 'Sim'),
+(5, 'Gabriel Hoffmann', 1, '55566677788', '43210987654', 'Gabriel Hoffmann', 'Rua Doutor Pedro Zimmermann, 2001', 898, '89060000', '(47) 99567-8901', 'gabriel.hoffmann@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E', 'Sim'),
+(6, 'Julia Baumgarten', 2, '66677788899', '54321098765', 'Julia Baumgarten', 'Rua Pomerode, 710', 898, '89050000', '(47) 99678-9012', 'julia.baumgarten@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F', 'Sim'),
+(7, 'Matheus Fritzke', 1, '77788899900', '65432109876', 'Matheus Fritzke', 'Rua Itajaí, 450', 898, '89015200', '(47) 99789-0123', 'matheus.fritzke@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G', 'Sim'),
+(8, 'Sofia Bauer', 2, '88899900011', '76543210987', 'Sofia Bauer', 'Rua Antônio da Veiga, 140', 898, '89030901', '(47) 99890-1234', 'sofia.bauer@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H', 'Sim'),
+(9, 'Felipe Schneider', 1, '99900011122', '87654321098', 'Felipe Schneider', 'Rua 2 de Setembro, 800', 898, '89052000', '(47) 99901-2345', 'felipe.schneider@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I', 'Sim'),
+(10, 'Laura Wagner', 2, '00011122233', '98765432109', 'Laura Wagner', 'Rua Theodoro Holtrup, 97', 898, '89030080', '(47) 99012-3456', 'laura.wagner@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J', 'Sim'),
+(11, 'Enzo Krueger', 1, '12312312344', '12312312345', 'Enzo Krueger', 'Rua Gustavo Budag, 420', 898, '89030360', '(47) 99123-1234', 'enzo.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K', 'Sim'),
+(12, 'Valentina Schmitt', 2, '45645645677', '45645645678', 'Valentina Schmitt', 'Rua Almirante Barroso, 605', 898, '89040001', '(47) 99456-4567', 'valentina.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L', 'Sim'),
+(13, 'Bruno Jensen', 1, '78978978900', '78978978901', 'Bruno Jensen', 'Rua Progresso, 1500', 898, '89026200', '(47) 99789-7890', 'bruno.jensen@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M', 'Sim'),
+(14, 'Isabela Weege', 2, '98798798766', '98798798765', 'Isabela Weege', 'Rua Humberto de Campos, 77', 898, '89045400', '(47) 99876-5432', 'isabela.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N', 'Sim'),
+(15, 'Rafael Volkmann', 1, '65465465433', '65465465432', 'Rafael Volkmann', 'Rua Johann Ohf, 222', 898, '89053590', '(47) 99654-3210', 'rafael.v@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O', 'Sim'),
+-- Cidades da Região de Blumenau (Gaspar: 960, Indaial: 984, Pomerode: 1074, Brusque: 909, Timbó: 1143)
+(16, 'Ricardo Hansen', 1, '32132132111', '32132132112', 'Ricardo Hansen', 'Rua Industrial, 50', 960, '89110000', '(47) 99111-2222', 'ricardo.hansen@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P', 'Sim'),
+(17, 'Carla de Souza', 2, '65465465411', '65465465412', 'Carla de Souza', 'Rua Sete de Setembro, 30', 984, '89080001', '(47) 99222-3333', 'carla.souza@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q', 'Sim'),
+(18, 'Alexandre Voigt', 1, '98798798711', '98798798712', 'Alexandre Voigt', 'Rua Testo Alto, 1000', 1074, '89107000', '(47) 99333-4444', 'alex.voigt@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R', 'Sim'),
+(19, 'Beatriz Fischer', 2, '14714714711', '14714714712', 'Beatriz Fischer', 'Avenida Consul Carlos Renaux, 150', 909, '88350001', '(47) 99444-5555', 'beatriz.fischer@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S', 'Sim'),
+(20, 'Marcos Reiter', 1, '25825825811', '25825825812', 'Marcos Reiter', 'Avenida Getúlio Vargas, 200', 1143, '89120000', '(47) 99555-6666', 'marcos.reiter@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T', 'Sim'),
+(21, 'Leticia Pamplona', 2, '36936936911', '36936936912', 'Leticia Pamplona', 'Rua Coronel Aristiliano Ramos, 40', 960, '89110001', '(47) 99666-7777', 'leticia.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U', 'Sim'),
+(22, 'Gustavo Siewert', 1, '15915915911', '15915915912', 'Gustavo Siewert', 'Rua Marechal Deodoro, 120', 984, '89080002', '(47) 99777-8888', 'gustavo.siewert@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V', 'Sim'),
+(23, 'Camila Luebke', 2, '75375375311', '75375375312', 'Camila Luebke', 'Rua Hermann Weege, 50', 1074, '89107001', '(47) 99888-9999', 'camila.luebke@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W', 'Sim'),
+(24, 'Tiago Deschamps', 1, '95195195111', '95195195112', 'Tiago Deschamps', 'Rua Azambuja, 100', 909, '88353900', '(47) 99999-0000', 'tiago.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X', 'Sim'),
+(25, 'Patrícia Muller', 2, '85285285211', '85285285212', 'Patrícia Muller', 'Rua Nereu Ramos, 30', 1143, '89120001', '(47) 99000-1111', 'patricia.muller@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y', 'Sim'),
+(26, 'Leonardo Spengler', 1, '14785236911', '14785236912', 'Leonardo Spengler', 'Avenida Otto Renaux, 445', 909, '88351900', '(47) 99111-3333', 'leo.spengler@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z', 'Sim'),
+(27, 'Gabriela Koehler', 2, '36985214711', '36985214712', 'Gabriela Koehler', 'Rua Luiz Abry, 122', 1074, '89107002', '(47) 99222-4444', 'gabi.koehler@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A1', 'Sim'),
+(28, 'Vinicius Klock', 1, '74185296311', '74185296312', 'Vinicius Klock', 'Rua Sete de Setembro, 800', 984, '89080003', '(47) 99333-5555', 'vinicius.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B1', 'Sim'),
+(29, 'Larissa Hostins', 2, '85296374111', '85296374112', 'Larissa Hostins', 'Rua Itajaí, 500', 960, '89110002', '(47) 99444-6666', 'larissa.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C1', 'Sim'),
+(30, 'Eduardo Richter', 1, '96374185211', '96374185212', 'Eduardo Richter', 'Rua General Osório, 100', 1143, '89120002', '(47) 99555-7777', 'edu.richter@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D1', 'Sim'),
+(31, 'Vanessa Küster', 2, '15975385211', '15975385212', 'Vanessa Küster', 'Rua Barão do Rio Branco, 250', 909, '88350002', '(47) 99666-8888', 'vanessa.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E1', 'Sim'),
+(32, 'Daniel Buerger', 1, '75395185211', '75395185212', 'Daniel Buerger', 'Rua 19 de Maio, 40', 1074, '89107003', '(47) 99777-9999', 'daniel.buerger@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F1', 'Sim'),
+(33, 'Amanda Karsten', 2, '85214796311', '85214796312', 'Amanda Karsten', 'Rua dos Caçadores, 2100', 898, '89040300', '(47) 99888-0000', 'amanda.karsten@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G1', 'Sim'),
+(34, 'Roberto Hering', 1, '96385274111', '96385274112', 'Roberto Hering', 'Rua Frei Estanislau Schaette, 300', 898, '89037000', '(47) 99999-1111', 'roberto.hering@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H1', 'Sim'),
+(35, 'Carolina Garcia', 2, '14796385211', '14796385212', 'Carolina Garcia', 'Rua da Glória, 150', 898, '89030000', '(47) 99000-2222', 'carol.garcia@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I1', 'Sim'),
+(36, 'Fernando Mueller', 1, '36974185211', '36974185212', 'Fernando Mueller', 'Rua São Paulo, 1000', 898, '89012000', '(47) 99111-4444', 'fernando.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J1', 'Sim'),
+(37, 'Isadora Fischer', 2, '74185296300', '74185296301', 'Isadora Fischer', 'Rua das Missões, 550', 898, '89051000', '(47) 99222-5555', 'isadora.fischer@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K1', 'Sim'),
+(38, 'Otávio Busch', 1, '85296374100', '85296374101', 'Otávio Busch', 'Rua Engenheiro Paul Werner, 100', 898, '89030100', '(47) 99333-6666', 'otavio.busch@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L1', 'Sim'),
+(39, 'Bianca Hadlich', 2, '96374185200', '96374185201', 'Bianca Hadlich', 'Rua Sete de Maio, 40', 898, '89060100', '(47) 99444-7777', 'bianca.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M1', 'Sim'),
+(40, 'Guilherme Jensen', 1, '15975385200', '15975385201', 'Guilherme Jensen', 'Rua Professor Max Humpl, 500', 898, '89052500', '(47) 99555-8888', 'gui.jensen@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N1', 'Sim'),
+(41, 'Henrique Braga', 1, '75395185222', '75395185223', 'Henrique Braga', 'Rua Hermann Huscher, 150', 898, '89022000', '(47) 99123-5544', 'henrique.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O1', 'Sim'),
+(42, 'Clara Stein', 2, '85214796333', '85214796334', 'Clara Stein', 'Rua Frei Barnabé, 40', 898, '89025300', '(47) 99234-6655', 'clara.stein@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P1', 'Sim'),
+(43, 'André Luís Pereira', 1, '96385274144', '96385274145', 'André Luís Pereira', 'Rua Água Branca, 700', 898, '89041300', '(47) 99345-7766', 'andre.luis@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q1', 'Sim'),
+(44, 'Sandra Hess', 2, '14796385255', '14796385256', 'Sandra Hess', 'Rua Alberto Stein, 199', 898, '89036200', '(47) 99456-8877', 'sandra.hess@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R1', 'Sim'),
+(45, 'Vitor Reichert', 1, '36974185266', '36974185267', 'Vitor Reichert', 'Rua Curt Hering, 100', 898, '89010101', '(47) 99567-9988', 'vitor.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S1', 'Sim'),
+(46, 'Alice Wruck', 2, '74185296377', '74185296378', 'Alice Wruck', 'Rua Benjamin Constant, 800', 898, '89045000', '(47) 99678-0099', 'alice.wruck@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T1', 'Sim'),
+(47, 'Sérgio Wehmuth', 1, '85296374188', '85296374189', 'Sérgio Wehmuth', 'Rua República Argentina, 2077', 898, '89051300', '(47) 99789-1100', 'sergio.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U1', 'Sim'),
+(48, 'Renata Krueger', 2, '96374185299', '96374185290', 'Renata Krueger', 'Rua Heinrich Hemmer, 150', 898, '89065000', '(47) 99890-2211', 'renata.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V1', 'Sim'),
+(49, 'Davi Pamplona', 1, '15975385202', '15975385203', 'Davi Pamplona', 'Rua Paris, 200', 898, '89032300', '(47) 99901-3322', 'davi.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W1', 'Sim'),
+(50, 'Helena da Costa', 2, '75395185203', '75395185204', 'Helena da Costa', 'Rua Siderópolis, 90', 898, '89052200', '(47) 99012-4433', 'helena.costa@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X1', 'Sim'),
+(51, 'Rodrigo Belli', 1, '85214796304', '85214796305', 'Rodrigo Belli', 'Rua da Comunidade, 55', 960, '89110100', '(47) 99123-5544', 'rodrigo.belli@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y1', 'Sim'),
+(52, 'Manuela Klug', 2, '96385274105', '96385274106', 'Manuela Klug', 'Rua Augusto Venske, 10', 984, '89081000', '(47) 99234-6655', 'manu.klug@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z1', 'Sim'),
+(53, 'Igor Rahn', 1, '14796385206', '14796385207', 'Igor Rahn', 'Rua Hermann Guenther, 50', 1074, '89107100', '(47) 99345-7766', 'igor.rahn@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A2', 'Sim'),
+(54, 'Vitória Becker', 2, '36974185207', '36974185208', 'Vitória Becker', 'Rua Moritz Germano Hoffmann, 64', 909, '88350100', '(47) 99456-8877', 'vitoria.becker@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B2', 'Sim'),
+(55, 'Thiago Fuckner', 1, '74185296308', '74185296309', 'Thiago Fuckner', 'Rua Finlândia, 150', 1143, '89120100', '(47) 99567-9988', 'thiago.f@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C2', 'Sim'),
+(56, 'Elisa Jensen', 2, '85296374109', '85296374100', 'Elisa Jensen', 'Avenida Nereu Ramos, 90', 960, '89110101', '(47) 99678-0099', 'elisa.jensen@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D2', 'Sim'),
+(57, 'William Dallmann', 1, '96374185201', '96374185202', 'William Dallmann', 'Rua Minas Gerais, 330', 984, '89081001', '(47) 99789-1100', 'william.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E2', 'Sim'),
+(58, 'Laura Riemer', 2, '15975385202', '15975385203', 'Laura Riemer', 'Rua dos Imigrantes, 1200', 1074, '89107101', '(47) 99890-2211', 'laura.riemer@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F2', 'Sim'),
+(59, 'Bernardo Groh', 1, '75395185204', '75395185205', 'Bernardo Groh', 'Rua Primeiro de Maio, 80', 909, '88350101', '(47) 99901-3322', 'bernardo.groh@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G2', 'Sim'),
+(60, 'Yasmin Reichert', 2, '85214796305', '85214796306', 'Yasmin Reichert', 'Rua Araponguinhas, 50', 1143, '89120101', '(47) 99012-4433', 'yasmin.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H2', 'Sim'),
+(61, 'Caio Pfiffer', 1, '96385274107', '96385274108', 'Caio Pfiffer', 'Rua Frederico Jensen, 1200', 898, '89066300', '(47) 99123-5566', 'caio.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I2', 'Sim'),
+(62, 'Lívia da Rosa', 2, '14796385208', '14796385209', 'Lívia da Rosa', 'Rua Hermann Hering, 1790', 898, '89010900', '(47) 99234-6677', 'livia.rosa@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J2', 'Sim'),
+(63, 'Juliano Fontes', 1, '36974185209', '36974185210', 'Juliano Fontes', 'Rua Victor Konder, 80', 898, '89010003', '(47) 99345-7788', 'juliano.fontes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K2', 'Sim'),
+(64, 'Raquel Zimmermann', 2, '74185296310', '74185296311', 'Raquel Zimmermann', 'Rua São José, 253', 898, '89030220', '(47) 99456-8899', 'raquel.z@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L2', 'Sim'),
+(65, 'Marlon Testo', 1, '85296374113', '85296374114', 'Marlon Testo', 'Rua Divinópolis, 123', 898, '89035200', '(47) 99567-9900', 'marlon.testo@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M2', 'Sim'),
+(66, 'Brenda Schmitt', 2, '96374185214', '96374185215', 'Brenda Schmitt', 'Rua Pastor Osvaldo Hesse, 450', 898, '89035250', '(47) 99678-0120', 'brenda.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N2', 'Sim'),
+(67, 'Diego Costa', 1, '15975385215', '15975385216', 'Diego Costa', 'Rua das Palmeiras, 90', 898, '89020300', '(47) 99789-1231', 'diego.costa@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O2', 'Sim'),
+(68, 'Sabrina Baum', 2, '75395185216', '75395185217', 'Sabrina Baum', 'Rua Francisco Vahldieck, 1000', 898, '89056000', '(47) 99890-2342', 'sabrina.baum@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P2', 'Sim'),
+(69, 'Nelson Piquet Souza', 1, '85214796317', '85214796318', 'Nelson Piquet Souza', 'Rua Christiano Karsten, 85', 898, '89066500', '(47) 99901-3453', 'nelson.souza@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q2', 'Sim'),
+(70, 'Talita Mendes', 2, '96385274118', '96385274119', 'Talita Mendes', 'Rua Oscar Dickmann, 33', 898, '89060150', '(47) 99012-4564', 'talita.mendes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R2', 'Sim'),
+(71, 'Fabrício dos Santos', 1, '14796385219', '14796385220', 'Fabrício dos Santos', 'Rua Arnoldo Ruediger, 90', 960, '89111000', '(47) 99123-5675', 'fabricio.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S2', 'Sim'),
+(72, 'Lorena Krepsky', 2, '36974185220', '36974185221', 'Lorena Krepsky', 'Rua Rio de Janeiro, 120', 984, '89082000', '(47) 99234-6786', 'lorena.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T2', 'Sim'),
+(73, 'Kevin Strutz', 1, '74185296321', '74185296322', 'Kevin Strutz', 'Rua Wunderwald, 450', 1074, '89107200', '(47) 99345-7897', 'kevin.strutz@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U2', 'Sim'),
+(74, 'Fernanda Schaefer', 2, '85296374122', '85296374123', 'Fernanda Schaefer', 'Rua Mathilde Hoffmann, 50', 909, '88351000', '(47) 99456-8908', 'fernanda.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V2', 'Sim'),
+(75, 'Jackson Probst', 1, '96374185223', '96374185224', 'Jackson Probst', 'Rua Pomeranos, 800', 1143, '89120200', '(47) 99567-9019', 'jackson.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W2', 'Sim'),
+(76, 'Melissa Zwang', 2, '15975385224', '15975385225', 'Melissa Zwang', 'Rua Amazonas, 3500', 898, '89022001', '(47) 99678-0120', 'melissa.z@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X2', 'Sim'),
+(77, 'Anderson da Cunha', 1, '75395185225', '75395185226', 'Anderson da Cunha', 'Rua Gertrud Sierich, 90', 898, '89012400', '(47) 99789-1231', 'anderson.cunha@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y2', 'Sim'),
+(78, 'Tatiane dos Passos', 2, '85214796326', '85214796327', 'Tatiane dos Passos', 'Rua Bahia, 1500', 898, '89031000', '(47) 99890-2342', 'tatiane.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z2', 'Sim'),
+(79, 'Leandro de Morais', 1, '96385274127', '96385274128', 'Leandro de Morais', 'Rua Itapiranga, 300', 898, '89053300', '(47) 99901-3453', 'leandro.morais@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A3', 'Sim'),
+(80, 'Samantha Becker', 2, '14796385228', '14796385229', 'Samantha Becker', 'Rua Doutor Amadeu da Luz, 10', 898, '89010170', '(47) 99012-4564', 'samantha.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B3', 'Sim'),
+
+-- =================================================================
+-- PESSOAS ESPALHADAS PELO BRASIL (TITULAR = MOTORISTA)
+-- =================================================================
+-- São Paulo (Capital) - Cidade_Id: 798
+(81, 'João da Silva', 1, '11111111111', '11111111111', 'João da Silva', 'Avenida Paulista, 100', 798, '01310000', '(11) 99111-1111', 'joao.silva@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C3', 'Sim'),
+(82, 'Maria Pereira', 2, '22222222222', '22222222222', 'Maria Pereira', 'Rua Augusta, 500', 798, '01305000', '(11) 99222-2222', 'maria.pereira@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D3', 'Sim'),
+(83, 'Carlos Oliveira', 1, '33333333333', '33333333333', 'Carlos Oliveira', 'Avenida Brigadeiro Faria Lima, 1500', 798, '01452000', '(11) 99333-3333', 'carlos.oliveira@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E3', 'Sim'),
+(84, 'Fernanda Costa', 2, '44444444444', '44444444444', 'Fernanda Costa', 'Avenida Ibirapuera, 2000', 798, '04028000', '(11) 99444-4444', 'fernanda.costa@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F3', 'Sim'),
+(85, 'Rodrigo Martins', 1, '55555555555', '55555555555', 'Rodrigo Martins', 'Rua Oscar Freire, 300', 798, '01426000', '(11) 99555-5555', 'rodrigo.martins@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G3', 'Sim'),
+(86, 'Aline Souza', 2, '66666666666', '66666666666', 'Aline Souza', 'Avenida Morumbi, 7000', 798, '05607000', '(11) 99666-6666', 'aline.souza@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H3', 'Sim'),
+(87, 'Diego Ferreira', 1, '77777777777', '77777777777', 'Diego Ferreira', 'Rua da Consolação, 1000', 798, '01301000', '(11) 99777-7777', 'diego.ferreira@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I3', 'Sim'),
+(88, 'Carla Dias', 2, '88888888888', '88888888888', 'Carla Dias', 'Avenida Angélica, 200', 798, '01228000', '(11) 99888-8888', 'carla.dias@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J3', 'Sim'),
+(89, 'Anderson Neves', 1, '99999999999', '99999999999', 'Anderson Neves', 'Rua Teodoro Sampaio, 800', 798, '05406000', '(11) 99999-9999', 'anderson.neves@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K3', 'Sim'),
+(90, 'Thais Rodrigues', 2, '12345678901', '12345678912', 'Thais Rodrigues', 'Avenida Rebouças, 1300', 798, '05401150', '(11) 99000-0000', 'thais.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L3', 'Sim'),
+-- Rio de Janeiro (Capital) - Cidade_Id: 1956
+(91, 'José Santos', 1, '10101010100', '10101010111', 'José Santos', 'Avenida Atlântica, 1000', 1956, '22010000', '(21) 98111-1111', 'jose.santos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M3', 'Sim'),
+(92, 'Juliana Lima', 2, '20202020200', '20202020222', 'Juliana Lima', 'Rua Barata Ribeiro, 50', 1956, '22011000', '(21) 98222-2222', 'juliana.lima@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N3', 'Sim'),
+(93, 'Ricardo Almeida', 1, '30303030300', '30303030333', 'Ricardo Almeida', 'Avenida das Américas, 500', 1956, '22640100', '(21) 98333-3333', 'ricardo.almeida@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O3', 'Sim'),
+(94, 'Priscila Barros', 2, '40404040400', '40404040444', 'Priscila Barros', 'Rua Visconde de Pirajá, 150', 1956, '22410000', '(21) 98444-4444', 'priscila.barros@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P3', 'Sim'),
+(95, 'Fábio Gomes', 1, '50505050500', '50505050555', 'Fábio Gomes', 'Avenida Rio Branco, 1', 1956, '20090003', '(21) 98555-5555', 'fabio.gomes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q3', 'Sim'),
+(96, 'Renata Azevedo', 2, '60606060600', '60606060666', 'Renata Azevedo', 'Rua do Catete, 200', 1956, '22220000', '(21) 98666-6666', 'renata.azevedo@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R3', 'Sim'),
+(97, 'Bruno Carvalho', 1, '70707070700', '70707070777', 'Bruno Carvalho', 'Rua Marquês de São Vicente, 225', 1956, '22451040', '(21) 98777-7777', 'bruno.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S3', 'Sim'),
+(98, 'Larissa Mendes', 2, '80808080800', '80808080888', 'Larissa Mendes', 'Estrada dos Bandeirantes, 1000', 1956, '22710571', '(21) 98888-8888', 'larissa.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T3', 'Sim'),
+(99, 'Caio Ribeiro', 1, '90909090900', '90909090999', 'Caio Ribeiro', 'Rua Conde de Bonfim, 300', 1956, '20520050', '(21) 98999-9999', 'caio.ribeiro@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U3', 'Sim'),
+(100, 'Beatriz Cunha', 2, '01201201200', '12121212121', 'Beatriz Cunha', 'Avenida Niemeyer, 121', 1956, '22450220', '(21) 98000-0000', 'beatriz.cunha@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V3', 'Sim'),
+
+-- =================================================================
+-- CONTAS ONDE O TITULAR NÃO É O MOTORISTA (EMPRESAS, FAMILIARES)
+-- =================================================================
+(101, 'Empresa Solutions TI Ltda', 3, '00100100101', '13131313131', 'Marcos Costa', 'Avenida Afonso Pena, 1500', 3218, '30130000', '(31) 97111-1111', 'financeiro@solutionsti.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W3', 'Sim'),
+(102, 'Adriana Nogueira', 2, '22322322322', '14141414141', 'Ricardo Nogueira', 'Avenida do Contorno, 6000', 3218, '30110000', '(31) 97222-2222', 'adriana.n@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X3', 'Sim'),
+(103, 'Construtora Andrade Ltda', 3, '33433433433', '15151515151', 'Thiago Fernandes', 'Rua da Bahia, 1000', 3218, '30160010', '(31) 97333-3333', 'compras@andrade.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y3', 'Sim'),
+(104, 'Patrícia Gomes', 2, '44544544544', '16161616161', 'Leonardo Gomes (Filho)', 'Rua Alagoas, 750', 3218, '30130160', '(31) 97444-4444', 'patricia.gomes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z3', 'Sim'),
+(105, 'Marcos Aurélio Veiga', 1, '55655655655', '17171717171', 'Aline Veiga (Esposa)', 'Avenida Antônio Carlos, 6627', 3218, '31270901', '(31) 97555-5555', 'marcos.veiga@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A4', 'Sim'),
+(106, 'Acarajé da Dinha ME', 3, '12121212122', '18181818181', 'Antônio Carlos Peixoto', 'Avenida Oceânica, 800', 5293, '40170010', '(71) 96111-1111', 'contato@acarajedadinha.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B4', 'Sim'),
+(107, 'Trio Elétrico S/A', 3, '23232323233', '19191919191', 'Ivete Sangalo Lima', 'Rua Direita do Rio Vermelho, 50', 5293, '41940430', '(71) 96222-2222', 'financeiro@trioeletrico.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C4', 'Sim'),
+(108, 'Ministério da Cultura', 3, '34343434344', '20202020202', 'Gilberto Gil Moreira', 'Largo do Pelourinho, 10', 5293, '40026280', '(71) 96333-3333', 'gabinete@minc.gov.br', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D4', 'Sim'),
+(109, 'Carlos Alberto Bastos', 1, '45454545455', '21212121212', 'Cláudia Leite Andrade', 'Avenida Tancredo Neves, 3000', 5293, '41820020', '(71) 96444-4444', 'carlos.bastos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E4', 'Sim'),
+(110, 'Bell Marques Produções', 3, '56565656566', '22222222222', 'Durval Lelys Pinheiro', 'Rua Almirante Marques de Leão, 20', 5293, '40140230', '(71) 96555-5555', 'bell@producoes.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F4', 'Sim'),
+(111, 'Governo do Ceará', 3, '13131313133', '23232323232', 'Francisco Neto', 'Avenida Beira Mar, 3000', 4825, '60165120', '(85) 95111-1111', 'governadoria@ce.gov.br', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G4', 'Sim'),
+(112, 'Raimunda Ferreira Gomes', 2, '24242424244', '24242424242', 'Raimunda Ferreira Gomes', 'Avenida Monsenhor Tabosa, 500', 4825, '60165011', '(85) 95222-2222', 'raimunda.gomes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H4', 'Sim'),
+(113, 'PDT Ceará', 3, '35353535355', '25252525252', 'Ciro Albuquerque', 'Rua Santos Dumont, 1500', 4825, '60150160', '(85) 95333-3333', 'contato@pdtce.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I4', 'Sim'),
+(114, 'TV Verdes Mares', 3, '46464646466', '26262626262', 'Tati Pessoa', 'Avenida Washington Soares, 100', 4825, '60811341', '(85) 95444-4444', 'frota@verdesmares.com.br', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J4', 'Sim'),
+(115, 'Aviões Eventos Ltda', 3, '57575757577', '27272727272', 'Wesley Oliveira', 'Rua Pereira Filgueiras, 90', 4825, '60160150', '(85) 95555-5555', 'avioes@eventos.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K4', 'Sim'),
+-- =================================================================
+-- MAIS PESSOAS ESPALHADAS PELO BRASIL (TITULAR = MOTORISTA)
+-- =================================================================
+-- Curitiba (PR) - Cidade_Id: 2491
+(116, 'Paulo Leminski Jr', 1, '14141414144', '28282828282', 'Paulo Leminski Jr', 'Rua Mateus Leme, 100', 2491, '80530010', '(41) 94111-1111', 'paulo.jr@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L4', 'Sim'),
+(117, 'Alice Braga Rocha', 2, '25252525255', '29292929292', 'Alice Braga Rocha', 'Avenida Sete de Setembro, 2000', 2491, '80230000', '(41) 94222-2222', 'alice.braga@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M4', 'Sim'),
+(118, 'Felipe Novak', 1, '36363636366', '30303030303', 'Felipe Novak', 'Rua Comendador Araújo, 300', 2491, '80420000', '(41) 94333-3333', 'felipe.novak@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N4', 'Sim'),
+(119, 'Simone Grofeld', 2, '47474747477', '31313131313', 'Simone Grofeld', 'Avenida Cândido de Abreu, 50', 2491, '80530000', '(41) 94444-4444', 'simone.g@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O4', 'Sim'),
+(120, 'Alexandre Witte', 1, '58585858588', '32323232323', 'Alexandre Witte', 'Avenida Manoel Ribas, 1000', 2491, '82020000', '(41) 94555-5555', 'alexandre.witte@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P4', 'Sim'),
+-- Porto Alegre (RS) - Cidade_Id: 1573
+(121, 'Mário Quintana Lopes', 1, '15151515155', '33333333333', 'Mário Quintana Lopes', 'Avenida Borges de Medeiros, 400', 1573, '90020020', '(51) 93111-1111', 'mario.lopes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q4', 'Sim'),
+(122, 'Elis Regina Matos', 2, '26262626266', '34343434343', 'Elis Regina Matos', 'Rua Padre Chagas, 200', 1573, '90570080', '(51) 93222-2222', 'elis.matos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R4', 'Sim'),
+(123, 'Luan Santoro', 1, '37373737377', '35353535353', 'Luan Santoro', 'Avenida Ipiranga, 5000', 1573, '90610000', '(51) 93333-3333', 'luan.santoro@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S4', 'Sim'),
+(124, 'Gisele Becker', 2, '48484848488', '36363636363', 'Gisele Becker', 'Avenida Diário de Notícias, 300', 1573, '90810080', '(51) 93444-4444', 'gisele.becker@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T4', 'Sim'),
+(125, 'Ronaldinho Assis', 1, '59595959599', '37373737373', 'Ronaldinho Assis', 'Avenida Wenceslau Escobar, 1000', 1573, '91900000', '(51) 93555-5555', 'ronald.assis@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U4', 'Sim'),
+-- Brasília (DF) - Cidade_Id: 4764
+(126, 'Juscelino Kubitschek', 1, '16161616166', '38383838383', 'Juscelino Kubitschek', 'SQS 308 Bloco K', 4764, '70355110', '(61) 92111-1111', 'juscelino.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V4', 'Sim'),
+(127, 'Sarah Oliveira', 2, '27272727277', '39393939393', 'Sarah Oliveira', 'SQN 110 Bloco A', 4764, '70753010', '(61) 92222-2222', 'sarah.oliveira@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W4', 'Sim'),
+(128, 'Renato Matos', 1, '38383838388', '40404040404', 'Renato Matos', 'QRSW 5 Bloco B', 4764, '70675512', '(61) 92333-3333', 'renato.matos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X4', 'Sim'),
+(129, 'Lucia Camargo', 2, '49494949499', '41414141414', 'Lucia Camargo', 'QI 9 Conjunto 5, Lago Sul', 4764, '71625050', '(61) 92444-4444', 'lucia.camargo@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y4', 'Sim'),
+(130, 'Fernando Teles', 1, '60606060601', '42424242424', 'Fernando Teles', 'QNA 30 Lote 10, Taguatinga', 4764, '72110300', '(61) 92555-5555', 'fernando.teles@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z4', 'Sim'),
+-- Manaus (AM) - Cidade_Id: 5404
+(131, 'Eduardo Braga', 1, '17171717177', '43434343434', 'Eduardo Braga', 'Avenida Coronel Teixeira, 500', 5404, '69037000', '(92) 91111-1111', 'eduardo.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A5', 'Sim'),
+(132, 'Vanessa Pontes', 2, '28282828288', '44444444444', 'Vanessa Pontes', 'Rua Salvador, 120', 5404, '69057040', '(92) 91222-2222', 'vanessa.pontes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B5', 'Sim'),
+(133, 'Rui Costa Alves', 1, '39393939399', '45454545454', 'Rui Costa Alves', 'Avenida Djalma Batista, 1661', 5404, '69050010', '(92) 91333-3333', 'rui.costa@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C5', 'Sim'),
+-- Recife (PE) - Cidade_Id: 2345
+(134, 'Gilberto Freyre', 1, '40404040411', '46464646464', 'Gilberto Freyre', 'Avenida Boa Viagem, 900', 2345, '51011000', '(81) 90111-1111', 'gilberto.freyre@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D5', 'Sim'),
+(135, 'Joana Maranhão', 2, '51515151522', '47474747474', 'Joana Maranhão', 'Rua da Aurora, 325', 2345, '50050000', '(81) 90222-2222', 'joana.maranhao@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E5', 'Sim'),
+(136, 'Ariano Suassuna', 1, '62626262633', '48484848484', 'Ariano Suassuna', 'Praça de Casa Forte, 454', 2345, '52061420', '(81) 90333-3333', 'ariano.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F5', 'Sim'),
+-- Goiânia (GO) - Cidade_Id: 4538
+(137, 'Leonardo Gonçalves', 1, '73737373744', '49494949494', 'Leonardo Gonçalves', 'Avenida T-63, 1000', 4538, '74230100', '(62) 91111-1111', 'leo.goncalves@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G5', 'Sim'),
+(138, 'Marília Mendonça Dias', 2, '84848484855', '50505050505', 'Marília Mendonça Dias', 'Rua 15, 50', 4538, '74150020', '(62) 91222-2222', 'marilia.dias@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H5', 'Sim'),
+(139, 'Zezé de Camargo', 1, '95959595966', '51515151515', 'Zezé de Camargo', 'Alameda Ricardo Paranhos, 700', 4538, '74150020', '(62) 91333-3333', 'zeze.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I5', 'Sim'),
+-- Outras Cidades (SP Interior, RJ Interior, Capitais Menores)
+(140, 'Douglas Souza', 1, '11122233345', '52525252525', 'Douglas Souza', 'Avenida 9 de Julho, 1200', 331, '13020000', '(19) 99111-1112', 'douglas.souza@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J5', 'Sim'),
+(141, 'Michele Prado', 2, '22233344456', '53535353535', 'Michele Prado', 'Rua Marechal Deodoro, 800', 800, '09710001', '(11) 99222-3334', 'michele.prado@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K5', 'Sim'),
+(142, 'Rafaela Borges', 2, '33344455567', '54545454545', 'Rafaela Borges', 'Avenida Industrial, 100', 790, '09080500', '(11) 99333-4445', 'rafaela.borges@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L5', 'Sim'),
+(143, 'André Santos', 1, '44455566678', '55555555555', 'André Santos', 'Rua XV de Novembro, 10', 792, '11010150', '(13) 99444-5556', 'andre.santos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M5', 'Sim'),
+(144, 'Soraia Nunes', 2, '55566677789', '56565656565', 'Soraia Nunes', 'Avenida Icaraí, 500', 1573, '90810000', '(51) 99555-6667', 'soraia.nunes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N5', 'Sim'),
+(145, 'Vitor Pereira', 1, '66677788890', '57575757575', 'Vitor Pereira', 'Rua 24 Horas, 10', 2491, '80230080', '(41) 99666-7778', 'vitor.pereira@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O5', 'Sim'),
+(146, 'Cléber Machado', 1, '77788899901', '58585858585', 'Cléber Machado', 'Rua da Praia, 30', 792, '11010001', '(13) 99777-8889', 'cleber.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P5', 'Sim'),
+(147, 'Fabíola Andrade', 2, '88899900012', '59595959595', 'Fabíola Andrade', 'Rua da Mooca, 2000', 798, '03104000', '(11) 99888-9990', 'fabiola.a@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q5', 'Sim'),
+(148, 'Otávio Neto', 1, '99900011123', '60606060606', 'Otávio Neto', 'Avenida T-10, 50', 4538, '74223060', '(62) 99999-0001', 'otavio.neto@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R5', 'Sim'),
+(149, 'Heloísa Martins', 2, '00011122234', '61616161616', 'Heloísa Martins', 'Rua 89, 10', 4538, '74120110', '(62) 99000-1112', 'helo.martins@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S5', 'Sim'),
+(150, 'Nicolas Cage', 1, '11122233345', '62626262626', 'Nicolas Cage', 'Avenida do Turismo, 1500', 5404, '69041010', '(92) 99111-2223', 'nicolas.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T5', 'Sim'),
+(151, 'Sandra Bullock', 2, '22233344456', '63636363636', 'Sandra Bullock', 'Rua dos Navegantes, 90', 2345, '51021010', '(81) 99222-3334', 'sandra.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U5', 'Sim'),
+(152, 'Keanu Reeves', 1, '33344455567', '64646464646', 'Keanu Reeves', 'Rua Haddock Lobo, 100', 798, '01414000', '(11) 99333-4445', 'keanu.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V5', 'Sim'),
+(153, 'Angelina Jolie', 2, '44455566678', '65656565656', 'Angelina Jolie', 'Avenida Vieira Souto, 110', 1956, '22420000', '(21) 99444-5556', 'angelina.j@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W5', 'Sim'),
+(154, 'Brad Pitt', 1, '55566677789', '66666666666', 'Brad Pitt', 'Rua Oscar Freire, 900', 798, '01426001', '(11) 99555-6667', 'brad.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X5', 'Sim'),
+(155, 'Jennifer Aniston', 2, '66677788890', '67676767676', 'Jennifer Aniston', 'Rua da Consolação, 2000', 798, '01302000', '(11) 99666-7778', 'jennifer.a@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y5', 'Sim'),
+(156, 'Tom Hanks', 1, '77788899901', '68686868686', 'Tom Hanks', 'Avenida Epitácio Pessoa, 700', 1956, '22471000', '(21) 99777-8889', 'tom.hanks@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z5', 'Sim'),
+(157, 'Meryl Streep', 2, '88899900012', '69696969696', 'Meryl Streep', 'Rua Bela Cintra, 1500', 798, '01415001', '(11) 99888-9990', 'meryl.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A6', 'Sim'),
+(158, 'Leonardo DiCaprio', 1, '99900011123', '70707070707', 'Leonardo DiCaprio', 'Avenida Atlântica, 4000', 1956, '22070000', '(21) 99999-0001', 'leo.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B6', 'Sim'),
+(159, 'Scarlett Johansson', 2, '00011122234', '71717171717', 'Scarlett Johansson', 'Avenida Paulista, 2300', 798, '01310300', '(11) 99000-1112', 'scarlett.j@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C6', 'Sim'),
+(160, 'Robert Downey Jr', 1, '11122233345', '72727272727', 'Robert Downey Jr', 'Rua Fonte da Saudade, 10', 1956, '22471210', '(21) 99111-2223', 'robert.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D6', 'Sim'),
+(161, 'Margot Robbie', 2, '22233344456', '73737373737', 'Margot Robbie', 'Rua Nascimento Silva, 300', 1956, '22421020', '(21) 99222-3334', 'margot.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E6', 'Sim'),
+(162, 'Ryan Gosling', 1, '33344455567', '74747474747', 'Ryan Gosling', 'Avenida Bartolomeu Mitre, 500', 1956, '22431000', '(21) 99333-4445', 'ryan.g@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F6', 'Sim'),
+(163, 'Florianópolis Silva', 3, '44455566678', '75757575757', 'Florianópolis Silva', 'Avenida Beira Mar Norte, 100', 953, '88015700', '(48) 98111-1111', 'floripa.teste@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G6', 'Sim'),
+(164, 'Joaquina da Praia', 2, '55566677789', '76767676767', 'Joaquina da Praia', 'Avenida das Rendeiras, 200', 953, '88062400', '(48) 98222-2222', 'joaquina.praia@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H6', 'Sim'),
+(165, 'Bernardo Nunes', 1, '66677788890', '77777777777', 'Bernardo Nunes', 'Rua Felipe Schmidt, 50', 953, '88010000', '(48) 98333-3333', 'bernardo.nunes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I6', 'Sim'),
+(166, 'Camila Esteves', 2, '77788899901', '78787878787', 'Camila Esteves', 'Rodovia SC-401, 1000', 953, '88032000', '(48) 98444-4444', 'camila.esteves@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J6', 'Sim'),
+(167, 'Guilherme Tell', 1, '88899900012', '79797979797', 'Guilherme Tell', 'Avenida Hercílio Luz, 300', 953, '88020000', '(48) 98555-5555', 'gui.tell@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K6', 'Sim'),
+(168, 'Ayrton Senna da Silva', 1, '12345678911', '80808080808', 'Ayrton Senna da Silva', 'Rua Interlagos, 1', 798, '04801010', '(11) 98765-1234', 'senna.a@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L6', 'Sim'),
+(169, 'Xuxa Meneghel', 2, '11122233355', '81818181818', 'Xuxa Meneghel', 'Avenida das Américas, 2000', 1956, '22640101', '(21) 98765-4321', 'xuxa.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M6', 'Sim'),
+(170, 'Pelé do Nascimento', 1, '22233344466', '82828282828', 'Pelé do Nascimento', 'Rua Princesa Isabel, 10', 792, '11013150', '(13) 98765-1111', 'pele.n@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N6', 'Sim'),
+(171, 'Anitta Machado', 2, '33344455577', '83838383838', 'Anitta Machado', 'Rua Honório Gurgel, 50', 1956, '21511010', '(21) 98765-2222', 'anitta.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O6', 'Sim'),
+(172, 'Neymar Santos Jr', 1, '44455566688', '84848484848', 'Neymar Santos Jr', 'Rua B, 10', 792, '11060400', '(13) 98765-3333', 'neymar.jr@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P6', 'Sim'),
+(173, 'Gisele Bündchen', 2, '55566677799', '85858585858', 'Gisele Bündchen', 'Rua Principal, 1', 1319, '95020360', '(54) 98765-4444', 'gisele.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q6', 'Sim'),
+(174, 'Silvio Santos Abravanel', 1, '66677788800', '86868686868', 'Silvio Santos Abravanel', 'Avenida das Comunicações, 4', 437, '06276010', '(11) 98765-5555', 'silvio.santos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R6', 'Sim'),
+(175, 'Hebe Camargo', 2, '77788899911', '87878787878', 'Hebe Camargo', 'Praça Morumbi, 100', 798, '05607000', '(11) 98765-6666', 'hebe.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S6', 'Sim'),
+(176, 'Fausto Silva', 1, '88899900022', '88888888888', 'Fausto Silva', 'Rua Tamboré, 200', 798, '06460000', '(11) 98765-7777', 'fausto.silva@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T6', 'Sim'),
+(177, 'Tom Jobim', 1, '99900011133', '89898989898', 'Tom Jobim', 'Rua Jardim Botânico, 1008', 1956, '22460000', '(21) 98765-8888', 'tom.jobim@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U6', 'Sim'),
+(178, 'Elis Regina', 2, '00011122244', '90909090909', 'Elis Regina', 'Rua Redentor, 50', 1956, '22421030', '(21) 98765-9999', 'elis.regina@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V6', 'Sim'),
+(179, 'Cazuza Araújo', 1, '11122233356', '91919191919', 'Cazuza Araújo', 'Rua Dias Ferreira, 20', 1956, '22431050', '(21) 98765-0000', 'cazuza.a@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W6', 'Sim'),
+(180, 'Renato Russo', 1, '22233344467', '92929292929', 'Renato Russo', 'SQS 303 Bloco B', 4764, '70331020', '(61) 98765-1112', 'renato.russo@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X6', 'Sim'),
+(181, 'Cássia Eller', 2, '33344455578', '93939393939', 'Cássia Eller', 'SHIS QI 15', 4764, '71635250', '(61) 98765-2223', 'cassia.eller@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y6', 'Sim'),
+(182, 'Chico Science', 1, '44455566689', '94949494949', 'Chico Science', 'Rua da Moeda, 10', 2345, '50030040', '(81) 98765-3334', 'chico.science@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z6', 'Sim'),
+(183, 'Luiz Gonzaga', 1, '55566677790', '95959595959', 'Luiz Gonzaga', 'Rua da Aurora, 1500', 2345, '50040080', '(81) 98765-4445', 'luiz.gonzaga@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A7', 'Sim'),
+(184, 'Jorge Amado', 1, '66677788801', '96969696969', 'Jorge Amado', 'Largo do Pelourinho, 20', 5293, '40026280', '(71) 98765-5556', 'jorge.amado@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B7', 'Sim'),
+(185, 'Zélia Gattai', 2, '77788899912', '97979797979', 'Zélia Gattai', 'Rua da Paciência, 100', 5293, '41950010', '(71) 98765-6667', 'zelia.gattai@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C7', 'Sim'),
+(186, 'Oscar Niemeyer', 1, '88899900023', '98989898989', 'Oscar Niemeyer', 'Eixo Monumental, 1', 4764, '70150900', '(61) 98765-7778', 'oscar.n@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D7', 'Sim'),
+(187, 'Tarsila do Amaral', 2, '99900011134', '99999999999', 'Tarsila do Amaral', 'Avenida Europa, 100', 798, '01449000', '(11) 98765-8889', 'tarsila.amaral@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E7', 'Sim'),
+(188, 'Cândido Portinari', 1, '00011122245', '10000000000', 'Cândido Portinari', 'Rua Brodowski, 30', 715, '14340000', '(16) 98765-9990', 'candido.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F7', 'Sim'),
+(189, 'Clarice Lispector', 2, '11122233356', '10101010101', 'Clarice Lispector', 'Rua do Leme, 20', 1956, '22010010', '(21) 98765-0001', 'clarice.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G7', 'Sim'),
+(190, 'Machado de Assis', 1, '22233344467', '10202020202', 'Machado de Assis', 'Rua Cosme Velho, 183', 1956, '22241090', '(21) 98765-1113', 'machado.assis@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H7', 'Sim'),
+(191, 'Carlos Drummond de Andrade', 1, '33344455578', '10303030303', 'Carlos Drummond de Andrade', 'Avenida Itabira, 10', 3218, '35900000', '(31) 98765-2224', 'carlos.drummond@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I7', 'Sim'),
+(192, 'Cora Coralina', 2, '44455566689', '10404040404', 'Cora Coralina', 'Rua da Ponte, 20', 4540, '76600000', '(62) 98765-3335', 'cora.coralina@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J7', 'Sim'),
+(193, 'Rachel de Queiroz', 2, '55566677790', '10505050505', 'Rachel de Queiroz', 'Avenida da Universidade, 1000', 4825, '60020180', '(85) 98765-4446', 'rachel.queiroz@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K7', 'Sim'),
+(194, 'Monteiro Lobato', 1, '66677788801', '10606060606', 'Monteiro Lobato', 'Sítio do Pica-Pau Amarelo, s/n', 820, '12010260', '(12) 98765-5557', 'monteiro.lobato@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L7', 'Sim'),
+(195, 'Cecília Meireles', 2, '77788899912', '10707070707', 'Cecília Meireles', 'Rua da Tijuca, 50', 1956, '20510060', '(21) 98765-6668', 'cecilia.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M7', 'Sim'),
+(196, 'Vinicius de Moraes', 1, '88899900023', '10808080808', 'Vinicius de Moraes', 'Rua Vinicius de Moraes, 100', 1956, '22411010', '(21) 98765-7779', 'vinicius.moraes@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N7', 'Sim'),
+(197, 'Paulo Freire', 1, '99900011134', '10909090909', 'Paulo Freire', 'Rua do Derby, 150', 2345, '52010140', '(81) 98765-8880', 'paulo.freire@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O7', 'Sim'),
+(198, 'Santos Dumont', 1, '00011122245', '11011011011', 'Santos Dumont', 'Avenida Champs-Élysées, 10', 798, '01202000', '(11) 98765-9991', 'santos.dumont@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P7', 'Sim'),
+(199, 'Carmen Miranda', 2, '11122233356', '11111111122', 'Carmen Miranda', 'Avenida Rio Branco, 500', 1956, '20040000', '(21) 98765-0002', 'carmen.miranda@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q7', 'Sim'),
+(200, 'Lampião Ferreira', 1, '22233344467', '11212121233', 'Lampião Ferreira', 'Rua do Sertão, 1', 2364, '56903320', '(87) 98765-1114', 'lampiao.f@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R7', 'Sim');
+
+
+INSERT INTO Pessoa (Id, Nome, Genero_Id, CPF, MotoristaCNH, Motorista, Endereco, Cidade_Id, Cep, Telefone, Email, Senha, Ativo) VALUES
+-- =================================================================
+-- MAIS PESSOAS (PERSONAGENS DE FICÇÃO E MAIS NA REGIÃO DE BLUMENAU)
+-- =================================================================
+(201, 'Walter White', 1, '33344455588', '11313131344', 'Walter White', 'Rua Albuquerque, 308', 898, '89030000', '(47) 99100-0001', 'walter.white@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S7', 'Sim'),
+(202, 'White & Co (Skyler)', 2, '44455566699', '11414141455', 'Skyler White', 'Rua Albuquerque, 308', 898, '89030000', '(47) 99100-0002', 'skyler.white@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T7', 'Sim'),
+(203, 'Jesse Pinkman', 1, '55566677700', '11515151566', 'Jesse Pinkman', 'Rua da Divisão, 10', 898, '89040100', '(47) 99100-0003', 'jesse.pinkman@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U7', 'Sim'),
+(204, 'Hank Schrader', 1, '66677788811', '11616161677', 'Hank Schrader', 'Avenida Beira Rio, 900', 898, '89010400', '(47) 99100-0004', 'hank.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V7', 'Sim'),
+(205, 'Marie Schrader', 2, '77788899922', '11717171788', 'Marie Schrader', 'Avenida Beira Rio, 900', 898, '89010400', '(47) 99100-0005', 'marie.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W7', 'Sim'),
+(206, 'Saul Goodman', 1, '88899900033', '11818181899', 'Saul Goodman', 'Rua Sete de Setembro, 777', 898, '89010202', '(47) 99100-0006', 'saul.goodman@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X7', 'Sim'),
+(207, 'Kim Wexler', 2, '99900011144', '11919191900', 'Kim Wexler', 'Rua Sete de Setembro, 777', 898, '89010202', '(47) 99100-0007', 'kim.wexler@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y7', 'Sim'),
+(208, 'Los Pollos Hermanos (Gus)', 3, '00011122255', '12020202011', 'Gustavo Fring', 'Rua das Indústrias, 1000', 984, '89080001', '(47) 99100-0008', 'gus.fring@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z7', 'Sim'),
+(209, 'Michael Ehrmantraut', 1, '11122233366', '12121212122', 'Michael Ehrmantraut', 'Rua da Vigília, 50', 960, '89110000', '(47) 99100-0009', 'mike.e@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A8', 'Sim'),
+(210, 'Lalo Salamanca', 1, '22233344477', '12222222233', 'Lalo Salamanca', 'Rua México, 10', 898, '89030500', '(47) 99100-0010', 'lalo.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B8', 'Sim'),
+(211, 'Nacho Varga', 1, '33344455588', '12323232344', 'Nacho Varga', 'Rua da Oficina, 30', 909, '88350001', '(47) 99100-0011', 'nacho.varga@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C8', 'Sim'),
+(212, 'Tuco Salamanca', 1, '44455566699', '12424242455', 'Tuco Salamanca', 'Rua da Poeira, 100', 898, '89070100', '(47) 99100-0012', 'tuco.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D8', 'Sim'),
+(213, 'Hector Salamanca', 1, '55566677701', '12525252566', 'Hector Salamanca', 'Rua Casa Velha, 1', 1074, '89107000', '(47) 99100-0013', 'hector.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E8', 'Sim'),
+(214, 'Gale Boetticher', 1, '66677788812', '12626262677', 'Gale Boetticher', 'Rua da Química, 12', 898, '89035100', '(47) 99100-0014', 'gale.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F8', 'Sim'),
+(215, 'Jane Margolis', 2, '77788899923', '12727272788', 'Jane Margolis', 'Avenida Brasil, 210', 898, '89050001', '(47) 99100-0015', 'jane.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G8', 'Sim'),
+(216, 'Skinny Pete', 1, '88899900034', '12828282899', 'Skinny Pete', 'Rua do Piano, 15', 898, '89040200', '(47) 99100-0016', 'skinny.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H8', 'Sim'),
+(217, 'Badger', 1, '99900011145', '12929292900', 'Badger', 'Rua da Placa, 55', 898, '89041000', '(47) 99100-0017', 'badger@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I8', 'Sim'),
+(218, 'Gray Matter Tech', 3, '00011122256', '13030303011', 'Gretchen Schwartz', 'Rua Gray Matter, 1', 953, '88015000', '(48) 99100-0018', 'contato@graymatter.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J8', 'Sim'),
+(219, 'Elliott Schwartz', 1, '11122233367', '13131313122', 'Elliott Schwartz', 'Rua Gray Matter, 1', 953, '88015000', '(48) 99100-0019', 'elliott.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K8', 'Sim'),
+(220, 'Walter White', 1, '33344455588', '13232323233', 'Walter White Jr.', 'Rua do Café da Manhã, 10', 898, '89030001', '(47) 99100-0020', 'walter.white@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L8', 'Sim'),
+(221, 'Dunder Mifflin', 3, '33344455589', '13333333344', 'Michael Scott', 'Rua Pensilvânia, 1725', 798, '01310000', '(11) 98001-0001', 'contato@dundermifflin.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M8', 'Sim'),
+(222, 'Pam Beesly', 2, '44455566690', '13434343445', 'Pam Beesly', 'Rua das Artes, 100', 798, '01305000', '(11) 98001-0002', 'pam.beesly@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N8', 'Sim'),
+(223, 'Jim Halpert', 1, '55566677701', '13535353556', 'Jim Halpert', 'Rua das Artes, 100', 798, '01305000', '(11) 98001-0003', 'jim.halpert@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O8', 'Sim'),
+(224, 'Schrute Farms', 3, '66677788812', '13636363667', 'Dwight Schrute', 'Rua da Beterraba, 1', 2491, '80010000', '(41) 98001-0004', 'dwight.schrute@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P8', 'Sim'),
+(225, 'Angela Martin', 2, '77788899923', '13737373778', 'Angela Martin', 'Rua dos Gatos, 50', 2491, '80020000', '(41) 98001-0005', 'angela.martin@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q8', 'Sim'),
+(226, 'Kevin Malone', 1, '88899900034', '13838383889', 'Kevin Malone', 'Rua do Chili, 10', 798, '01311000', '(11) 98001-0006', 'kevin.malone@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R8', 'Sim'),
+(227, 'Meredith Palmer', 2, '99900011145', '13939393990', 'Meredith Palmer', 'Rua do Bar, 1', 1956, '22010000', '(21) 98001-0007', 'meredith.palmer@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S8', 'Sim'),
+(228, 'Creed Bratton', 1, '00011122256', '14040404001', 'Creed Bratton', 'Rua Misteriosa, 0', 798, '01001000', '(11) 98001-0008', 'creed.bratton@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T8', 'Sim'),
+(229, 'Oscar Martinez', 1, '11122233367', '14141414112', 'Oscar Martinez', 'Rua da Lógica, 300', 798, '01415000', '(11) 98001-0009', 'oscar.martinez@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U8', 'Sim'),
+(230, 'Stanley Hudson', 1, '22233344478', '14242424223', 'Stanley Hudson', 'Rua das Palavras Cruzadas, 10', 953, '88010000', '(48) 98001-0010', 'stanley.hudson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V8', 'Sim'),
+(231, 'Phyllis Lapin', 2, '33344455589', '14343434334', 'Phyllis Lapin', 'Rua dos Perfumes, 20', 798, '01416000', '(11) 98001-0011', 'phyllis.lapin@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W8', 'Sim'),
+(232, 'Dunder Mifflin HR', 3, '44455566690', '14444444445', 'Toby Flenderson', 'Rua do RH, 50', 3218, '30110000', '(31) 98001-0012', 'toby.f@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X8', 'Sim'),
+(233, 'Kelly Kapoor', 2, '55566677701', '14545454556', 'Kelly Kapoor', 'Rua da Moda, 80', 798, '01426000', '(11) 98001-0013', 'kelly.kapoor@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y8', 'Sim'),
+(234, 'Ryan Howard', 1, '66677788812', '14646464667', 'Ryan Howard', 'Rua do Estagiário, 10', 798, '01310000', '(11) 98001-0014', 'ryan.howard@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z8', 'Sim'),
+(235, 'Andy Bernard', 1, '77788899923', '14747474778', 'Andy Bernard', 'Rua Cornell, 1', 1956, '22010000', '(21) 98001-0015', 'andy.bernard@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A9', 'Sim'),
+(236, 'Erin Hannon', 2, '88899900034', '14848484889', 'Erin Hannon', 'Rua da Recepção, 1', 798, '01001000', '(11) 98001-0016', 'erin.hannon@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B9', 'Sim'),
+(237, 'Gabe Lewis', 1, '99900011145', '14949494990', 'Gabe Lewis', 'Rua Tallahassee, 1', 4538, '74150020', '(62) 98001-0017', 'gabe.lewis@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C9', 'Sim'),
+(238, 'Robert California', 1, '00011122256', '15050505001', 'Robert California', 'Rua dos CEOs, 1', 798, '01452000', '(11) 98001-0018', 'robert.california@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D9', 'Sim'),
+(239, 'Darryl Philbin', 1, '11122233367', '15151515112', 'Darryl Philbin', 'Rua do Depósito, 1', 2491, '80030000', '(41) 98001-0019', 'darryl.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E9', 'Sim'),
+(240, 'Holly Flax', 2, '22233344478', '15252525223', 'Holly Flax', 'Rua Nashua, 10', 4764, '70355110', '(61) 98001-0020', 'holly.flax@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F9', 'Sim'),
+(241, 'Ordem Jedi', 3, '33344455589', '15353535334', 'Luke Skywalker', 'Rua Tatooine, 10', 5293, '40170010', '(71) 98002-0001', 'conselho@jedi.org', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G9', 'Sim'),
+(242, 'Senado Galático', 3, '44455566690', '15454545445', 'Leia Organa', 'Rua Alderaan, 1', 4764, '70150900', '(61) 98002-0002', 'senado@alderaan.gov', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H9', 'Sim'),
+(243, 'Cargas Corellia', 3, '55566677701', '15555555556', 'Han Solo', 'Rua Millennium Falcon, 1', 798, '04028000', '(11) 98002-0003', 'han.solo@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I9', 'Sim'),
+(244, 'Sheldon Cooper', 1, '66677788812', '15656565667', 'Sheldon Cooper', 'Rua do Apartamento 4A, 1', 798, '01310000', '(11) 98002-0004', 'sheldon.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J9', 'Sim'),
+(245, 'Leonard Hofstadter', 1, '77788899923', '15757575778', 'Leonard Hofstadter', 'Rua do Apartamento 4A, 2', 798, '01310000', '(11) 98002-0005', 'leonard.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K9', 'Sim'),
+(246, 'Penny Hofstadter', 2, '88899900034', '15858585889', 'Penny Hofstadter', 'Rua do Apartamento 4B, 1', 798, '01310000', '(11) 98002-0006', 'penny.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L9', 'Sim'),
+(247, 'Howard Wolowitz', 1, '99900011145', '15959595990', 'Howard Wolowitz', 'Rua do Espaço, 10', 798, '01452000', '(11) 98002-0007', 'howard.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M9', 'Sim'),
+(248, 'Bernadette Rostenkowski', 2, '00011122256', '16060606001', 'Bernadette Rostenkowski', 'Rua do Laboratório, 5', 798, '01452000', '(11) 98002-0008', 'bernadette.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N9', 'Sim'),
+(249, 'Raj Koothrappali', 1, '11122233367', '16161616112', 'Raj Koothrappali', 'Rua do Telescópio, 1', 798, '01305000', '(11) 98002-0009', 'raj.k@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O9', 'Sim'),
+(250, 'Amy Farrah Fowler', 2, '22233344478', '16262626223', 'Amy Farrah Fowler', 'Rua do Cérebro, 10', 798, '01414000', '(11) 98002-0010', 'amy.f@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P9', 'Sim'),
+(251, 'Stark Industries', 3, '33344455589', '16363636334', 'Tony Stark', 'Torre Stark, 1', 798, '01310000', '(11) 98003-0001', 'contato@stark.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q9', 'Sim'),
+(252, 'Governo Americano', 3, '44455566690', '16464646445', 'Steve Rogers', 'Avenida Brooklyn, 1940', 798, '01001000', '(11) 98003-0002', 'contato@gov.us', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R9', 'Sim'),
+(253, 'Natasha Romanoff', 2, '55566677701', '16565656556', 'Natasha Romanoff', 'Rua Sala Vermelha, 10', 1956, '20040000', '(21) 98003-0003', 'nat.romanoff@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S9', 'Sim'),
+(254, 'Bruce Banner', 1, '66677788812', '16666666667', 'Bruce Banner', 'Rua Raios Gama, 7', 3218, '30110000', '(31) 98003-0004', 'bruce.banner@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T9', 'Sim'),
+(255, 'Thor Odinson', 1, '77788899923', '16767676778', 'Thor Odinson', 'Rua Asgard, 1', 1956, '22010000', '(21) 98003-0005', 'thor.odinson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U9', 'Sim'),
+(256, 'Clark Kent', 1, '88899900034', '16868686889', 'Clark Kent', 'Planeta Diário, 1', 798, '01001000', '(11) 98003-0006', 'clark.kent@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V9', 'Sim'),
+(257, 'Wayne Enterprises', 3, '99900011145', '16969696990', 'Bruce Wayne', 'Mansão Wayne, 1', 798, '05607000', '(11) 98003-0007', 'ceo@wayne.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W9', 'Sim'),
+(258, 'Diana Prince', 2, '00011122256', '17070707001', 'Diana Prince', 'Rua Themyscira, 1', 4764, '70150900', '(61) 98003-0008', 'diana.prince@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X9', 'Sim'),
+(259, 'Harry Potter', 1, '11122233367', '17171717112', 'Harry Potter', 'Rua dos Alfeneiros, 4', 798, '01311000', '(11) 98003-0009', 'harry.potter@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y9', 'Sim'),
+(260, 'Hermione Granger', 2, '22233344478', '17272727223', 'Hermione Granger', 'Rua da Biblioteca, 1', 798, '01301000', '(11) 98003-0010', 'hermione.g@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z9', 'Sim'),
+(261, 'Ronald Weasley', 1, '33344455589', '17373737334', 'Ronald Weasley', 'A Toca, 1', 4538, '74150020', '(62) 98003-0011', 'ron.weasley@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A10', 'Sim'),
+(262, 'Frodo Baggins', 1, '44455566690', '17474747445', 'Frodo Baggins', 'Bolsão, 1', 1573, '90020020', '(51) 98003-0012', 'frodo.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B10', 'Sim'),
+(263, 'Samwise Gamgee', 1, '55566677701', '17575757556', 'Samwise Gamgee', 'Bolsão, 2', 1573, '90020020', '(51) 98003-0013', 'sam.gamgee@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C10', 'Sim'),
+(264, 'Aragorn Teles', 1, '66677788812', '17676767667', 'Aragorn Teles', 'Rua de Gondor, 1', 4764, '70355110', '(61) 98003-0014', 'aragorn.t@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D10', 'Sim'),
+(265, 'Daenerys Targaryen', 2, '77788899923', '17777777778', 'Daenerys Targaryen', 'Rua dos Dragões, 1', 5293, '40170010', '(71) 98003-0015', 'dany.t@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E10', 'Sim'),
+(266, 'Jon Snow', 1, '88899900034', '17878787889', 'Jon Snow', 'Castelo Negro, 1', 1157, '69304320', '(95) 98003-0016', 'jon.snow@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F10', 'Sim'),
+(267, 'Tyrion Lannister', 1, '99900011145', '17979797990', 'Tyrion Lannister', 'Rochedo Casterly, 1', 798, '01414000', '(11) 98003-0017', 'tyrion.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G10', 'Sim'),
+(268, 'Sansa Stark', 2, '00011122256', '18080808001', 'Sansa Stark', 'Winterfell, 1', 1573, '90010000', '(51) 98003-0018', 'sansa.stark@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H10', 'Sim'),
+(269, 'Arya Stark', 2, '11122233367', '18181818112', 'Arya Stark', 'Rua de Braavos, 1', 792, '11010150', '(13) 98003-0019', 'arya.stark@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I10', 'Sim'),
+(270, 'Cersei Lannister', 2, '22233344478', '18282828223', 'Cersei Lannister', 'Fortaleza Vermelha, 1', 1956, '20040000', '(21) 98003-0020', 'cersei.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J10', 'Sim'),
+(271, 'Frota Estelar', 3, '33344455589', '18383838334', 'James Tiberius Kirk', 'USS Enterprise, 1', 4764, '70150900', '(61) 98004-0001', 'frota@estelar.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K10', 'Sim'),
+(272, 'Embaixada Vulcana', 3, '44455566690', '18484848445', 'Spock', 'Rua Vulcano, 1', 798, '01301000', '(11) 98004-0002', 'spock@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L10', 'Sim'),
+(273, 'Nyota Uhura', 2, '55566677701', '18585858556', 'Nyota Uhura', 'Ponte de Comando, 1', 4764, '70753010', '(61) 98004-0003', 'n.uhura@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M10', 'Sim'),
+(274, 'Katniss Everdeen', 2, '66677788812', '18686868667', 'Katniss Everdeen', 'Distrito 12, 1', 3218, '30110000', '(31) 98004-0004', 'katniss.e@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N10', 'Sim'),
+(275, 'Peeta Mellark', 1, '77788899923', '18787878778', 'Peeta Mellark', 'Rua da Padaria, 1', 3218, '30130000', '(31) 98004-0005', 'peeta.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O10', 'Sim'),
+(276, 'Thomas Anderson', 1, '88899900034', '18888888889', 'Thomas Anderson', 'Rua Matrix, 101', 798, '01311000', '(11) 98004-0006', 'neo.anderson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P10', 'Sim'),
+(277, 'Trinity', 2, '99900011145', '18989898990', 'Trinity', 'Rua da Moto, 1', 798, '01414000', '(11) 98004-0007', 'trinity@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q10', 'Sim'),
+(278, 'Morpheus', 1, '00011122256', '19090909001', 'Morpheus', 'Nabucodonosor, 1', 798, '01001000', '(11) 98004-0008', 'morpheus@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R10', 'Sim'),
+(279, 'Agente Smith', 1, '11122233367', '19191919112', 'Agente Smith', 'Rua do Sistema, 0', 798, '01001000', '(11) 98004-0009', 'smith.agente@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S10', 'Sim'),
+(280, 'Cyberdyne Systems', 3, '22233344478', '19292929223', 'Sarah Connor', 'Rua do Futuro, 1984', 798, '04028000', '(11) 98004-0010', 'contato@cyberdyne.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T10', 'Sim'),
+(281, 'John Connor', 1, '33344455589', '19393939334', 'John Connor', 'Rua da Resistência, 10', 798, '04028000', '(11) 98004-0011', 'john.connor@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U10', 'Sim'),
+(282, 'Modelo T-800', 3, '44455566690', '19494949445', 'Arnold', 'Rua da Cyberdyne, 800', 798, '01452000', '(11) 98004-0012', 't800@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V10', 'Sim'),
+(283, 'Weyland-Yutani Corp', 3, '55566677701', '19595959556', 'Ellen Ripley', 'Nostromo, 1', 3026, '66017000', '(91) 98004-0013', 'frota@weyland.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W10', 'Sim'),
+(284, 'Senhores do Tempo', 3, '66677788812', '19696969667', 'O Doutor', 'TARDIS, 1', 2491, '80010000', '(41) 98004-0014', 'thedoctor@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X10', 'Sim'),
+(285, 'Rose Tyler', 2, '77788899923', '19797979778', 'Rose Tyler', 'Rua Londres, 10', 798, '01414000', '(11) 98004-0015', 'rose.tyler@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y10', 'Sim'),
+(286, 'Jack Harkness', 1, '88899900034', '19898989889', 'Jack Harkness', 'Torchwood, 1', 1573, '90010000', '(51) 98004-0016', 'jack.harkness@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z10', 'Sim'),
+(287, 'Donna Noble', 2, '99900011145', '19999999990', 'Donna Noble', 'Rua Chiswick, 40', 798, '01302000', '(11) 98004-0017', 'donna.noble@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A11', 'Sim'),
+(288, 'Amy Pond', 2, '00011122256', '20000000001', 'Amelia Pond', 'Leadworth, 1', 1573, '90020020', '(51) 98004-0018', 'amy.pond@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B11', 'Sim'),
+(289, 'Rory Williams', 1, '11122233367', '20101010112', 'Rory Williams', 'Leadworth, 1', 1573, '90020020', '(51) 98004-0019', 'rory.williams@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C11', 'Sim'),
+(290, 'River Song', 2, '22233344478', '20202020223', 'Melody Pond', 'Stormcage, 1', 4764, '70150900', '(61) 98004-0020', 'river.song@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D11', 'Sim'),
+(291, 'Clara Oswald', 2, '33344455589', '20303030334', 'Clara Oswald', 'Rua Blackpool, 10', 798, '01311000', '(11) 98004-0021', 'clara.oswald@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E11', 'Sim'),
+(292, 'O Doutor (12)', 1, '44455566690', '20404040445', 'O Doutor', 'TARDIS, 12', 2491, '80020000', '(41) 98004-0022', 'doctor12@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F11', 'Sim'),
+(293, 'Bill Potts', 2, '55566677701', '20505050556', 'Bill Potts', 'Universidade, 1', 1956, '22241090', '(21) 98004-0023', 'bill.potts@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G11', 'Sim'),
+(294, 'O Doutor (13)', 2, '66677788812', '20606060667', 'A Doutora', 'TARDIS, 13', 2491, '80030000', '(41) 98004-0024', 'doctor13@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H11', 'Sim'),
+(295, 'O Doutor (10)', 1, '77788899923', '20707070778', 'O Doutor', 'TARDIS, 10', 1956, '22011000', '(21) 98004-0025', 'doctor10@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I11', 'Sim'),
+(296, 'Sherlock Holmes', 1, '88899900034', '20808080889', 'Sherlock Holmes', 'Rua Baker, 221B', 798, '01415000', '(11) 98005-0001', 'sherlock.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J11', 'Sim'),
+(297, 'John Watson', 1, '99900011145', '20909090990', 'John Watson', 'Rua Baker, 221B', 798, '01415000', '(11) 98005-0002', 'john.watson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K11', 'Sim'),
+(298, 'Sra. Hudson', 2, '00011122256', '21010101001', 'Sra. Hudson', 'Rua Baker, 221A', 798, '01415000', '(11) 98005-0003', 'mrs.hudson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L11', 'Sim'),
+(299, 'Mycroft Holmes', 1, '11122233367', '21111111112', 'Mycroft Holmes', 'Clube Diogenes, 1', 798, '01302000', '(11) 98005-0004', 'mycroft.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M11', 'Sim'),
+(300, 'Jim Moriarty', 1, '22233344478', '21212121223', 'Jim Moriarty', 'Rua do Crime, 10', 1956, '20090003', '(21) 98005-0005', 'moriarty@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N11', 'Sim'),
+(301, 'Irene Adler', 2, '33344455589', '21313131334', 'A Mulher', 'Rua Belgravia, 1', 1956, '22010010', '(21) 98005-0006', 'irene.adler@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O11', 'Sim'),
+(302, 'Molly Hooper', 2, '44455566690', '21414141445', 'Molly Hooper', 'Barts Hospital, 1', 798, '01228000', '(11) 98005-0007', 'molly.hooper@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P11', 'Sim'),
+(303, 'Lestrade', 1, '55566677701', '21515151556', 'Greg Lestrade', 'Scotland Yard, 1', 798, '01001000', '(11) 98005-0008', 'lestrade.g@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q11', 'Sim'),
+(304, 'John Watson', 1, '66677788812', '21616161667', 'Mary Watson', 'Rua Baker, 221B', 798, '01415000', '(11) 98005-0009', 'john.watson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R11', 'Sim'),
+(305, 'Eurus Holmes', 2, '77788899923', '21717171778', 'Eurus Holmes', 'Sherrinford, 1', 1956, '20010000', '(21) 98005-0010', 'eurus.h@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S11', 'Sim'),
+(306, 'Viktor Krum', 1, '88899900034', '21818181889', 'Viktor Krum', 'Rua Durmstrang, 1', 2491, '80010000', '(41) 98006-0001', 'viktor.krum@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T11', 'Sim'),
+(307, 'Fleur Delacour', 2, '99900011145', '21919191990', 'Fleur Delacour', 'Rua Beauxbatons, 1', 1956, '22410000', '(21) 98006-0002', 'fleur.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U11', 'Sim'),
+(308, 'Cedric Diggory', 1, '00011122256', '22020202001', 'Cedric Diggory', 'Rua Hufflepuff, 1', 3218, '30130000', '(31) 98006-0003', 'cedric.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V11', 'Sim'),
+(309, 'Cho Chang', 2, '11122233367', '22121212112', 'Cho Chang', 'Rua Ravenclaw, 1', 798, '01311000', '(11) 98006-0004', 'cho.chang@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W11', 'Sim'),
+(310, 'Luna Lovegood', 2, '22233344478', '22222222223', 'Luna Lovegood', 'Rua do Pasquim, 1', 1573, '90020020', '(51) 98006-0005', 'luna.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X11', 'Sim'),
+(311, 'Neville Longbottom', 1, '33344455589', '22323232334', 'Neville Longbottom', 'Rua da Herbologia, 1', 2491, '80020000', '(41) 98006-0006', 'neville.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y11', 'Sim'),
+(312, 'Ginny Weasley', 2, '44455566690', '22424242445', 'Ginny Weasley', 'A Toca, 2', 4538, '74150020', '(62) 98006-0007', 'ginny.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z11', 'Sim'),
+(313, 'Draco Malfoy', 1, '55566677701', '22525252556', 'Draco Malfoy', 'Mansão Malfoy, 1', 798, '01426000', '(11) 98006-0008', 'draco.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A12', 'Sim'),
+(314, 'Albus Dumbledore', 1, '66677788812', '22626262667', 'Albus Dumbledore', 'Hogwarts, 1', 1573, '90010000', '(51) 98006-0009', 'albus.d@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B12', 'Sim'),
+(315, 'Minerva McGonagall', 2, '77788899923', '22727272778', 'Minerva McGonagall', 'Hogwarts, 2', 1573, '90010000', '(51) 98006-0010', 'minerva.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C12', 'Sim'),
+(316, 'Severus Snape', 1, '88899900034', '22828282889', 'Severus Snape', 'Rua da Fiação, 1', 798, '03104000', '(11) 98006-0011', 'severus.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D12', 'Sim'),
+(317, 'Rubeus Hagrid', 1, '99900011145', '22929292990', 'Rubeus Hagrid', 'Cabana do Hagrid, 1', 1573, '90010000', '(51) 98006-0012', 'hagrid.r@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E12', 'Sim'),
+(318, 'Sirius Black', 1, '00011122256', '23030303001', 'Sirius Black', 'Largo Grimmauld, 12', 798, '01301000', '(11) 98006-0013', 'sirius.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F12', 'Sim'),
+(319, 'Remus Lupin', 1, '11122233367', '23131313112', 'Remus Lupin', 'Rua do Lobo, 1', 798, '05406000', '(11) 98006-0014', 'remus.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G12', 'Sim'),
+(320, 'Nymphadora Tonks', 2, '22233344478', '23232323223', 'Nymphadora Tonks', 'Rua dos Aurores, 1', 798, '01302000', '(11) 98006-0015', 'tonks@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H12', 'Sim'),
+(321, 'Lord Voldemort', 1, '33344455589', '23333333334', 'Tom Riddle', 'Rua da Maldição, 1', 4764, '70150900', '(61) 98006-0016', 'voldemort@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I12', 'Sim'),
+(322, 'Bellatrix Lestrange', 2, '44455566690', '23434343445', 'Bellatrix Lestrange', 'Azkaban, 1', 1956, '20090003', '(21) 98006-0017', 'bellatrix.l@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J12', 'Sim'),
+(323, 'Lucius Malfoy', 1, '55566677701', '23535353556', 'Lucius Malfoy', 'Mansão Malfoy, 2', 798, '01426000', '(11) 98006-0018', 'lucius.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K12', 'Sim'),
+(324, 'Peter Pettigrew', 1, '66677788812', '23636363667', 'Peter Pettigrew', 'Rua do Rato, 1', 798, '01001000', '(11) 98006-0019', 'peter.p@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L12', 'Sim'),
+(325, 'Dolores Umbridge', 2, '77788899923', '23737373778', 'Dolores Umbridge', 'Ministério da Magia, 1', 4764, '70150900', '(61) 98006-0020', 'dolores.u@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M12', 'Sim'),
+(326, 'Arthur Weasley', 1, '88899900034', '23838383889', 'Arthur Weasley', 'A Toca, 3', 4538, '74150020', '(62) 98006-0021', 'arthur.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N12', 'Sim'),
+(327, 'Molly Weasley', 2, '99900011145', '23939393990', 'Molly Weasley', 'A Toca, 4', 4538, '74150020', '(62) 98006-0022', 'molly.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O12', 'Sim'),
+(328, 'Fred Weasley', 1, '00011122256', '24040404001', 'Fred Weasley', 'Gemialidades Weasley, 1', 798, '01311000', '(11) 98006-0023', 'fred.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P12', 'Sim'),
+(329, 'George Weasley', 1, '11122233367', '24141414112', 'George Weasley', 'Gemialidades Weasley, 1', 798, '01311000', '(11) 98006-0024', 'george.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q12', 'Sim'),
+(330, 'Percy Weasley', 1, '22233344478', '24242424223', 'Percy Weasley', 'Ministério da Magia, 2', 4764, '70150900', '(61) 98006-0025', 'percy.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R12', 'Sim'),
+(331, 'Bill Weasley', 1, '33344455589', '24343434334', 'Bill Weasley', 'Banco Gringotes, 1', 798, '01001000', '(11) 98006-0026', 'bill.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S12', 'Sim'),
+(332, 'Charlie Weasley', 1, '44455566690', '24444444445', 'Charlie Weasley', 'Reserva de Dragões, 1', 5293, '40170010', '(71) 98006-0027', 'charlie.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T12', 'Sim'),
+(333, 'Alastor Moody', 1, '55566677701', '24545454556', 'Alastor Moody', 'Rua da Vigilância, 1', 798, '01302000', '(11) 98006-0028', 'moody.a@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U12', 'Sim'),
+(334, 'Dobby', 3, '66677788812', '24646464667', 'Dobby', 'Cozinha de Hogwarts, 1', 1573, '90010000', '(51) 98006-0029', 'dobby@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V12', 'Sim'),
+(335, 'Kreacher', 3, '77788899923', '24747474778', 'Monstro', 'Largo Grimmauld, 12', 798, '01301000', '(11) 98006-0030', 'kreacher@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W12', 'Sim'),
+(336, 'Geralt de Rivia', 1, '88899900034', '24848484889', 'Geralt de Rivia', 'Kaer Morhen, 1', 2491, '80030000', '(41) 98007-0001', 'geralt.rivia@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X12', 'Sim'),
+(337, 'Yennefer de Vengerberg', 2, '99900011145', '24949494990', 'Yennefer de Vengerberg', 'Aretuza, 1', 1956, '22410000', '(21) 98007-0002', 'yennefer.v@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y12', 'Sim'),
+(338, 'Ciri de Cintra', 2, '00011122256', '25050505001', 'Cirilla', 'Cintra, 1', 1573, '90010000', '(51) 98007-0003', 'ciri.cintra@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z12', 'Sim'),
+(339, 'Jaskier', 1, '11122233367', '25151515112', 'Jaskier', 'Rua da Taverna, 1', 798, '01311000', '(11) 98007-0004', 'jaskier@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A13', 'Sim'),
+(340, 'Triss Merigold', 2, '22233344478', '25252525223', 'Triss Merigold', 'Maribor, 1', 2491, '80020000', '(41) 98007-0005', 'triss.m@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B13', 'Sim'),
+(341, 'Vesemir', 1, '33344455589', '25353535334', 'Vesemir', 'Kaer Morhen, 2', 2491, '80030000', '(41) 98007-0006', 'vesemir@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C13', 'Sim'),
+(342, 'Emhyr var Emreis', 1, '44455566690', '25454545445', 'Emhyr var Emreis', 'Nilfgaard, 1', 4764, '70150900', '(61) 98007-0007', 'emhyr.e@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D13', 'Sim'),
+(343, 'Regis', 1, '55566677701', '25555555556', 'Emiel Regis', 'Rua do Vampiro, 1', 3218, '30110000', '(31) 98007-0008', 'regis.e@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E13', 'Sim'),
+(344, 'Philippa Eilhart', 2, '66677788812', '25656565667', 'Philippa Eilhart', 'Montecalvo, 1', 798, '01426000', '(11) 98007-0009', 'philippa.e@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F13', 'Sim'),
+(345, 'Dijkstra', 1, '77788899923', '25757575778', 'Sigismund Dijkstra', 'Redania, 1', 798, '01414000', '(11) 98007-0010', 'dijkstra.s@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G13', 'Sim'),
+(346, 'Dudu', 3, '88899900034', '25858585889', 'Dudu', 'Novigrad, 1', 798, '01305000', '(11) 98007-0011', 'dudu@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H13', 'Sim'),
+(347, 'Zoltan Chivay', 1, '99900011145', '25959595990', 'Zoltan Chivay', 'Rua Mahakam, 1', 1573, '90020020', '(51) 98007-0012', 'zoltan.c@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I13', 'Sim'),
+(348, 'Vilgefortz', 1, '00011122256', '26060606001', 'Vilgefortz', 'Stygga, 1', 1956, '20090003', '(21) 98007-0013', 'vilgefortz@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J13', 'Sim'),
+(349, 'Cahir', 1, '11122233367', '26161616112', 'Cahir', 'Nilfgaard, 2', 4764, '70150900', '(61) 98007-0014', 'cahir@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K13', 'Sim'),
+(350, 'Milva', 2, '22233344478', '26262626223', 'Maria Barring', 'Rua Brokilon, 1', 2491, '80040000', '(41) 98007-0015', 'milva.b@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L13', 'Sim'),
+(351, 'Peter Parker', 1, '33344455589', '26363636334', 'Peter Parker', 'Rua do Queens, 10', 798, '01310000', '(11) 98008-0001', 'peter.parker@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M13', 'Sim'),
+(352, 'Mary Jane Watson', 2, '44455566690', '26464646445', 'Mary Jane Watson', 'Rua do Queens, 11', 798, '01310000', '(11) 98008-0002', 'mj.watson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N13', 'Sim'),
+(353, 'Norman Osborn', 1, '55566677701', '26565656556', 'Norman Osborn', 'Oscorp, 1', 798, '01452000', '(11) 98008-0003', 'norman.osborn@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O13', 'Sim'),
+(354, 'J. Jonah Jameson', 1, '66677788812', '26666666667', 'J. Jonah Jameson', 'Clarim Diário, 1', 798, '01001000', '(11) 98008-0004', 'jj.jameson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P13', 'Sim'),
+(355, 'Gwen Stacy', 2, '77788899923', '26767676778', 'Gwen Stacy', 'Ponte do Brooklyn, 1', 798, '01301000', '(11) 98008-0005', 'gwen.stacy@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q13', 'Sim'),
+(356, 'Miles Morales', 1, '88899900034', '26868686889', 'Miles Morales', 'Rua do Brooklyn, 10', 798, '05406000', '(11) 98008-0006', 'miles.morales@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R13', 'Sim'),
+(357, 'Tia May Parker', 2, '99900011145', '26969696990', 'May Parker', 'Rua do Queens, 10', 798, '01310000', '(11) 98008-0007', 'may.parker@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S13', 'Sim'),
+(358, 'Otto Octavius', 1, '00011122256', '27070707001', 'Otto Octavius', 'Laboratório, 8', 798, '04028000', '(11) 98008-0008', 'otto.octavius@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T13', 'Sim'),
+(359, 'Empresa Wayne', 3, '11122233367', '27171717112', 'Alfred Pennyworth', 'Mansão Wayne, 1', 798, '05607000', '(11) 98008-0009', 'alfred.p@wayne.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U13', 'Sim'),
+(360, 'Selina Kyle', 2, '22233344478', '27272727223', 'Selina Kyle', 'Rua dos Telhados, 1', 798, '01001000', '(11) 98008-0010', 'selina.kyle@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V13', 'Sim'),
+(361, 'James Gordon', 1, '33344455589', '27373737334', 'James Gordon', 'DPGC, 1', 798, '01001000', '(11) 98008-0011', 'jim.gordon@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W13', 'Sim'),
+(362, 'O Coringa', 1, '44455566690', '27474747445', 'Arthur Fleck', 'Asilo Arkham, 1', 798, '01001000', '(11) 98008-0012', 'joker@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X13', 'Sim'),
+(363, 'Harleen Quinzel', 2, '55566677701', '27575757556', 'Harley Quinn', 'Asilo Arkham, 2', 798, '01001000', '(11) 98008-0013', 'harley.q@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y13', 'Sim'),
+(364, 'Dick Grayson', 1, '66677788812', '27676767667', 'Dick Grayson', 'Torre Titã, 1', 798, '01311000', '(11) 98008-0014', 'dick.grayson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z13', 'Sim'),
+(365, 'Barbara Gordon', 2, '77788899923', '27777777778', 'Barbara Gordon', 'Torre do Relógio, 1', 798, '01001000', '(11) 98008-0015', 'barbara.gordon@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A14', 'Sim'),
+(366, 'Jason Todd', 1, '88899900034', '27878787889', 'Jason Todd', 'Beco do Crime, 1', 798, '01001000', '(11) 98008-0016', 'jason.todd@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B14', 'Sim'),
+(367, 'Tim Drake', 1, '99900011145', '27979797990', 'Tim Drake', 'Mansão Wayne, 2', 798, '05607000', '(11) 98008-0017', 'tim.drake@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C14', 'Sim'),
+(368, 'Damian Wayne', 1, '00011122256', '28080808001', 'Damian Wayne', 'Mansão Wayne, 3', 798, '05607000', '(11) 98008-0018', 'damian.wayne@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D14', 'Sim'),
+(369, 'Mario Bros', 1, '11122233367', '28181818112', 'Mario', 'Reino Cogumelo, 1', 798, '01001000', '(11) 98009-0001', 'mario@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E14', 'Sim'),
+(370, 'Luigi Bros', 1, '22233344478', '28282828223', 'Luigi', 'Reino Cogumelo, 2', 798, '01001000', '(11) 98009-0002', 'luigi@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F14', 'Sim'),
+(371, 'Princesa Peach', 2, '33344455589', '28383838334', 'Peach Toadstool', 'Castelo da Peach, 1', 798, '01001000', '(11) 98009-0003', 'peach@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G14', 'Sim'),
+(372, 'Bowser', 1, '44455566690', '28484848445', 'Bowser Koopa', 'Castelo do Bowser, 1', 798, '01001000', '(11) 98009-0004', 'bowser@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H14', 'Sim'),
+(373, 'Link', 1, '55566677701', '28585858556', 'Link', 'Hyrule, 1', 4538, '74150020', '(62) 98009-0005', 'link@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I14', 'Sim'),
+(374, 'Zelda', 2, '66677788812', '28686868667', 'Princesa Zelda', 'Castelo de Hyrule, 1', 4538, '74150020', '(62) 98009-0006', 'zelda@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J14', 'Sim'),
+(375, 'Ganondorf', 1, '77788899923', '28787878778', 'Ganondorf', 'Deserto Gerudo, 1', 4538, '74150020', '(62) 98009-0007', 'ganondorf@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.K14', 'Sim'),
+(376, 'Solid Snake', 1, '88899900034', '28888888889', 'David', 'Shadow Moses, 1', 5404, '69041010', '(92) 98009-0008', 'solid.snake@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.L14', 'Sim'),
+(377, 'Liquid Snake', 1, '99900011145', '28989898990', 'Eli', 'Shadow Moses, 2', 5404, '69041010', '(92) 98009-0009', 'liquid.snake@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.M14', 'Sim'),
+(378, 'Big Boss', 1, '00011122256', '29090909001', 'John', 'Outer Heaven, 1', 5404, '69041010', '(92) 98009-0010', 'big.boss@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.N14', 'Sim'),
+(379, 'Kratos', 1, '11122233367', '29191919112', 'Kratos', 'Rua Esparta, 1', 798, '01310000', '(11) 98010-0001', 'kratos@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.O14', 'Sim'),
+(380, 'Atreus', 1, '22233344478', '29292929223', 'Loki', 'Midgard, 1', 798, '01310000', '(11) 98010-0002', 'atreus@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.P14', 'Sim'),
+(381, 'Freya', 2, '33344455589', '29393939334', 'Freya', 'Midgard, 2', 798, '01310000', '(11) 98010-0003', 'freya@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Q14', 'Sim'),
+(382, 'Odin', 1, '44455566690', '29494949445', 'Odin', 'Asgard, 1', 1956, '22010000', '(21) 98010-0004', 'odin@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.R14', 'Sim'),
+(383, 'Thor (GoW)', 1, '55566677701', '29595959556', 'Thor', 'Asgard, 2', 1956, '22010000', '(21) 98010-0005', 'thor.gow@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.S14', 'Sim'),
+(384, 'Kratos da Silva', 1, '66677788812', '29696969667', 'Kratos da Silva', 'Rua Olympus, 10', 5293, '40170010', '(71) 98010-0006', 'kratos.br@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.T14', 'Sim'),
+(385, 'Master Chief', 1, '77788899923', '29797979778', 'John-117', 'UNSC, 1', 4764, '70150900', '(61) 98010-0007', 'master.chief@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.U14', 'Sim'),
+(386, 'Cortana', 2, '88899900034', '29898989889', 'Cortana', 'UNSC, 2', 4764, '70150900', '(61) 98010-0008', 'cortana@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.V14', 'Sim'),
+(387, 'Capitão Price', 1, '99900011145', '29999999990', 'Capitão Price', 'Força Tarefa 141, 1', 1956, '20040000', '(21) 98010-0009', 'price.141@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.W14', 'Sim'),
+(388, 'Soap MacTavish', 1, '00011122256', '30000000001', 'Soap', 'Força Tarefa 141, 2', 1956, '20040000', '(21) 98010-0010', 'soap.141@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.X14', 'Sim'),
+(389, 'Simon Riley', 1, '11122233367', '30101010112', 'Ghost', 'Força Tarefa 141, 3', 1956, '20040000', '(21) 98010-0011', 'ghost.141@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Y14', 'Sim'),
+(390, 'General Shepherd', 1, '22233344478', '30202020223', 'General Shepherd', 'Pentágono, 1', 4764, '70150900', '(61) 98010-0012', 'shepherd.us@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z14', 'Sim'),
+(391, 'Makarov', 1, '33344455589', '30303030334', 'Vladimir Makarov', 'Rua Ultranacionalista, 1', 798, '01001000', '(11) 98010-0013', 'makarov.v@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.A15', 'Sim'),
+(392, 'Lara Croft', 2, '44455566690', '30404040445', 'Lara Croft', 'Mansão Croft, 1', 798, '05607000', '(11) 98011-0001', 'lara.croft@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.B15', 'Sim'),
+(393, 'Nathan Drake', 1, '55566677701', '30505050556', 'Nathan Drake', 'Rua do Tesouro, 1', 5293, '40170010', '(71) 98011-0002', 'nathan.drake@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.C15', 'Sim'),
+(394, 'Elena Fisher', 2, '66677788812', '30606060667', 'Elena Fisher', 'Rua do Tesouro, 2', 5293, '40170010', '(71) 98011-0003', 'elena.fisher@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.D15', 'Sim'),
+(395, 'Victor Sullivan', 1, '77788899923', '30707070778', 'Sully', 'Rua do Charuto, 1', 1956, '22010000', '(21) 98011-0004', 'sully.v@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.E15', 'Sim'),
+(396, 'Ellie Williams', 2, '88899900034', '30808080889', 'Ellie', 'Zona de Quarentena, 1', 2491, '80010000', '(41) 98011-0005', 'ellie.w@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.F15', 'Sim'),
+(397, 'Joel Miller', 1, '99900011145', '30909090990', 'Joel', 'Zona de Quarentena, 2', 2491, '80010000', '(41) 98011-0006', 'joel.miller@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.G15', 'Sim'),
+(398, 'Abby Anderson', 2, '00011122256', '31010101001', 'Abby', 'Estádio WLF, 1', 2491, '80020000', '(41) 98011-0007', 'abby.anderson@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.H15', 'Sim'),
+(399, 'Tess', 2, '11122233367', '31111111112', 'Tess', 'Zona de Quarentena, 3', 2491, '80010000', '(41) 98011-0008', 'tess.q@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.I15', 'Sim'),
+(400, 'Marlene', 2, '22233344478', '31212121223', 'Marlene', 'Hospital St. Mary, 1', 2491, '80030000', '(41) 98011-0009', 'marlene.vaga@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.J15', 'Sim');
+
+INSERT INTO Reserva (Id, Pessoa_Id, PacoteDesconto_Id, Carro_Id, DataRetirada, DataDevolucao, ValorTotal, StatusReserva, DataReserva) VALUES
+
+-- =================================================================
+-- RESERVAS COM STATUS = FINALIZADO (HISTÓRICO)
+-- =================================================================
+(1, 1, 1, 1, '2024-01-15 14:00:00', '2024-01-20 14:00:00', 627.50, 'Finalizado', '2024-01-10 10:30:00'),
+(2, 81, 2, 2, '2024-02-10 12:00:00', '2024-02-13 12:00:00', 900.00, 'Finalizado', '2024-02-01 15:00:00'),
+(3, 91, 1, 3, '2024-02-20 10:00:00', '2024-02-25 10:00:00', 1050.00, 'Finalizado', '2024-02-15 11:00:00'),
+(4, 116, 1, 4, '2024-03-01 09:00:00', '2024-03-10 09:00:00', 3156.75, 'Finalizado', '2024-02-20 08:00:00'),
+(5, 121, 4, 5, '2024-03-05 18:00:00', '2024-03-15 18:00:00', 7430.00, 'Finalizado', '2024-03-01 17:00:00'),
+(6, 18, 1, 6, '2024-03-12 14:00:00', '2024-03-14 14:00:00', 1100.00, 'Finalizado', '2024-03-10 10:00:00'),
+(7, 201, 1, 7, '2024-04-01 11:00:00', '2024-04-08 11:00:00', 770.00, 'Finalizado', '2024-03-25 13:00:00'),
+(8, 33, 2, 8, '2024-04-10 15:00:00', '2024-04-13 15:00:00', 945.00, 'Finalizado', '2024-04-05 14:00:00'),
+(9, 140, 1, 9, '2024-05-02 12:00:00', '2024-05-04 12:00:00', 190.00, 'Finalizado', '2024-04-30 10:00:00'),
+(10, 163, 3, 10, '2024-05-20 09:00:00', '2024-05-27 09:00:00', 1090.00, 'Finalizado', '2024-05-10 16:00:00'),
+(11, 45, 1, 11, '2024-06-01 10:00:00', '2024-06-04 10:00:00', 540.00, 'Finalizado', '2024-05-28 12:00:00'),
+(12, 194, 1, 12, '2024-06-10 14:00:00', '2024-06-15 14:00:00', 950.00, 'Finalizado', '2024-06-05 11:00:00'),
+(13, 220, 2, 13, '2024-07-01 16:00:00', '2024-07-10 16:00:00', 2670.00, 'Finalizado', '2024-06-20 10:00:00'),
+(14, 60, 1, 14, '2024-07-15 12:00:00', '2024-07-22 12:00:00', 2170.00, 'Finalizado', '2024-07-10 09:00:00'),
+(15, 88, 1, 15, '2024-08-01 09:00:00', '2024-08-05 09:00:00', 1040.00, 'Finalizado', '2024-07-25 15:00:00'),
+(16, 112, 4, 16, '2024-08-10 10:00:00', '2024-08-12 10:00:00', 1550.00, 'Finalizado', '2024-08-01 14:00:00'),
+(17, 130, 1, 17, '2024-09-01 11:00:00', '2024-09-06 11:00:00', 1200.00, 'Finalizado', '2024-08-25 17:00:00'),
+(18, 150, 1, 18, '2024-09-10 12:00:00', '2024-09-20 12:00:00', 7200.00, 'Finalizado', '2024-09-01 10:00:00'),
+(19, 170, 1, 19, '2024-10-01 14:00:00', '2024-10-04 14:00:00', 960.00, 'Finalizado', '2024-09-28 11:00:00'),
+(20, 1, 2, 20, '2024-01-25 10:00:00', '2024-01-28 10:00:00', 405.00, 'Finalizado', '2024-01-20 13:00:00'),
+(21, 82, 1, 21, '2024-02-15 11:00:00', '2024-02-17 11:00:00', 260.00, 'Finalizado', '2024-02-10 14:00:00'),
+(22, 92, 1, 22, '2024-03-10 12:00:00', '2024-03-17 12:00:00', 2940.00, 'Finalizado', '2024-03-01 10:00:00'),
+(23, 118, 1, 23, '2024-04-05 14:00:00', '2024-04-07 14:00:00', 236.00, 'Finalizado', '2024-04-01 12:00:00'),
+(24, 122, 1, 24, '2024-04-15 15:00:00', '2024-04-20 15:00:00', 1325.00, 'Finalizado', '2024-04-10 11:00:00'),
+(25, 20, 3, 25, '2024-05-10 10:00:00', '2024-05-20 10:00:00', 2810.00, 'Finalizado', '2024-05-01 16:00:00'),
+(26, 202, 1, 26, '2024-06-01 12:00:00', '2024-06-05 12:00:00', 880.00, 'Finalizado', '2024-05-25 14:00:00'),
+(27, 40, 1, 27, '2024-06-15 14:00:00', '2024-06-17 14:00:00', 680.00, 'Finalizado', '2024-06-10 10:00:00'),
+(28, 142, 1, 28, '2024-07-01 15:00:00', '2024-07-08 15:00:00', 3150.00, 'Finalizado', '2024-06-25 11:00:00'),
+(29, 165, 2, 29, '2024-07-20 10:00:00', '2024-07-23 10:00:00', 510.00, 'Finalizado', '2024-07-15 12:00:00'),
+(30, 50, 1, 30, '2024-08-05 11:00:00', '2024-08-10 11:00:00', 3100.00, 'Finalizado', '2024-08-01 13:00:00'),
+(31, 10, 1, 31, '2024-08-15 14:00:00', '2024-08-17 14:00:00', 598.00, 'Finalizado', '2024-08-10 10:00:00'),
+(32, 90, 1, 32, '2024-09-01 16:00:00', '2024-09-04 16:00:00', 585.00, 'Finalizado', '2024-08-28 15:00:00'),
+(33, 114, 1, 33, '2024-09-10 10:00:00', '2024-09-15 10:00:00', 775.00, 'Finalizado', '2024-09-05 12:00:00'),
+(34, 133, 4, 34, '2024-10-01 12:00:00', '2024-10-10 12:00:00', 6100.00, 'Finalizado', '2024-09-20 14:00:00'),
+(35, 155, 1, 35, '2024-10-15 14:00:00', '2024-10-18 14:00:00', 630.00, 'Finalizado', '2024-10-10 11:00:00'),
+(36, 177, 1, 36, '2024-11-01 15:00:00', '2024-11-06 15:00:00', 1250.00, 'Finalizado', '2024-10-25 10:00:00'),
+(37, 2, 1, 37, '2024-11-10 10:00:00', '2024-11-12 10:00:00', 490.00, 'Finalizado', '2024-11-05 12:00:00'),
+(38, 83, 1, 38, '2024-12-01 11:00:00', '2024-12-05 11:00:00', 768.00, 'Finalizado', '2024-11-25 13:00:00'),
+(39, 93, 4, 39, '2024-12-20 14:00:00', '2024-12-27 14:00:00', 7105.00, 'Finalizado', '2024-12-15 10:00:00'),
+(40, 119, 1, 40, '2023-12-28 10:00:00', '2024-01-05 10:00:00', 1505.00, 'Finalizado', '2023-12-20 11:00:00'),
+(41, 123, 1, 41, '2024-01-18 12:00:00', '2024-01-21 12:00:00', 1290.00, 'Finalizado', '2024-01-15 10:00:00'),
+(42, 22, 1, 42, '2024-02-12 14:00:00', '2024-02-19 14:00:00', 3395.00, 'Finalizado', '2024-02-05 12:00:00'),
+(43, 203, 1, 43, '2024-03-15 15:00:00', '2024-03-18 15:00:00', 435.00, 'Finalizado', '2024-03-10 14:00:00'),
+(44, 42, 2, 44, '2024-04-12 10:00:00', '2024-04-19 10:00:00', 2044.00, 'Finalizado', '2024-04-05 11:00:00'),
+(45, 144, 1, 45, '2024-05-18 11:00:00', '2024-05-28 11:00:00', 1130.00, 'Finalizado', '2024-05-10 13:00:00'),
+(46, 168, 1, 46, '2024-06-12 12:00:00', '2024-06-15 12:00:00', 1080.00, 'Finalizado', '2024-06-08 10:00:00'),
+(47, 52, 1, 47, '2024-07-18 14:00:00', '2024-07-20 14:00:00', 220.00, 'Finalizado', '2024-07-15 12:00:00'),
+(48, 100, 3, 48, '2024-08-12 15:00:00', '2024-08-22 15:00:00', 3660.00, 'Finalizado', '2024-08-05 14:00:00'),
+(49, 125, 1, 49, '2024-09-12 10:00:00', '2024-09-17 10:00:00', 825.00, 'Finalizado', '2024-09-08 11:00:00'),
+(50, 152, 1, 50, '2024-10-18 11:00:00', '2024-10-20 11:00:00', 710.00, 'Finalizado', '2024-10-15 13:00:00'),
+(100, 399, 1, 100, '2024-05-05 10:00:00', '2024-05-10 10:00:00', 660.00, 'Finalizado', '2024-05-01 10:00:00'),
+(101, 15, 1, 101, '2024-05-06 12:00:00', '2024-05-16 12:00:00', 4700.00, 'Finalizado', '2024-05-02 11:00:00'),
+(102, 30, 2, 102, '2024-05-07 14:00:00', '2024-05-12 14:00:00', 1885.00, 'Finalizado', '2024-05-03 12:00:00'),
+(103, 45, 1, 103, '2024-05-08 15:00:00', '2024-05-13 15:00:00', 2450.00, 'Finalizado', '2024-05-04 14:00:00'),
+(104, 60, 1, 104, '2024-05-09 10:00:00', '2024-05-11 10:00:00', 220.00, 'Finalizado', '2024-05-05 10:00:00'),
+(105, 75, 1, 105, '2024-05-10 11:00:00', '2024-05-17 11:00:00', 6650.00, 'Finalizado', '2024-05-06 11:00:00'),
+(106, 90, 3, 106, '2024-05-11 12:00:00', '2024-05-14 12:00:00', 795.00, 'Finalizado', '2024-05-07 12:00:00'),
+(107, 105, 1, 107, '2024-05-12 14:00:00', '2024-05-22 14:00:00', 9800.00, 'Finalizado', '2024-05-08 14:00:00'),
+(108, 120, 1, 108, '2024-05-13 15:00:00', '2024-05-20 15:00:00', 6650.00, 'Finalizado', '2024-05-09 15:00:00'),
+(109, 135, 1, 109, '2024-05-14 10:00:00', '2024-05-24 10:00:00', 8000.00, 'Finalizado', '2024-05-10 10:00:00'),
+(110, 150, 1, 110, '2024-05-15 11:00:00', '2024-05-21 11:00:00', 5100.00, 'Finalizado', '2024-05-11 11:00:00'),
+(111, 165, 2, 111, '2024-05-16 12:00:00', '2024-05-18 12:00:00', 1580.00, 'Finalizado', '2024-05-12 12:00:00'),
+(112, 180, 1, 112, '2024-05-17 14:00:00', '2024-05-27 14:00:00', 8200.00, 'Finalizado', '2024-05-13 14:00:00'),
+(113, 195, 1, 113, '2024-05-18 15:00:00', '2024-05-25 15:00:00', 7000.00, 'Finalizado', '2024-05-14 15:00:00'),
+(114, 210, 4, 114, '2024-05-19 10:00:00', '2024-05-29 10:00:00', 6900.00, 'Finalizado', '2024-05-15 10:00:00'),
+(115, 225, 1, 115, '2024-05-20 11:00:00', '2024-05-26 11:00:00', 4320.00, 'Finalizado', '2024-05-16 11:00:00'),
+(116, 240, 1, 116, '2024-05-21 12:00:00', '2024-05-28 12:00:00', 6020.00, 'Finalizado', '2024-05-17 12:00:00'),
+(117, 255, 1, 117, '2024-05-22 14:00:00', '2024-05-24 14:00:00', 1360.00, 'Finalizado', '2024-05-18 14:00:00'),
+(118, 270, 1, 118, '2024-05-23 15:00:00', '2024-06-02 15:00:00', 18500.00, 'Finalizado', '2024-05-19 15:00:00'),
+(119, 285, 1, 119, '2024-05-24 10:00:00', '2024-05-31 10:00:00', 10500.00, 'Finalizado', '2024-05-20 10:00:00'),
+(120, 300, 1, 120, '2024-05-25 11:00:00', '2024-06-01 11:00:00', 10150.00, 'Finalizado', '2024-05-21 11:00:00'),
+(121, 315, 1, 121, '2024-05-26 12:00:00', '2024-06-05 12:00:00', 11200.00, 'Finalizado', '2024-05-22 12:00:00'),
+(122, 330, 1, 122, '2024-05-27 14:00:00', '2024-06-10 14:00:00', 18200.00, 'Finalizado', '2024-05-23 14:00:00'),
+(123, 345, 1, 123, '2024-05-28 15:00:00', '2024-06-07 15:00:00', 8500.00, 'Finalizado', '2024-05-24 15:00:00'),
+(124, 360, 1, 124, '2024-05-29 10:00:00', '2024-06-12 10:00:00', 9520.00, 'Finalizado', '2024-05-25 10:00:00'),
+(125, 375, 1, 125, '2024-05-30 11:00:00', '2024-06-04 11:00:00', 1900.00, 'Finalizado', '2024-05-26 11:00:00'),
+(126, 390, 1, 126, '2024-05-31 12:00:00', '2024-06-06 12:00:00', 2700.00, 'Finalizado', '2024-05-27 12:00:00'),
+(127, 399, 1, 127, '2024-06-01 14:00:00', '2024-06-08 14:00:00', 1750.00, 'Finalizado', '2024-05-28 14:00:00'),
+(128, 5, 2, 128, '2024-06-02 15:00:00', '2024-06-09 15:00:00', 1914.50, 'Finalizado', '2024-05-29 15:00:00'),
+(129, 25, 1, 129, '2024-06-03 10:00:00', '2024-06-13 10:00:00', 2500.00, 'Finalizado', '2024-05-30 10:00:00'),
+(130, 50, 1, 130, '2024-06-04 11:00:00', '2024-06-11 11:00:00', 2135.00, 'Finalizado', '2024-05-31 11:00:00'),
+(131, 70, 1, 131, '2024-06-05 12:00:00', '2024-06-14 12:00:00', 1350.00, 'Finalizado', '2024-06-01 12:00:00'),
+(132, 90, 3, 132, '2024-06-06 14:00:00', '2024-06-16 14:00:00', 2310.00, 'Finalizado', '2024-06-02 14:00:00'),
+(133, 110, 1, 133, '2024-06-07 15:00:00', '2024-06-17 15:00:00', 1180.00, 'Finalizado', '2024-06-03 15:00:00'),
+(134, 130, 1, 134, '2024-06-08 10:00:00', '2024-06-20 10:00:00', 4560.00, 'Finalizado', '2024-06-04 10:00:00'),
+(135, 150, 1, 135, '2024-06-09 11:00:00', '2024-06-19 11:00:00', 1600.00, 'Finalizado', '2024-06-05 11:00:00'),
+(136, 170, 2, 136, '2024-06-10 12:00:00', '2024-06-22 12:00:00', 3060.00, 'Finalizado', '2024-06-06 12:00:00'),
+(137, 190, 1, 137, '2024-06-11 14:00:00', '2024-06-21 14:00:00', 3000.00, 'Finalizado', '2024-06-07 14:00:00'),
+(138, 210, 1, 138, '2024-06-12 15:00:00', '2024-06-25 15:00:00', 2314.00, 'Finalizado', '2024-06-08 15:00:00'),
+(139, 230, 1, 139, '2024-06-13 10:00:00', '2024-06-23 10:00:00', 1400.00, 'Finalizado', '2024-06-09 10:00:00'),
+(140, 250, 1, 140, '2024-06-14 11:00:00', '2024-06-24 11:00:00', 2800.00, 'Finalizado', '2024-06-10 11:00:00'),
+(141, 270, 1, 141, '2024-06-15 12:00:00', '2024-06-26 12:00:00', 2255.00, 'Finalizado', '2024-06-11 12:00:00'),
+(142, 290, 3, 142, '2024-06-16 14:00:00', '2024-06-27 14:00:00', 2420.00, 'Finalizado', '2024-06-12 14:00:00'),
+(143, 310, 1, 143, '2024-06-17 15:00:00', '2024-06-28 15:00:00', 3630.00, 'Finalizado', '2024-06-13 15:00:00'),
+(144, 330, 1, 144, '2024-06-18 10:00:00', '2024-06-29 10:00:00', 1980.00, 'Finalizado', '2024-06-14 10:00:00'),
+(145, 350, 1, 145, '2024-06-19 11:00:00', '2024-06-30 11:00:00', 3410.00, 'Finalizado', '2024-06-15 11:00:00'),
+(146, 370, 1, 146, '2024-06-20 12:00:00', '2024-07-01 12:00:00', 1350.00, 'Finalizado', '2024-06-16 12:00:00'),
+(147, 390, 4, 147, '2024-06-21 14:00:00', '2024-07-02 14:00:00', 3090.00, 'Finalizado', '2024-06-17 14:00:00'),
+(148, 400, 1, 148, '2024-06-22 15:00:00', '2024-07-03 15:00:00', 2156.00, 'Finalizado', '2024-06-18 15:00:00'),
+(149, 3, 1, 149, '2024-06-23 10:00:00', '2024-07-04 10:00:00', 1540.00, 'Finalizado', '2024-06-19 10:00:00'),
+(150, 23, 1, 150, '2024-06-24 11:00:00', '2024-07-05 11:00:00', 4070.00, 'Finalizado', '2024-06-20 11:00:00'),
+
+-- =================================================================
+-- RESERVAS COM STATUS = ABERTO (FUTURAS)
+-- =================================================================
+-- Usando Carros com ID > 500 para garantir que não haja conflitos com carros "Finalizados"
+(151, 1, 2, 501, '2025-10-01 10:00:00', '2025-10-05 10:00:00', 1400.00, 'Aberto', '2025-09-10 08:00:00'),
+(152, 2, 3, 502, '2025-10-05 12:00:00', '2025-10-15 12:00:00', 3360.00, 'Aberto', '2025-09-11 09:00:00'),
+(153, 3, 1, 503, '2025-10-10 14:00:00', '2025-10-12 14:00:00', 650.00, 'Aberto', '2025-09-12 10:00:00'),
+(154, 81, 1, 504, '2025-11-01 15:00:00', '2025-11-08 15:00:00', 1655.00, 'Aberto', '2025-09-13 11:00:00'),
+(155, 91, 4, 505, '2025-11-05 10:00:00', '2025-11-10 10:00:00', 2160.00, 'Aberto', '2025-09-14 12:00:00'),
+(156, 101, 1, 506, '2025-11-10 11:00:00', '2025-11-17 11:00:00', 2240.00, 'Aberto', '2025-09-15 08:00:00'),
+(157, 116, 2, 507, '2025-12-01 12:00:00', '2025-12-03 12:00:00', 800.00, 'Aberto', '2025-09-15 09:00:00'),
+(158, 121, 1, 508, '2025-12-05 14:00:00', '2025-12-10 14:00:00', 1925.00, 'Aberto', '2025-09-15 10:00:00'),
+(159, 163, 1, 509, '2025-12-10 15:00:00', '2025-12-15 15:00:00', 2625.00, 'Aberto', '2025-09-15 11:00:00'),
+(160, 18, 1, 510, '2025-12-20 10:00:00', '2026-01-05 10:00:00', 8496.00, 'Aberto', '2025-09-15 12:00:00'),
+(161, 201, 1, 511, '2025-10-02 12:00:00', '2025-10-04 12:00:00', 970.00, 'Aberto', '2025-09-10 08:30:00'),
+(162, 33, 1, 512, '2025-10-06 14:00:00', '2025-10-09 14:00:00', 450.00, 'Aberto', '2025-09-11 09:30:00'),
+(163, 140, 2, 513, '2025-10-11 15:00:00', '2025-10-18 15:00:00', 1330.00, 'Aberto', '2025-09-12 10:30:00'),
+(164, 163, 1, 514, '2025-11-02 10:00:00', '2025-11-09 10:00:00', 3605.00, 'Aberto', '2025-09-13 11:30:00'),
+(165, 45, 1, 515, '2025-11-06 11:00:00', '2025-11-11 11:00:00', 3300.00, 'Aberto', '2025-09-14 12:30:00'),
+(166, 194, 1, 516, '2025-11-11 12:00:00', '2025-11-18 12:00:00', 1260.00, 'Aberto', '2025-09-15 08:30:00'),
+(167, 220, 3, 517, '2025-12-02 14:00:00', '2025-12-04 14:00:00', 800.00, 'Aberto', '2025-09-15 09:30:00'),
+(168, 60, 1, 518, '2025-12-06 15:00:00', '2025-12-11 15:00:00', 1650.00, 'Aberto', '2025-09-15 10:30:00'),
+(169, 88, 1, 519, '2025-12-11 10:00:00', '2025-12-16 10:00:00', 2025.00, 'Aberto', '2025-09-15 11:30:00'),
+(170, 112, 1, 520, '2025-12-21 11:00:00', '2026-01-06 11:00:00', 5840.00, 'Aberto', '2025-09-15 12:30:00'),
+(171, 130, 2, 521, '2025-10-03 14:00:00', '2025-10-06 14:00:00', 1140.00, 'Aberto', '2025-09-10 09:00:00'),
+(172, 150, 1, 522, '2025-10-07 15:00:00', '2025-10-10 15:00:00', 960.00, 'Aberto', '2025-09-11 10:00:00'),
+(173, 170, 1, 523, '2025-10-12 10:00:00', '2025-10-20 10:00:00', 2320.00, 'Aberto', '2025-09-12 11:00:00'),
+(174, 1, 1, 524, '2025-11-03 11:00:00', '2025-11-10 11:00:00', 1015.00, 'Aberto', '2025-09-13 12:00:00'),
+(175, 81, 4, 525, '2025-11-07 12:00:00', '2025-11-12 12:00:00', 1475.00, 'Aberto', '2025-09-14 14:00:00'),
+(176, 91, 1, 526, '2025-11-12 14:00:00', '2025-11-20 14:00:00', 2360.00, 'Aberto', '2025-09-15 10:00:00'),
+(177, 101, 1, 527, '2025-12-03 15:00:00', '2025-12-05 15:00:00', 810.00, 'Aberto', '2025-09-15 11:00:00'),
+(178, 116, 1, 528, '2025-12-07 10:00:00', '2025-12-12 10:00:00', 1450.00, 'Aberto', '2025-09-15 12:00:00'),
+(179, 121, 2, 529, '2025-12-12 11:00:00', '2025-12-17 11:00:00', 1710.00, 'Aberto', '2025-09-15 14:00:00'),
+(180, 163, 1, 530, '2025-12-22 12:00:00', '2026-01-07 12:00:00', 8800.00, 'Aberto', '2025-09-15 15:00:00'),
+
+-- =================================================================
+-- RESERVAS COM STATUS = PENDENTE
+-- =================================================================
+(181, 18, 1, 531, '2025-09-16 14:00:00', '2025-09-20 14:00:00', 1420.00, 'Pendente', '2025-09-16 10:00:00'),
+(182, 201, 1, 532, '2025-09-17 10:00:00', '2025-09-27 10:00:00', 1200.00, 'Pendente', '2025-09-16 10:30:00'),
+(183, 33, 1, 533, '2025-09-18 11:00:00', '2025-09-20 11:00:00', 530.00, 'Pendente', '2025-09-16 11:00:00'),
+(184, 140, 1, 534, '2025-09-20 12:00:00', '2025-09-25 12:00:00', 1075.00, 'Pendente', '2025-09-16 11:30:00'),
+(185, 45, 1, 535, '2025-09-22 14:00:00', '2025-09-29 14:00:00', 4550.00, 'Pendente', '2025-09-16 12:00:00'),
+(186, 194, 2, 536, '2025-09-17 15:00:00', '2025-09-19 15:00:00', 560.00, 'Pendente', '2025-09-16 12:30:00'),
+(187, 220, 1, 537, '2025-09-18 10:00:00', '2025-09-22 10:00:00', 1560.00, 'Pendente', '2025-09-16 13:00:00'),
+(188, 60, 1, 538, '2025-09-19 11:00:00', '2025-09-21 11:00:00', 660.00, 'Pendente', '2025-09-16 13:30:00'),
+(189, 88, 1, 539, '2025-09-20 12:00:00', '2025-09-23 12:00:00', 1155.00, 'Pendente', '2025-09-16 14:00:00'),
+(190, 112, 1, 540, '2025-09-21 14:00:00', '2025-09-28 14:00:00', 3920.00, 'Pendente', '2025-09-16 14:30:00'),
+(191, 130, 1, 541, '2025-09-17 10:00:00', '2025-09-20 10:00:00', 1215.00, 'Pendente', '2025-09-16 15:00:00'),
+(192, 150, 1, 542, '2025-09-18 11:00:00', '2025-09-21 11:00:00', 960.00, 'Pendente', '2025-09-16 15:30:00'),
+(193, 170, 1, 543, '2025-09-19 12:00:00', '2025-09-22 12:00:00', 585.00, 'Pendente', '2025-09-16 16:00:00'),
+(194, 1, 1, 544, '2025-09-20 14:00:00', '2025-09-23 14:00:00', 420.00, 'Pendente', '2025-09-16 16:30:00'),
+(195, 81, 1, 545, '2025-09-21 15:00:00', '2025-09-24 15:00:00', 405.00, 'Pendente', '2025-09-16 17:00:00'),
+(196, 91, 1, 546, '2025-09-17 10:00:00', '2025-09-25 10:00:00', 2360.00, 'Pendente', '2025-09-16 17:30:00'),
+(197, 101, 1, 547, '2025-09-18 11:00:00', '2025-09-26 11:00:00', 3240.00, 'Pendente', '2025-09-16 18:00:00'),
+(198, 116, 1, 548, '2025-09-19 12:00:00', '2025-09-27 12:00:00', 2320.00, 'Pendente', '2025-09-16 18:30:00'),
+(199, 121, 1, 549, '2025-09-20 14:00:00', '2025-09-28 14:00:00', 1280.00, 'Pendente', '2025-09-16 19:00:00'),
+(200, 163, 1, 550, '2025-09-21 15:00:00', '2025-09-30 15:00:00', 4410.00, 'Pendente', '2025-09-16 19:30:00');
+
+INSERT INTO Reserva_Servico (Reserva_Id, Servico_Id) VALUES
+
+-- Reservas de Pacote 1 (Nenhum) que adicionaram serviços:
+(1, 3), -- Reserva 1 (Nenhum) + GPS
+(3, 1), -- Reserva 3 (Nenhum) + Proteção Básica
+(4, 2), -- Reserva 4 (Nenhum) + Proteção Completa
+(4, 3), -- Reserva 4 (Nenhum) + GPS
+(6, 1), -- Reserva 6 (Nenhum) + Proteção Básica
+(7, 3), -- Reserva 7 (Nenhum) + GPS
+(9, 1), -- Reserva 9 (Nenhum) + Proteção Básica
+(11, 1), -- Reserva 11 (Nenhum) + Proteção Básica
+(12, 2), -- Reserva 12 (Nenhum) + Proteção Completa
+(14, 1), -- Reserva 14 (Nenhum) + Proteção Básica
+(14, 3), -- Reserva 14 (Nenhum) + GPS
+(15, 1), -- Reserva 15 (Nenhum) + Proteção Básica
+(17, 1), -- Reserva 17 (Nenhum) + Proteção Básica
+(18, 1), -- Reserva 18 (Nenhum) + Proteção Básica
+(19, 1), -- Reserva 19 (Nenhum) + Proteção Básica
+(21, 1), -- Reserva 21 (Nenhum) + Proteção Básica
+(22, 2), -- Reserva 22 (Nenhum) + Proteção Completa
+(23, 1), -- Reserva 23 (Nenhum) + Proteção Básica
+(24, 1), -- Reserva 24 (Nenhum) + Proteção Básica
+(26, 1), -- Reserva 26 (Nenhum) + Proteção Básica
+(27, 2), -- Reserva 27 (Nenhum) + Proteção Completa
+(28, 1), -- Reserva 28 (Nenhum) + Proteção Básica
+(30, 1), -- Reserva 30 (Nenhum) + Proteção Básica
+(31, 1), -- Reserva 31 (Nenhum) + Proteção Básica
+(32, 1), -- Reserva 32 (Nenhum) + Proteção Básica
+(33, 1), -- Reserva 33 (Nenhum) + Proteção Básica
+(33, 3), -- Reserva 33 (Nenhum) + GPS
+(35, 1), -- Reserva 35 (Nenhum) + Proteção Básica
+(36, 1), -- Reserva 36 (Nenhum) + Proteção Básica
+(37, 1), -- Reserva 37 (Nenhum) + Proteção Básica
+(38, 1), -- Reserva 38 (Nenhum) + Proteção Básica
+(40, 1), -- Reserva 40 (Nenhum) + Proteção Básica
+(41, 1), -- Reserva 41 (Nenhum) + Proteção Básica
+(42, 2), -- Reserva 42 (Nenhum) + Proteção Completa
+(43, 1), -- Reserva 43 (Nenhum) + Proteção Básica
+(44, 1), -- Reserva 44 (Nenhum) + Proteção Básica
+(45, 1), -- Reserva 45 (Nenhum) + Proteção Básica
+(46, 1), -- Reserva 46 (Nenhum) + Proteção Básica
+(47, 1), -- Reserva 47 (Nenhum) + Proteção Básica
+(49, 1), -- Reserva 49 (Nenhum) + Proteção Básica
+(50, 2), -- Reserva 50 (Nenhum) + Proteção Completa
+(100, 1), -- Reserva 100 (Nenhum) + Proteção Básica
+(101, 2), -- Reserva 101 (Nenhum) + Proteção Completa
+(103, 1), -- Reserva 103 (Nenhum) + Proteção Básica
+(104, 1), -- Reserva 104 (Nenhum) + Proteção Básica
+(105, 2), -- Reserva 105 (Nenhum) + Proteção Completa
+(107, 1), -- Reserva 107 (Nenhum) + Proteção Básica
+(108, 1), -- Reserva 108 (Nenhum) + Proteção Básica
+(109, 1), -- Reserva 109 (Nenhum) + Proteção Básica
+(110, 1), -- Reserva 110 (Nenhum) + Proteção Básica
+(112, 1), -- Reserva 112 (Nenhum) + Proteção Básica
+(113, 1), -- Reserva 113 (Nenhum) + Proteção Básica
+(115, 1), -- Reserva 115 (Nenhum) + Proteção Básica
+(116, 1), -- Reserva 116 (Nenhum) + Proteção Básica
+(117, 1), -- Reserva 117 (Nenhum) + Proteção Básica
+(118, 1), -- Reserva 118 (Nenhum) + Proteção Básica
+(119, 1), -- Reserva 119 (Nenhum) + Proteção Básica
+(120, 2), -- Reserva 120 (Nenhum) + Proteção Completa
+(121, 1), -- Reserva 121 (Nenhum) + Proteção Básica
+(122, 1), -- Reserva 122 (Nenhum) + Proteção Básica
+(123, 1), -- Reserva 123 (Nenhum) + Proteção Básica
+(124, 1), -- Reserva 124 (Nenhum) + Proteção Básica
+(125, 1), -- Reserva 125 (Nenhum) + Proteção Básica
+(126, 1), -- Reserva 126 (Nenhum) + Proteção Básica
+(127, 2), -- Reserva 127 (Nenhum) + Proteção Completa
+(128, 1), -- Reserva 128 (Nenhum) + Proteção Básica
+(129, 1), -- Reserva 129 (Nenhum) + Proteção Básica
+(130, 1), -- Reserva 130 (Nenhum) + Proteção Básica
+(131, 1), -- Reserva 131 (Nenhum) + Proteção Básica
+(133, 1), -- Reserva 133 (Nenhum) + Proteção Básica
+(134, 2), -- Reserva 134 (Nenhum) + Proteção Completa
+(135, 1), -- Reserva 135 (Nenhum) + Proteção Básica
+(137, 1), -- Reserva 137 (Nenhum) + Proteção Básica
+(138, 1), -- Reserva 138 (Nenhum) + Proteção Básica
+(139, 1), -- Reserva 139 (Nenhum) + Proteção Básica
+(140, 1), -- Reserva 140 (Nenhum) + Proteção Básica
+(141, 1), -- Reserva 141 (Nenhum) + Proteção Básica
+(143, 2), -- Reserva 143 (Nenhum) + Proteção Completa
+(144, 1), -- Reserva 144 (Nenhum) + Proteção Básica
+(145, 1), -- Reserva 145 (Nenhum) + Proteção Básica
+(146, 1), -- Reserva 146 (Nenhum) + Proteção Básica
+(148, 1), -- Reserva 148 (Nenhum) + Proteção Básica
+(149, 1), -- Reserva 149 (Nenhum) + Proteção Básica
+(150, 1), -- Reserva 150 (Nenhum) + Proteção Básica
+(153, 1), -- Reserva 153 (Nenhum) + Proteção Básica
+(154, 1), -- Reserva 154 (Nenhum) + Proteção Básica
+(155, 1), -- Reserva 155 (Nenhum) + Proteção Básica
+(156, 1), -- Reserva 156 (Nenhum) + Proteção Básica
+(158, 1), -- Reserva 158 (Nenhum) + Proteção Básica
+(159, 1), -- Reserva 159 (Nenhum) + Proteção Básica
+(160, 1), -- Reserva 160 (Nenhum) + Proteção Básica
+(162, 1), -- Reserva 162 (Nenhum) + Proteção Básica
+(163, 1), -- Reserva 163 (Nenhum) + Proteção Básica
+(164, 1), -- Reserva 164 (Nenhum) + Proteção Básica
+(165, 1), -- Reserva 165 (Nenhum) + Proteção Básica
+(166, 1), -- Reserva 166 (Nenhum) + Proteção Básica
+(168, 1), -- Reserva 168 (Nenhum) + Proteção Básica
+(169, 1), -- Reserva 169 (Nenhum) + Proteção Básica
+(170, 1), -- Reserva 170 (Nenhum) + Proteção Básica
+(172, 1), -- Reserva 172 (Nenhum) + Proteção Básica
+(173, 1), -- Reserva 173 (Nenhum) + Proteção Básica
+(174, 1), -- Reserva 174 (Nenhum) + Proteção Básica
+(176, 1), -- Reserva 176 (Nenhum) + Proteção Básica
+(177, 1), -- Reserva 177 (Nenhum) + Proteção Básica
+(178, 1), -- Reserva 178 (Nenhum) + Proteção Básica
+(180, 1), -- Reserva 180 (Nenhum) + Proteção Básica
+(181, 1), -- Reserva 181 (Nenhum) + Proteção Básica
+(182, 1), -- Reserva 182 (Nenhum) + Proteção Básica
+(183, 1), -- Reserva 183 (Nenhum) + Proteção Básica
+(184, 1), -- Reserva 184 (Nenhum) + Proteção Básica
+(185, 1), -- Reserva 185 (Nenhum) + Proteção Básica
+(187, 1), -- Reserva 187 (Nenhum) + Proteção Básica
+(188, 1), -- Reserva 188 (Nenhum) + Proteção Básica
+(189, 1), -- Reserva 189 (Nenhum) + Proteção Básica
+(190, 1), -- Reserva 190 (Nenhum) + Proteção Básica
+(191, 1), -- Reserva 191 (Nenhum) + Proteção Básica
+(192, 1), -- Reserva 192 (Nenhum) + Proteção Básica
+(193, 1), -- Reserva 193 (Nenhum) + Proteção Básica
+(194, 1), -- Reserva 194 (Nenhum) + Proteção Básica
+(195, 1), -- Reserva 195 (Nenhum) + Proteção Básica
+(196, 1), -- Reserva 196 (Nenhum) + Proteção Básica
+(197, 1), -- Reserva 197 (Nenhum) + Proteção Básica
+(198, 1), -- Reserva 198 (Nenhum) + Proteção Básica
+(199, 1), -- Reserva 199 (Nenhum) + Proteção Básica
+(200, 1), -- Reserva 200 (Nenhum) + Proteção Básica
+
+-- Reservas de Pacote 2 (Simples: Serviços 1 e 3)
+(2, 1), (2, 3),
+(8, 1), (8, 3),
+(13, 1), (13, 3),
+(20, 1), (20, 3),
+(29, 1), (29, 3),
+(111, 1), (111, 3),
+(136, 1), (136, 3),
+(151, 1), (151, 3),
+(157, 1), (157, 3),
+(171, 1), (171, 3),
+(179, 1), (179, 3),
+(186, 1), (186, 3),
+
+-- Adicionais para Pacote 2
+(8, 4), -- Reserva 8 (Simples) + Cadeira de Bebê
+
+-- Reservas de Pacote 3 (Completo: Serviços 2, 3, 4, 5)
+(10, 2), (10, 3), (10, 4), (10, 5),
+(25, 2), (25, 3), (25, 4), (25, 5),
+(48, 2), (48, 3), (48, 4), (48, 5),
+(106, 2), (106, 3), (106, 4), (106, 5),
+(132, 2), (132, 3), (132, 4), (132, 5),
+(142, 2), (142, 3), (142, 4), (142, 5),
+(152, 2), (152, 3), (152, 4), (152, 5),
+(167, 2), (167, 3), (167, 4), (167, 5),
+
+-- Adicionais para Pacote 3
+(10, 6), -- Reserva 10 (Completo) + Condutor Adicional
+
+-- Reservas de Pacote 4 (Premium: Serviços 2, 3, 6, 7)
+(5, 2), (5, 3), (5, 6), (5, 7),
+(16, 2), (16, 3), (16, 6), (16, 7),
+(34, 2), (34, 3), (34, 6), (34, 7),
+(39, 2), (39, 3), (39, 6), (39, 7),
+(102, 2), (102, 3), (102, 6), (102, 7),
+(114, 2), (114, 3), (114, 6), (114, 7),
+(147, 2), (147, 3), (147, 6), (147, 7),
+(175, 2), (175, 3), (175, 6), (175, 7);

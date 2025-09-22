@@ -1,0 +1,17 @@
+let nome  = "Alberto";
+undefined
+let sobrenome = "Santos"
+undefined
+let resutado = nome + ' ' + sobrenome
+undefined
+let resultado2 = `${nome} ${sobrenome}`;
+undefined
+console.log('Informacao');
+VM603:1 Informacao
+undefined
+alert("Registro cadastrado");
+undefined
+let nomee = prompt("Informe o seu nome:");
+undefined
+nomee
+'Alberto Santos'

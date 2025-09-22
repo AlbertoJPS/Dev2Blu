@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>Lista de Exercícios 1</h1>
+        <Fieldset>
+            <legend>Operadores Aritméticos</legend>
+            <button class="btn-exercicio" id="btnExercicio1_1" onclick="aritmeticos01()">Exercício 1</button>
+            <button class="btn-exercicio" id="btnExercicio1_2" onclick="aritmeticos02()">Exercício 2</button>
+            <button class="btn-exercicio" id="btnExercicio1_3" onclick="aritmeticos03()">Exercício 3</button>
+            <button class="btn-exercicio" id="btnExercicio1_4" onclick="aritmeticos04()">Exercício 4</button>
+            <button class="btn-exercicio" id="btnExercicio1_5" onclick="aritmeticos05()">Exercício 5</button> 
+        </Fieldset>
+        <Fieldset>
+            <legend>Operadores de Atribuição</legend>
+            <button class="btn-exercicio" id="btnExercicio2_1" onclick="atribuicao01()">Exercício 1</button>
+            <button class="btn-exercicio" id="btnExercicio2_2" onclick="atribuicao02()">Exercício 2</button>
+            <button class="btn-exercicio" id="btnExercicio2_3" onclick="atribuicao03()">Exercício 3</button>
+            <button class="btn-exercicio" id="btnExercicio2_4" onclick="atribuicao04()">Exercício 4</button>
+            <button class="btn-exercicio" id="btnExercicio2_5" onclick="atribuicao05()">Exercício 5</button>   
+        </Fieldset>
+        <Fieldset>
+            <legend>Operadores Relacionais</legend>
+            <button class="btn-exercicio" id="btnExercicio3_1" onclick="relacionais01()">Exercício 1</button>
+            <button class="btn-exercicio" id="btnExercicio3_2" onclick="relacionais02()">Exercício 2</button>
+            <button class="btn-exercicio" id="btnExercicio3_3" onclick="relacionais03()">Exercício 3</button>
+            <button class="btn-exercicio" id="btnExercicio3_4" onclick="relacionais04()">Exercício 4</button>
+            <button class="btn-exercicio" id="btnExercicio3_5" onclick="relacionais05()">Exercício 5</button>
+        </Fieldset>
+        <Fieldset>
+            <legend>Operadores Lógicos</legend>
+            <button class="btn-exercicio" id="btnExercicio4_1" onclick="logicos01()">Exercício 1</button>
+            <button class="btn-exercicio" id="btnExercicio4_2" onclick="logicos02()">Exercício 2</button>
+        </Fieldset>
+        <Fieldset>
+            <legend>Operadores Ternários</legend>
+            <button class="btn-exercicio" id="btnExercicio5_1" onclick="ternarios01()">Exercício 1</button>
+            <button class="btn-exercicio" id="btnExercicio5_2" onclick="ternarios02()">Exercício 2</button>
+            <button class="btn-exercicio" id="btnExercicio5_3" onclick="ternarios03()">Exercício 3</button> 
+        </Fieldset>
+    </div>
+    <div id="modal-overlay" class="hidden"></div>
+    <div id="custom-alert" class="hidden">
+        <div id="alert-title"></div>
+        <div id="alert-body"></div>
+        
+        <div id="input-container" style="display: none;">
+            <input type="text" id="alert-input" placeholder="Digite um valor aqui...">
+        </div>
+        
+        <div class="modal-footer">
+            <button id="alert-ok-btn">OK</button>
+        </div>
+    </div>
+</body>
+</html>

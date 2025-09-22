@@ -204,6 +204,11 @@ INSERT INTO Categoria (Nome) VALUES (2, "Sedan"), (3, "Hatch"), (4, "Picape"), (
 
 INSERT INTO Categoria (Nome) VALUES ("Conversível"), ("Perua"), ("Minivan"), ("Crossover");
 
-SELECT * FROM Filial;
+SELECT * FROM pessoa;
 
 ALTER TABLE Carro MODIFY COLUMN Motor VARCHAR(45);
+
+ALTER TABLE Pessoa MODIFY COLUMN MotoristaCNH VARCHAR(11);
+ALTER TABLE genero MODIFY COLUMN Nome VARCHAR(45);
+
+
