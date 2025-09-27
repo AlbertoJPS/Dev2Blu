@@ -211,4 +211,33 @@ ALTER TABLE Carro MODIFY COLUMN Motor VARCHAR(45);
 ALTER TABLE Pessoa MODIFY COLUMN MotoristaCNH VARCHAR(11);
 ALTER TABLE genero MODIFY COLUMN Nome VARCHAR(45);
 
+ALTER TABLE Pessoa DROP COLUMN Ativo;
+
+ALTER TABLE Pessoa ADD AtivoPessoa ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Servico ADD AtivoServico ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Carro ADD AtivoCarro ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Categoria ADD AtivoCategoria ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Genero ADD AtivoGenero ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Filial ADD AtivoFilial ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Estado ADD AtivoEstado ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Cidade ADD AtivoCidade ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Marca ADD AtivoMarca ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Modelo ADD AtivoModelo ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE PacoteDesconto ADD AtivoPacoteDesconto ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Reserva ADD AtivoReserva ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+ALTER TABLE Pendencia ADD AtivoPendencia ENUM('True', 'False') DEFAULT 'True' NOT NULL;
+
+
 

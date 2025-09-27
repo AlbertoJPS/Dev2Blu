@@ -1,10 +1,6 @@
-
--- CRUD - LOCADORAVEICULOSDB - Alberto Santos
-
--- verificar e criar novas colunas para deletar um dado que já é usado em outra tabela de referência;
--- ao criar novos campos lembrar de adicionar ao insert, e ao update;
-
-
+/*
+CRUD - LOCADORAVEICULOSDB - Alberto Santos
+*/
 
 -- =====================================================================
 -- MODULO - Gênero
@@ -19,15 +15,12 @@ SELECT * FROM Genero WHERE id = 5;
 
 -- #PUT - UPDATE
 UPDATE Genero SET 
-	Nome = 'Animal' 
+    Nome = 'Animal' 
 WHERE Id = 5;
 
--- #DELETE - DELETE
-DELETE FROM Genero WHERE Id = 5;
+-- #DELETE - DELETE (Lógico)
+UPDATE Genero SET AtivoGenero = 'False' WHERE Id = 5;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Estado
@@ -42,15 +35,12 @@ SELECT * FROM Estado WHERE id = 29;
 
 -- #PUT - UPDATE
 UPDATE Estado SET 
-	Nome = 'US' 
+    Nome = 'US' 
 WHERE Id = 29;
 
--- #DELETE - DELETE
-DELETE FROM Estado WHERE Id = 29;
+-- #DELETE - DELETE (Lógico)
+UPDATE Estado SET AtivoEstado = 'False' WHERE Id = 29;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Cidade
@@ -69,12 +59,9 @@ UPDATE Cidade SET
     Estado_Id = 24 
 WHERE Id = 5570;
 
--- #DELETE - DELETE
-DELETE FROM Cidade WHERE Id = 5570;
+-- #DELETE - DELETE (Lógico)
+UPDATE Cidade SET AtivoCidade = 'False' WHERE Id = 5570;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Categoria
@@ -89,18 +76,15 @@ SELECT * FROM Categoria WHERE id = 12;
 
 -- #PUT - UPDATE
 UPDATE Categoria SET 
-	Nome = 'Veículo Marinho' 
+    Nome = 'Veículo Marinho' 
 WHERE Id = 12;
 
--- #DELETE - DELETE
-DELETE FROM Categoria WHERE Id = 12;
+-- #DELETE - DELETE (Lógico)
+UPDATE Categoria SET AtivoCategoria = 'False' WHERE Id = 12;
 -- =====================================================================
 
-
-
-
 -- =====================================================================
--- MODULO - Categoria
+-- MODULO - Marca
 -- =====================================================================
 
 -- #POST - CREATE
@@ -112,15 +96,12 @@ SELECT * FROM Marca WHERE id = 102;
 
 -- #PUT - UPDATE
 UPDATE Marca SET 
-	Nome = 'Boiano Motors' 
+    Nome = 'Boiano Motors' 
 WHERE Id = 102;
 
--- #DELETE - DELETE
-DELETE FROM Marca WHERE Id = 102;
+-- #DELETE - DELETE (Lógico)
+UPDATE Marca SET AtivoMarca = 'False' WHERE Id = 102;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Modelo
@@ -140,12 +121,9 @@ UPDATE Modelo SET
     Marca_Id = 102 
 WHERE Id = 202;
 
--- #DELETE - DELETE
-DELETE FROM Modelo WHERE Id = 202;
+-- #DELETE - DELETE (Lógico)
+UPDATE Modelo SET AtivoModelo = 'False' WHERE Id = 202;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Pendencias
@@ -165,12 +143,9 @@ UPDATE Pendencia SET
     Custo = 900.00 
 WHERE Id = 9;
 
--- #DELETE - DELETE
-DELETE FROM Pendencia WHERE Id = 9;
+-- #DELETE - DELETE (Lógico)
+UPDATE Pendencia SET AtivoPendencia = 'False' WHERE Id = 9;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Filial
@@ -193,12 +168,9 @@ UPDATE Filial SET
     Cep = '89035900' 
 WHERE Id = 202;
 
--- #DELETE - DELETE
-DELETE FROM Filial WHERE Id = 202;
+-- #DELETE - DELETE (Lógico)
+UPDATE Filial SET AtivoFilial = 'False' WHERE Id = 202;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Carro
@@ -223,24 +195,21 @@ UPDATE Carro SET
     Motor = 'Jato (Elétrico)', 
     TipoCambio = 'Automatico', 
     Valor = 7900.00, 
-    StatusCarro = 'Disponível', 
+    StatusCarro = 'Disponivel', 
     KmTotal = 1000 
 WHERE Id = 702;
 
--- #DELETE - DELETE
-DELETE FROM Carro WHERE Id = 702;
+-- #DELETE - DELETE (Lógico)
+UPDATE Carro SET AtivoCarro = 'False' WHERE Id = 702;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Pessoa
 -- =====================================================================
 
 -- #POST - CREATE
-INSERT INTO Pessoa (Id, Nome, Genero_Id, CPF, MotoristaCNH, Motorista, Endereco, Cidade_Id, Cep, Telefone, Email, Senha, Ativo) VALUES 
-(402, 'Elon Musk 2', 4, '12345678999', '01234567890', 'Ellon Muskit', 'Rua Testada, 123', 5570, '89010100', '(47) 99799-9998', 'tio.cliente@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z99', 'Sim');
+INSERT INTO Pessoa (Id, Nome, Genero_Id, CPF, MotoristaCNH, Motorista, Endereco, Cidade_Id, Cep, Telefone, Email, Senha, AtivoPessoa) VALUES 
+(402, 'Elon Musk 2', 4, '12345678999', '01234567890', 'Ellon Muskit', 'Rua Testada, 123', 5570, '89010100', '(47) 99799-9998', 'tio.cliente@email.com', '$2a$10$fK/0K/0K/0K/0K/0K/0K.Z99', 'True');
 
 -- #GET - SELECT
 SELECT * FROM Pessoa WHERE id = 402;
@@ -258,17 +227,12 @@ UPDATE Pessoa SET
     Telefone = '(47) 98888-8888', 
     Email = 'elon@tesla.com', 
     Senha = '$2a$10$NEWPASS/TESLA/SPACEX.A', 
-    Ativo = 'Sim' 
+    AtivoPessoa = 'True' 
 WHERE Id = 402;
 
--- #DELETE - DELETE
-UPDATE Pessoa SET
-    Ativo = 'Nao' 
-WHERE Id = 402;
+-- #DELETE - DELETE (Lógico)
+UPDATE Pessoa SET AtivoPessoa = 'False' WHERE Id = 402;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Pacote de Desconto
@@ -288,12 +252,9 @@ UPDATE PacoteDesconto SET
     Valor = 100.00 
 WHERE Id = 6;
 
--- #DELETE - DELETE
-DELETE FROM PacoteDesconto WHERE Id = 6;
+-- #DELETE - DELETE (Lógico)
+UPDATE PacoteDesconto SET AtivoPacoteDesconto = 'False' WHERE Id = 6;
 -- =====================================================================
-
-
-
 
 -- =====================================================================
 -- MODULO - Serviço
@@ -313,15 +274,12 @@ UPDATE Servico SET
     Valor = 30.00 
 WHERE Id = 9;
 
--- #DELETE - DELETE
-DELETE FROM Servico WHERE Id = 9;
+-- #DELETE - DELETE (Lógico)
+UPDATE Servico SET AtivoServico = 'False' WHERE Id = 9;
 -- =====================================================================
 
-
-
-
 -- =====================================================================
--- MODULO - Reserva (em andamenteo)
+-- MODULO - Reserva
 -- =====================================================================
 
 -- #POST - CREATE
@@ -329,29 +287,22 @@ INSERT INTO Reserva (Id, Pessoa_Id, PacoteDesconto_Id, Carro_Id, DataRetirada, D
 (201, 401, 1, 701, '2025-10-01 12:00:00', '2025-10-05 12:00:00', 5200.00, 'Aberto', '2025-09-16 21:30:00');
 
 -- #GET - SELECT
-SELECT * FROM Reserva WHERE id = 201;
-SELECT * 
-FROM Reserva R 
-	JOIN Carro Cr 
-	ON R.Carro_Id = Cr.Id
-		JOIN Filial F 
-		ON Cr.Carro_Id = F.Id
-        
-		JOIN Modelo M 
-		ON Cr.Carro_Id = M.Id
-        
-		JOIN Pendencia PND 
-		ON Cr.Carro_Id = PND.Id
-	JOIN PacoteDesconto PD 
-	ON R.PacoteDesconto_Id = PD.Id
-	JOIN Pessoa P 
-	ON R.Pessoa_Id = P.Id
-		JOIN Genero G 
-		ON P.Genero_Id = G.Id
-		JOIN Cidade C 
-		ON P.Cidade_Id = C.Id
-        
-WHERE R.id = 100;
+SELECT * FROM 
+    Reserva R
+    JOIN Pessoa P ON R.Pessoa_Id = P.Id
+		JOIN Genero G ON P.Genero_Id = G.Id
+		JOIN Cidade CidPessoa ON P.Cidade_Id = CidPessoa.Id
+			JOIN Estado EstPessoa ON CidPessoa.Estado_Id = EstPessoa.Id
+    JOIN Carro Cr ON R.Carro_Id = Cr.Id
+        JOIN Modelo M ON Cr.Modelo_Id = M.Id
+            JOIN Marca Ma ON M.Marca_Id = Ma.Id
+			JOIN Filial F ON Cr.Filial_Id = F.Id
+                JOIN Cidade CidFilial ON F.Cidade_Id = CidFilial.Id
+					JOIN Estado EstFilial ON CidFilial.Estado_Id = EstFilial.Id
+		LEFT JOIN Pendencia PND ON Cr.Pendencia_Id = PND.Id
+    JOIN PacoteDesconto PD ON R.PacoteDesconto_Id = PD.Id
+WHERE 
+    R.Id = 201;
 
 -- #PUT - UPDATE
 UPDATE Reserva SET 
@@ -365,13 +316,15 @@ UPDATE Reserva SET
     DataReserva = '2025-09-17 10:00:00' 
 WHERE Id = 201;
 
-
--- #DELETE - DELETE
-DELETE FROM Reserva WHERE Id = 201;
+-- #DELETE - DELETE (Lógico)
+UPDATE Reserva SET AtivoReserva = 'False' WHERE Id = 201;
 -- =====================================================================
 
+-- =====================================================================
+-- MODULO - Tabelas Associativas
+-- =====================================================================
 -- ---------------------------------------------
--- PacoteDesconto_Servico --------------
+-- PacoteDesconto_Servico
 -- ---------------------------------------------
 
 -- #POST - CREATE
@@ -383,11 +336,11 @@ UPDATE PacoteDesconto_Servico SET
     Servico_Id = 8 
 WHERE PacoteDesconto_Id = 5 AND Servico_Id = 1;
 
--- #DELETE - DELETE
+-- #DELETE - DELETE 
 DELETE FROM PacoteDesconto_Servico WHERE PacoteDesconto_Id = 5 AND Servico_Id = 8; 
 
 -- ---------------------------------------------
--- Reserva_Servico ----------------------
+-- Reserva_Servico
 -- ---------------------------------------------
 
 -- #POST - CREATE
@@ -399,7 +352,6 @@ UPDATE Reserva_Servico SET
     Servico_Id = 8 
 WHERE Reserva_Id = 201 AND Servico_Id = 1;
 
--- #DELETE - DELETE
+-- #DELETE - DELETE 
 DELETE FROM Reserva_Servico WHERE Reserva_Id = 201 AND Servico_Id = 8; 
 -- =====================================================================
-
