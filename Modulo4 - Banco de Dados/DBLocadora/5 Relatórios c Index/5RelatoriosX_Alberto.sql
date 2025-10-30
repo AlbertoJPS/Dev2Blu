@@ -39,7 +39,7 @@ ORDER BY R.DataReserva DESC;
 
 -- ==========================================================================
 
-CREATE UNIQUE INDEX IDX_Pessoa_CPF ON Pessoa(CPF);
+CREATE INDEX IDX_Pessoa_CPF ON Pessoa(CPF);
 CREATE INDEX IDX_Reserva_Pessoa_Status_Data ON Reserva(Pessoa_Id, StatusReserva, DataReserva);
 
 DROP INDEX IDX_Pessoa_CPF ON Pessoa;
@@ -55,7 +55,7 @@ Carro_Id,
 DataRetirada,
 StatusReserva
 FROM Reserva
-WHERE StatusReserva = 'Aberto' AND DataRetirada BETWEEN '2025-02-01' AND '2025-02-07'v; -- Use um intervalo de datas relevante
+WHERE StatusReserva = 'Aberto' AND DataRetirada BETWEEN '2024-02-01' AND '2024-08-07';
 
 -- ==========================================================================
 
@@ -85,7 +85,10 @@ CREATE INDEX IDX_FK_Modelo_Marca ON Modelo(Marca_Id);
 
 DROP INDEX IDX_Marca_Nome ON Marca;
 DROP INDEX IDX_Modelo_Nome ON Modelo;
+
+ALTER TABLE Carro DROP FOREIGN KEY FK_Carro_Modelo;
 DROP INDEX IDX_FK_Carro_Modelo ON Carro;
+ALTER TABLE Modelo DROP FOREIGN KEY FK_Modelo_Marca;
 DROP INDEX IDX_FK_Modelo_Marca ON Modelo;
 
 -- ==========================================================================================================================================
@@ -103,7 +106,7 @@ WHERE Placa = 'AKL8K90';
 
 -- ==========================================================================
 
-CREATE UNIQUE INDEX IDX_Carro_Placa ON Carro(Placa);
+CREATE INDEX IDX_Carro_Placa ON Carro(Placa);
 
 DROP INDEX IDX_Carro_Placa ON Carro;
 
@@ -111,12 +114,28 @@ DROP INDEX IDX_Carro_Placa ON Carro;
 
 -- ERROS ao Dropar:
 
--- (ALTER TABLE Reserva DROP FOREIGN KEY FK_Reserva_Pessoa;)
+ALTER TABLE Reserva DROP FOREIGN KEY FK_Reserva_Pessoa;
 DROP INDEX idx_reserva_pessoa_status_data ON Reserva; 
 
--- (ALTER TABLE Carro DROP FOREIGN KEY FK_Carro_Filial;)
+ALTER TABLE Carro DROP FOREIGN KEY FK_Carro_Filial;
 DROP INDEX idx_carro_filial_FK ON Carro; 
 
+-- ==========================================================================
+-- ==========================================================================
 
+EXPLAIN SELECT *
+FROM Cidade C
+JOIN Estado E ON E.Id = C.Estado_Id
+WHERE E.Nome = "SC";
 
+CREATE INDEX IDX_Estado_Nome ON Estado(Nome);
+CREATE INDEX IDX_FK_Cidade_Estado ON Cidade(Estado_Id);
 
+EXPLAIN SELECT *
+FROM Estado E
+JOIN Cidade C
+ON E.Nome = "SC"
+AND E.Id = C.Estado_Id;
+
+-- ==========================================================================
+-- ==========================================================================

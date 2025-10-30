@@ -1,0 +1,53 @@
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<section class="min-h-screen bg-white text-gray-800 p-4 md:p-6">
+
+    @if(book){
+    <div class="max-w-6xl mx-auto bg-gray-100 rounded-2xl shadow-2xl overflow-hidden">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            
+            <div class="relative rounded-xl overflow-hidden shadow-lg border-4 border-amber-500/50 self-start">
+                <img 
+                    [src]="book.capaUrl"
+                    [alt]="book.titulo + ' capa'"
+                    class="w-full h-auto object-cover"
+                />
+                <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+
+            <div class="flex flex-col justify-start md:col-span-2">
+                <div>
+                    <h1 class="text-3xl font-extrabold mb-2 leading-tight">
+                        <span class="text-orange-600">{{ book.titulo }}</span>
+                    </h1>
+
+                    <div class="pt-2 border-t border-amber-500/50 mt-2">
+                        <h2 class="text-xl font-bold text-orange-600 mb-3 border-b border-gray-300 pb-2">
+                            Sinopse
+                        </h2>
+                        
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                            {{ book.sinopse }}
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-200 p-4 rounded-lg border border-amber-500 mb-4">
+                        <span class="text-sm text-gray-600 block">Preço</span>
+                        <p class="text-3xl font-black text-gray-900 tracking-wider">
+                            {{ book.price | currency:'BRL':'symbol':'1.2-2' }}
+                        </p>
+        
+                    </div>
+                    <button (click)="addToCart()" class="w-full bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md font-medium text-center text-base">
+                            Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    
+
+    </div>
+    }
+</section>

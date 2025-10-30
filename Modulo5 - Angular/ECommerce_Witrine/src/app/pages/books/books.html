@@ -1,0 +1,64 @@
+<section class="container mx-auto p-4 md:p-8 bg-white text-gray-800 rounded-xl shadow-2xl">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 border-b border-amber-500 pb-6 mb-8 items-center">
+        
+        <div class="p-2 flex items-center justify-center lg:justify-start">
+            <img
+                class="w-32 md:w-40 rounded-full shadow-lg"
+                src="assets/Logo_Witrine.png"
+                alt="Logo da Witrine"
+            />
+        </div>
+        
+        <div class="lg:col-span-2 p-4 flex flex-col items-center lg:items-start justify-center gap-2">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">
+                <span class="text-orange-600">Catálogo</span> Completo
+            </h2>
+             <p class="text-lg text-gray-600">
+                Explore nosso universo de obras independentes.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-xl text-gray-600 mb-10 text-center md:text-left leading-relaxed">
+        <p>Aqui você pode explorar todo o catálogo de livros da nossa loja, publicados por autores que usam a <span class="text-orange-600 font-semibold">Forja do Escritor</span>. 
+        <span class="text-orange-600 font-semibold">Encontre sua próxima grande leitura!</span></p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 justify-center">
+        
+        @for (book of books; track book.titulo) {
+            <div
+                class="bg-gray-100 text-gray-800 p-4 rounded-xl shadow-lg border border-gray-300 
+                       hover:shadow-orange-500/30 hover:shadow-2xl hover:scale-[1.03] 
+                       transition-all duration-300 ease-in-out 
+                       flex flex-col items-start cursor-pointer"
+            >
+                <img
+                    [src]="book.capaUrl"
+                    [alt]="book.titulo"
+                    class="rounded-lg w-full h-48 md:h-56 object-cover mb-4 shadow-md"
+                />
+                
+                <h3 class="text-2xl font-bold text-orange-600 mb-2 truncate w-full">{{ book.titulo }}</h3>
+                
+                <div class="text-lg font-semibold text-gray-900 mb-3">
+                    {{book.price | currency:'BRL':'symbol':'1.2-2'}}
+                </div>
+
+                <p class="text-sm text-gray-600 leading-normal mb-4 text-left flex-grow">
+                    {{ book.sinopse }}
+                </p>
+                
+                <div class="flex gap-3 w-full mt-auto">
+                    <button
+                        class="flex-grow bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md font-medium text-center" [routerLink]="['/book-page', book.id]"
+                    >
+                        Ver Detalhes
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+
+</section>
